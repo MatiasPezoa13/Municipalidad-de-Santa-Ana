@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias | Municipalidad</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="shortcut icon" href="santa.ico" type="image/x-icon">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <!-- HEADER - ocupa 100% de ancho -->
+    <header class="shadow-md p-2 w-full" style="background-color: #fbff00;">
+        <div class="flex items-center justify-center flex-wrap gap-6 px-4">
+            <!-- Logo + Título -->
+            <div class="flex items-center gap-3">
+                <img src="img/logosan.png" alt="Logo Municipalidad" class="w-24 h-24 object-contain" />
+                <h1 class="text-lg font-bold text-black">MUNICIPALIDAD DE SANTA ANA</h1>
+            </div>
+            <!-- Menú de navegación -->
+            <nav class="mt-2 md:mt-0 justify-center">
+                <ul class="flex flex-wrap gap-4 text-sm font-semibold text-black">
+                    <!-- GOBIERNO -->
+                    <li class="relative group">
+                        <a href="#" class="hover:text-green-900" data-toggle="gobierno">GOBIERNO</a>
+                        <div data-menu="gobierno" class="hidden absolute z-10 bg-white shadow-xl rounded-lg p-4 mt-2 w-64 border border-gray-200
+               left-0 group-hover:block">
+                            <ul class="space-y-2 text-sm text-gray-800">
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user-tie text-green-600"></i> Intendenta Lic. M. Mabel
+                                        Pezoa</a></li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user-tie text-green-600"></i> Presidente HCD Prof. Eikman
+                                        Matías</a></li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user text-green-600"></i> Vice-Presidente Mariela Scholles</a>
+                                </li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user text-green-600"></i>Concejal Otilia Alderete</a>
+                                </li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user text-green-600"></i>Concejal Olivera Sandro</a>
+                                </li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user text-green-600"></i>Concejal Dario Vera</a></li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user-cog text-green-600"></i> Secretaria del Concejo Salina
+                                        Priscila</a></li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user-cog text-green-600"></i> Pro-Secretaria Mezetti
+                                        Daniela</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- NOTICIAS -->
+                    <li><a href="#noticias" class="hover:text-green-900">NOTICIAS</a>
+                    </li>
+                    <!-- TURISMO -->
+                    <li><a href="#Turismo" class="hover:text-green-900">TURISMO</a></li>
+                    <!-- ACTIVIDADES -->
+                    <li><a href="#actividades" class="hover:text-green-900">ACTIVIDADES</a></li>
+                    <!-- OBRAS PUBLICAS -->
+                    <li><a href="obras-publicas.html" class="hover:text-green-900">OBRAS PUBLICAS</a></li>
+                    <!-- CONTACTOS -->
+                    <li class="relative group">
+                        <a href="#contactos" class="hover:text-green-900" data-toggle="contactos">CONTACTOS</a>
+                        <div data-menu="contactos" class="hidden absolute z-10 bg-white shadow-xl rounded-lg p-4 mt-2 w-64 border border-gray-200
+               left-0 group-hover:block">
+                            <ul class="space-y-2 text-sm text-gray-800">
+                                <li><a href="https://wa.me/5493765216291?text=Hola,%20quisiera%20información%20sobre%20la%20Municipalidad"
+                                        target="_blank"
+                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fab fa-whatsapp text-green-600"></i> Mesa de Entrada</a></li>
+                                <li><a href="https://wa.me/5493765216293?text=Hola,%20quisiera%20información%20sobre%20Recaudaciones"
+                                        target="_blank"
+                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fab fa-whatsapp text-green-600"></i> Recaudaciones</a></li>
+                                <li><a href="https://wa.me/5493765208091?text=Hola,%20quisiera%20información%20sobre%20Calidad%20De%20Vida"
+                                        target="_blank"
+                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fab fa-whatsapp text-green-600"></i> Calidad de Vida</a></li>
+                                <li><a href="https://wa.me/5493765208039?text=Hola,%20quisiera%20información%20sobre%20Obra%20Pública"
+                                        target="_blank"
+                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fab fa-whatsapp text-green-600"></i> Obra Pública</a></li>
+                                <li><a href="https://wa.me/5493765216294?text=Hola,%20quisiera%20información%20sobre%20Agua%20Potable"
+                                        target="_blank"
+                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fab fa-whatsapp text-green-600"></i> Agua Potable</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- BARRA INFERIOR 100% ANCHO -->
+    <div class="w-full text-black" style="background-color: #fbff00;">
+        <div class="flex flex-wrap justify-center items-center gap-2 py-1 px-4 text-sm">
+            <span>FM 94.7</span>
+            <span>|</span>
+            <span>@santaanamunicipalidad</span>
+            <span>|</span>
+            <span>Av. San Martín & Belgrano</span>
+            <span>|</span>
+            <i class="fas fa-phone"></i>
+            <span>+54 9 3765-216291</span>
+        </div>
+    </div>
+    <!-- Script para mostrar u ocultar los menús desplegables -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggles = document.querySelectorAll("[data-toggle]");
+            toggles.forEach(toggle => {
+                toggle.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const menuName = toggle.getAttribute("data-toggle");
+                    const menu = document.querySelector(`[data-menu="${menuName}"]`);
+                    // Cierra otros menús abiertos
+                    document.querySelectorAll("[data-menu]").forEach(m => {
+                        if (m !== menu) m.classList.add("hidden");
+                    });
+                    // Toggle de visibilidad
+                    menu.classList.toggle("hidden");
+                });
+            });
+            // Oculta el menú si se hace clic fuera
+            document.addEventListener("click", (e) => {
+                if (!e.target.closest("[data-toggle]") && !e.target.closest("[data-menu]")) {
+                    document.querySelectorAll("[data-menu]").forEach(m => m.classList.add("hidden"));
+                }
+            });
+        });
+    </script>
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-300 shadow-sm py-6 mb-8">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight">📰 Noticias Municipales</h1>
+
+            <!-- Botón estético en verde -->
+            <a href="santaana.html"
+                class="inline-flex items-center gap-2 text-white bg-green-600 hover:bg-green-700 transition duration-300 px-4 py-2 rounded-full shadow-md text-sm font-semibold">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+                Volver al inicio
+            </a>
+        </div>
+    </header>
+
+
+    <main class="max-w-7xl mx-auto px-4 lg:px-8 py-8">
+        <!-- Nota destacada -->
+        <article
+            class="bg-white rounded-xl shadow-lg p-6 mb-12 border-l-8 border-red-500 lg:flex lg:items-center lg:gap-8">
+            <img src="Noti/TrofeoRobotica1.png" alt="Trofeo Robótica"
+                class="rounded-md w-full mb-6 lg:mb-0 lg:w-1/2 h-72 object-cover">
+            <div class="lg:w-1/2">
+                <h2 class="text-3xl font-bold mb-3">📌 Santa Ana se coronó campeona provincial en la categoría
+                    Innovación Senior</h2>
+                <p class="text-gray-600 text-sm mb-4">Publicado el 07 de Diciembre de 2024</p>
+                <p class="text-gray-700 leading-relaxed">
+                    La Municipalidad de Santa Ana finalizó con éxito el trabajo de asfaltado en la calle 120, mejorando
+                    el tránsito y la calidad de vida de los vecinos del área. Este proyecto forma parte del plan
+                    integral de mejora de infraestructura urbana.
+                </p>
+            </div>
+        </article>
+        <!-- Lista de noticias -->
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Tarjeta de noticia -->
+            <article class="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition">
+                <h4 class="text-lg font-semibold mb-2">🛠️ Nuevas luminarias en el barrio El Progreso</h4>
+                <p class="text-gray-500 text-sm mb-2">10 de junio de 2025</p>
+                <p class="text-gray-700 mb-3">
+                    Se instalaron más de 30 luminarias LED que mejoran la visibilidad y reducen el consumo energético.
+                </p>
+                <a href="https://www.instagram.com/p/otra_noticia" target="_blank"
+                    class="text-blue-600 hover:underline text-sm">Leer más →</a>
+            </article>
+
+            <!-- Tarjeta de noticia -->
+            <article class="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition">
+                <h4 class="text-lg font-semibold mb-2">🌳 Nueva plaza inaugurada en el Barrio Norte</h4>
+                <p class="text-gray-500 text-sm mb-2">8 de junio de 2025</p>
+                <p class="text-gray-700 mb-3">
+                    La comunidad ya puede disfrutar de un espacio verde renovado, con juegos infantiles, bancos y
+                    árboles nativos.
+                </p>
+                <a href="https://www.instagram.com/p/plaza_nueva" target="_blank"
+                    class="text-blue-600 hover:underline text-sm">Leer más →</a>
+            </article>
+
+            <!-- Tercera tarjeta (puedes cambiarla si querés) -->
+            <article class="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition">
+                <h4 class="text-lg font-semibold mb-2">🌱 Mejoras en espacios verdes comunitarios</h4>
+                <p class="text-gray-500 text-sm mb-2">6 de junio de 2025</p>
+                <p class="text-gray-700 mb-3">
+                    Se plantaron más de 50 árboles nativos y se renovaron juegos en diversas plazas del municipio.
+                </p>
+                <a href="https://www.instagram.com/p/espacios_verdes" target="_blank"
+                    class="text-blue-600 hover:underline text-sm">Leer más →</a>
+            </article>
+        </div>
+        <!-- Segunda nota destacada con imagen a la derecha -->
+        <article
+            class="bg-white rounded-xl shadow-lg p-6 mb-12 mt-12 border-l-8 border-purple-500 lg:flex lg:items-center lg:gap-8 lg:flex-row-reverse">
+
+            <img src="Noti/convenio.jpg" alt="Nueva Obra"
+                class="rounded-md w-full mb-6 lg:mb-0 lg:w-1/2 h-72 object-cover">
+            <div class="lg:w-1/2">
+                <h2 class="text-3xl font-bold mb-3">Convenio con la Escuela de Enfermería de la UNAM
+                </h2>
+                <p class="text-gray-600 text-sm mb-4">Publicado el 28 de agosto de 2024</p>
+                <p class="text-gray-700 leading-relaxed">
+                    Se llevó a cabo la firma del convenio con la Escuela de Enfermería de la Universidad Nacional de
+                    Misiones, un acuerdo que marca el inicio de la carrera de Enfermería Universitaria en nuestra
+                    localidad. Este importante paso permitirá que la formación académica se dicte íntegramente en Santa
+                    Ana, gracias al financiamiento total de la Municipalidad de Santa Ana.
+                </p>
+            </div>
+        </article>
+        <!-- Lista de noticias -->
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Tarjeta de noticia -->
+            <article class="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition">
+                <h4 class="text-lg font-semibold mb-2">🛠️ Nuevas luminarias en el barrio El Progreso</h4>
+                <p class="text-gray-500 text-sm mb-2">10 de junio de 2025</p>
+                <p class="text-gray-700 mb-3">
+                    Se instalaron más de 30 luminarias LED que mejoran la visibilidad y reducen el consumo energético.
+                </p>
+                <a href="https://www.instagram.com/p/otra_noticia" target="_blank"
+                    class="text-blue-600 hover:underline text-sm">Leer más →</a>
+            </article>
+
+            <!-- Tarjeta de noticia -->
+            <article class="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition">
+                <h4 class="text-lg font-semibold mb-2">🌳 Nueva plaza inaugurada en el Barrio Norte</h4>
+                <p class="text-gray-500 text-sm mb-2">8 de junio de 2025</p>
+                <p class="text-gray-700 mb-3">
+                    La comunidad ya puede disfrutar de un espacio verde renovado, con juegos infantiles, bancos y
+                    árboles nativos.
+                </p>
+                <a href="https://www.instagram.com/p/plaza_nueva" target="_blank"
+                    class="text-blue-600 hover:underline text-sm">Leer más →</a>
+            </article>
+
+            <!-- Tercera tarjeta (puedes cambiarla si querés) -->
+            <article class="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition">
+                <h4 class="text-lg font-semibold mb-2">🌱 Mejoras en espacios verdes comunitarios</h4>
+                <p class="text-gray-500 text-sm mb-2">6 de junio de 2025</p>
+                <p class="text-gray-700 mb-3">
+                    Se plantaron más de 50 árboles nativos y se renovaron juegos en diversas plazas del municipio.
+                </p>
+                <a href="https://www.instagram.com/p/espacios_verdes" target="_blank"
+                    class="text-blue-600 hover:underline text-sm">Leer más →</a>
+            </article>
+        </div>
+        <!-- Nota destacada -->
+        <article
+            class="bg-white rounded-xl shadow-lg p-6 mb-12 mt-12 border-l-8 border-green-500 lg:flex lg:items-center lg:gap-8 lg:flex-row-reverse">
+            <img src="Noti/TrofeoRobotica1.png" alt="Trofeo Robótica"
+                class="rounded-md w-full mb-6 lg:mb-0 lg:w-1/2 h-72 object-cover">
+            <div class="lg:w-1/2">
+                <h2 class="text-3xl font-bold mb-3">📌 Santa Ana se coronó campeona provincial en la categoría
+                    Innovación Senior</h2>
+                <p class="text-gray-600 text-sm mb-4">Publicado el 07 de Diciembre de 2024</p>
+                <p class="text-gray-700 leading-relaxed">
+                    La Municipalidad de Santa Ana finalizó con éxito el trabajo de asfaltado en la calle 120, mejorando
+                    el tránsito y la calidad de vida de los vecinos del área. Este proyecto forma parte del plan
+                    integral de mejora de infraestructura urbana.
+                </p>
+            </div>
+        </article>
+    </main>
+
+
+    <footer class="bg-black/80 text-white py-10 mt-12 rounded-t-2xl shadow-inner backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Sección de Contactos -->
+            <div class="mb-6">
+                <h2 class="text-center text-xl font-semibold mb-6">Contactos Municipales</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 justify-items-center">
+                    <!-- Municipalidad -->
+                    <a href="https://wa.me/5493765216291?text=Hola,%20quisiera%20poder%20hablar%20con%20la%20Intendenta"
+                        target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fas fa-city text-3xl"></i>
+                        <p class="text-sm">Mesa de Entrada</p>
+                    </a>
+                    <!-- Recaudaciones -->
+                    <a href="https://wa.me/5493765216293?text=Hola,%20quisiera%20información%20sobre%20Recaudaciones"
+                        target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fas fa-wallet text-3xl"></i>
+                        <p class="text-sm">Recaudaciones</p>
+                    </a>
+                    <!-- Calidad de Vida -->
+                    <a href="https://wa.me/5493765208091?text=Hola,%20quisiera%20información%20sobre%20Calidad%20de%20Vida"
+                        target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fas fa-heartbeat text-3xl"></i>
+                        <p class="text-sm">Calidad de Vida</p>
+                    </a>
+                    <!-- Obra Pública -->
+                    <a href="https://wa.me/5493765208039?text=Hola,%20quisiera%20información%20sobre%20Obra%20Pública"
+                        target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fas fa-tools text-3xl"></i>
+                        <p class="text-sm">Obra Pública</p>
+                    </a>
+                    <!-- Agua Potable -->
+                    <a href="https://wa.me/5493765216294?text=Hola,%20quisiera%20información%20sobre%20Agua%20Potable"
+                        target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fas fa-tint text-3xl"></i>
+                        <p class="text-sm">Agua Potable</p>
+                    </a>
+                    <!-- Feriantes -->
+                    <a href="https://chat.whatsapp.com/IKqujeJkOi54nDEFW3yyCT" target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fab fa-whatsapp text-3xl"></i>
+                        <p class="text-sm">Grupo Feriantes</p>
+                    </a>
+                </div>
+            </div>
+            <!-- Derechos -->
+            <p class="text-center text-xs md:text-sm mt-8">&copy; Municipalidad de Santa Ana. Todos los derechos
+                reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

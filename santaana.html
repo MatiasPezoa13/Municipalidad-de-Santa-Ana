@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="es">
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipalidad de Santa Ana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="santa.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<body class="w-full min-h-screen overflow-x-hidden">
+    <!-- HEADER - ocupa 100% de ancho -->
+    <header class="shadow-md p-2 w-full" style="background-color: #fbff00;">
+        <div class="flex items-center justify-center flex-wrap gap-6 px-4">
+            <!-- Logo + Título -->
+            <div class="flex items-center gap-3">
+                <img src="img/logosan.png" alt="Logo Municipalidad" class="w-24 h-24 object-contain" />
+                <h1 class="text-lg font-bold text-black">MUNICIPALIDAD DE SANTA ANA</h1>
+            </div>
+            <!-- Menú de navegación -->
+            <nav class="mt-2 md:mt-0 justify-center">
+                <ul class="flex flex-wrap gap-4 text-sm font-semibold text-black">
+                    <!-- GOBIERNO -->
+                    <li class="relative group">
+                        <a href="#" class="hover:text-green-900" data-toggle="gobierno">GOBIERNO</a>
+                        <div data-menu="gobierno" class="hidden absolute z-10 bg-white shadow-xl rounded-lg p-4 mt-2 w-64 border border-gray-200
+               left-0 group-hover:block">
+                            <ul class="space-y-2 text-sm text-gray-800">
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user-tie text-green-600"></i> Intendenta Lic. M. Mabel
+                                        Pezoa</a></li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user-tie text-green-600"></i> Presidente HCD Prof. Eikman
+                                        Matías</a></li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user text-green-600"></i> Vice-Presidente Mariela Scholles</a>
+                                </li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user text-green-600"></i>Concejal Otilia Alderete</a>
+                                </li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user text-green-600"></i>Concejal Olivera Sandro</a>
+                                </li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user text-green-600"></i>Concejal Dario Vera</a></li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user-cog text-green-600"></i> Secretaria del Concejo Salina
+                                        Priscila</a></li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user-cog text-green-600"></i> Pro-Secretaria Mezetti
+                                        Daniela</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- NOTICIAS -->
+                    <li><a href="#noticias" class="hover:text-green-900">NOTICIAS</a>
+                    </li>
+                    <!-- TURISMO -->
+                    <li><a href="#Turismo" class="hover:text-green-900">TURISMO</a></li>
+                    <!-- ACTIVIDADES -->
+                    <li><a href="#actividades" class="hover:text-green-900">ACTIVIDADES</a></li>
+                    <!-- OBRAS PUBLICAS -->
+                    <li><a href="obras-publicas.html" class="hover:text-green-900">OBRAS PUBLICAS</a></li>
+                    <!-- CONTACTOS -->
+                    <li class="relative group">
+                        <a href="#contactos" class="hover:text-green-900" data-toggle="contactos">CONTACTOS</a>
+                        <div data-menu="contactos" class="hidden absolute z-10 bg-white shadow-xl rounded-lg p-4 mt-2 w-64 border border-gray-200
+               left-0 group-hover:block">
+                            <ul class="space-y-2 text-sm text-gray-800">
+                                <li><a href="https://wa.me/5493765216291?text=Hola,%20quisiera%20información%20sobre%20la%20Municipalidad"
+                                        target="_blank"
+                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fab fa-whatsapp text-green-600"></i> Mesa de Entrada</a></li>
+                                <li><a href="https://wa.me/5493765216293?text=Hola,%20quisiera%20información%20sobre%20Recaudaciones"
+                                        target="_blank"
+                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fab fa-whatsapp text-green-600"></i> Recaudaciones</a></li>
+                                <li><a href="https://wa.me/5493765208091?text=Hola,%20quisiera%20información%20sobre%20Calidad%20De%20Vida"
+                                        target="_blank"
+                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fab fa-whatsapp text-green-600"></i> Calidad de Vida</a></li>
+                                <li><a href="https://wa.me/5493765208039?text=Hola,%20quisiera%20información%20sobre%20Obra%20Pública"
+                                        target="_blank"
+                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fab fa-whatsapp text-green-600"></i> Obra Pública</a></li>
+                                <li><a href="https://wa.me/5493765216294?text=Hola,%20quisiera%20información%20sobre%20Agua%20Potable"
+                                        target="_blank"
+                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fab fa-whatsapp text-green-600"></i> Agua Potable</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- BARRA INFERIOR 100% ANCHO -->
+    <div class="w-full text-black" style="background-color: #fbff00;">
+        <div class="flex flex-wrap justify-center items-center gap-2 py-1 px-4 text-sm">
+            <span>FM 94.7</span>
+            <span>|</span>
+            <span>@santaanamunicipalidad</span>
+            <span>|</span>
+            <span>Av. San Martín & Belgrano</span>
+            <span>|</span>
+            <i class="fas fa-phone"></i>
+            <span>+54 9 3765-216291</span>
+        </div>
+    </div>
+    <!-- Script para mostrar u ocultar los menús desplegables -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggles = document.querySelectorAll("[data-toggle]");
+            toggles.forEach(toggle => {
+                toggle.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const menuName = toggle.getAttribute("data-toggle");
+                    const menu = document.querySelector(`[data-menu="${menuName}"]`);
+                    // Cierra otros menús abiertos
+                    document.querySelectorAll("[data-menu]").forEach(m => {
+                        if (m !== menu) m.classList.add("hidden");
+                    });
+                    // Toggle de visibilidad
+                    menu.classList.toggle("hidden");
+                });
+            });
+            // Oculta el menú si se hace clic fuera
+            document.addEventListener("click", (e) => {
+                if (!e.target.closest("[data-toggle]") && !e.target.closest("[data-menu]")) {
+                    document.querySelectorAll("[data-menu]").forEach(m => m.classList.add("hidden"));
+                }
+            });
+        });
+    </script>
+    <!-- Carrusel automático con barra de iconos transparente -->
+    <div class="relative overflow-hidden h-[650px] w-screen">
+        <!-- Carrusel -->
+        <div id="carousel" class="flex transition-transform duration-[8000] ease-in-out w-full h-full">
+            <img src="Encabezado/1.png" alt="Imagen 1" class="w-full h-full object-cover flex-shrink-0" />
+            <img src="Encabezado/2.png" alt="Imagen 2" class="w-full h-full object-cover flex-shrink-0" />
+            <img src="Encabezado/3.png" alt="Imagen 3" class="w-full h-full object-cover flex-shrink-0" />
+            <img src="Encabezado/4.png" alt="Imagen 4" class="w-full h-full object-cover flex-shrink-0" />
+            <img src="Encabezado/5.png" alt="Imagen 5" class="w-full h-full object-cover flex-shrink-0" />
+        </div>
+        <!-- Barra de Iconos flotando sobre el carrusel -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 
+    rounded-xl px-6 py-4 
+    flex flex-wrap md:flex-nowrap justify-center items-center gap-6 
+    shadow-lg border border-gray-300 
+    bg-white/70 backdrop-blur-md 
+    w-[95%] sm:w-[85%] md:w-[70%] lg:w-[50%] xl:w-[40%] max-w-5xl">
+            <a href="tel:4497027" class="group hover:bg-green-700 p-3 rounded-full transition duration-300">
+                <img src="img/logo hos (1).png" alt="Hospital Nivel I Santa Ana" class="w-16 h-16">
+            </a>
+            <a href="tel:4497100" class="group hover:bg-green-700 p-3 rounded-full transition duration-300">
+                <img src="img/logo bomber (2).png" alt="Bomberos Santa Ana" class="w-16 h-16">
+            </a>
+            <a href="tel:4497100" class="group hover:bg-green-700 p-3 rounded-full transition duration-300">
+                <img src="img/logo hos.png" alt="Policía de Misiones" class="w-16 h-16">
+            </a>
+            <a href="tel:0376-4497734" class="group hover:bg-green-700 p-3 rounded-full transition duration-300">
+                <img src="img/logo hos (2).png" alt="Prefectura Naval Argentina" class="w-16 h-16">
+            </a>
+            <a href="tel:" class="group hover:bg-green-700 p-3 rounded-full transition duration-300">
+                <img src="img/logo corre (1).png" alt="Peaje" class="w-16 h-16">
+            </a>
+            <a href="tel:4497100" class="group hover:bg-green-700 p-3 rounded-full transition duration-300">
+                <img src="img/logo comando (1).png" alt="Comando Radioelectrico" class="w-16 h-16">
+            </a>
+        </div>
+    </div>
+    <!-- Script del carrusel automático -->
+    <script>
+        const carousel = document.getElementById('carousel');
+        const slides = carousel.children.length;
+        let index = 0;
+        setInterval(() => {
+            index = (index + 1) % slides;
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+        }, 8000); // Cambio cada 8 segundos
+    </script>
+    <!-- Actividades Municipales -->
+    <section id="actividades" class="bg-[#ECECEC] py-16 px-4">
+        <div class="max-w-6xl mx-auto bg-white rounded-3xl shadow-xl p-10">
+            <h2 class="text-4xl font-bold text-gray-800 text-center mb-10">Actividades Municipales:</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Columna 1: Actividades Deportivas -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Talleres Municipales</h3>
+                    <ul class="space-y-6">
+                        <!-- Patin -->
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <img src="img/PATIN.png" alt="Patin" class="w-12 h-12">
+                                <span class="text-lg text-gray-700 font-medium">Patin - Viernes a 18:30hs Prof. Aylen
+                                    Werner.</span>
+                            </div>
+                            <a href="https://wa.me/5493754444608?text=Hola,%20quiero%20inscribirme%20en%20Patin"
+                                target="_blank"
+                                class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
+                                WhatsApp
+                            </a>
+                        </li>
+                        <!-- Yoga -->
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <img src="img/yogaa.png" alt="Yoga" class="w-12 h-12">
+                                <span class="text-lg text-gray-700 font-medium">Yoga - (Lunes - Miércoles) Infantil
+                                    17:00 - Adulto 19:30</span>
+                            </div>
+                            <a href="https://wa.me/5493764211086?text=Hola,%20quiero%20inscribirme%20en%20Yoga"
+                                target="_blank"
+                                class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
+                                WhatsApp
+                            </a>
+                        </li>
+                        <!-- Voleibol Newcom -->
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <img src="img/Voleibol Newcom.png" alt="Voleibol Newcom" class="w-12 h-12">
+                                <span class="text-lg text-gray-700 font-medium">Voleibol NEWCOM Polideportivo Municipal
+                                    Santa Ana - Viernes 17:00hs</span>
+                            </div>
+                            <a href="https://wa.me/5493764579480?text=Hola,%20quiero%20inscribirme%20en%20Voleibol%20NEWCOM"
+                                target="_blank"
+                                class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
+                                WhatsApp
+                            </a>
+                        </li>
+                        <!-- Zumba -->
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <img src="img/zumba.png" alt="Zumba" class="w-12 h-12">
+                                <span class="text-lg text-gray-700 font-medium">Zumba - (Martes y Jueves)
+                                    18:30hs.</span>
+                            </div>
+                            <a href="https://wa.me/5493764211086?text=Hola,%20quiero%20inscribirme%20en%20Zumba"
+                                target="_blank"
+                                class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
+                                WhatsApp
+                            </a>
+                        </li>
+                        <!-- Robotica -->
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <img src="img/Robotica.png" alt="Robotica" class="w-12 h-12">
+                                <span class="text-lg text-gray-700 font-medium">Robotica - 5 años en adelante.</span>
+                            </div>
+                            <a href="https://wa.me/5493764727920?text=Hola,%20quiero%20inscribirme%20en%20Zumba"
+                                target="_blank"
+                                class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
+                                WhatsApp
+                            </a>
+                        </li>
+                        <!-- Futbol -->
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <img src="img/Futbol.png" alt="Futbol" class="w-12 h-12">
+                                <span class="text-lg text-gray-700 font-medium">Campeonato local de fútbol: Veterano,
+                                    senior y la liga.</span>
+                            </div>
+                            <a href="https://wa.me/5493764727920?text=Hola,%20quiero%20inscribirme%20en%20Zumba"
+                                target="_blank"
+                                class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
+                                WhatsApp
+                            </a>
+                        </li>
+                        <!-- Feriantes -->
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <img src="img/feriantes (1).png" alt="Feriantes" class="w-12 h-12">
+                                <span class="text-lg text-gray-700 font-medium">Feriantes Frente a la Ex-Municipalidad.
+                                    Martes y jueves 07hs a 11hs Viernes de 18hs a 21hs</span>
+                            </div>
+                            <a href="https://wa.me/5493764727920?text=Hola,%20quiero%20inscribirme%20en%20Zumba"
+                                target="_blank"
+                                class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
+                                WhatsApp
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- Columna 2: Actividades del C.I.C -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">C.I.C</h3>
+                    <ul class="space-y-6">
+                        <!--Sipted-->
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <img src="img/redondo.png" alt="Veterinaria" class="w-12 h-12">
+                                <span class="text-lg text-gray-700 font-medium">Sipted</span>
+                            </div>
+                        </li>
+                        <!-- Trabajador social-->
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <img src="img/redondo.png" alt="Veterinaria" class="w-12 h-12">
+                                <span class="text-lg text-gray-700 font-medium">Trabajador Social</span>
+                            </div>
+                        </li>
+                        <!--Doctor de pami Ozuna-->
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <img src="img/redondo.png" alt="Veterinaria" class="w-12 h-12">
+                                <span class="text-lg text-gray-700 font-medium">Doctor de pami Ozuna</span>
+                            </div>
+                        </li>
+                        <!-- Veterinaria -->
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <img src="img/redondo.png" alt="Veterinaria" class="w-12 h-12">
+                                <span class="text-lg text-gray-700 font-medium">Veterinaria</span>
+                            </div>
+                        </li>
+                        <!--Sala de computación de la epet-->
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <img src="img/redondo.png" alt="Veterinaria" class="w-12 h-12">
+                                <span class="text-lg text-gray-700 font-medium">Sala de computación de la epet</span>
+                            </div>
+                        </li>
+                        <!--Hambre cero-->
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <img src="img/redondo.png" alt="Veterinaria" class="w-12 h-12">
+                                <span class="text-lg text-gray-700 font-medium">Hambre cero</span>
+                            </div>
+                        </li>
+                        <!-- Procipo-->
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <img src="img/redondo.png" alt="Veterinaria" class="w-12 h-12">
+                                <span class="text-lg text-gray-700 font-medium">Procipo</span>
+                            </div>
+                        </li>
+                        <!-- Celíaco -->
+                        <li class="flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <img src="img/redondo.png" alt="Veterinaria" class="w-12 h-12">
+                                <span class="text-lg text-gray-700 font-medium">Celíaco</span>
+                            </div>
+                            <a href="https://wa.me/5493765208091?text=Hola,%20quiero%20informacion%20sobre"
+                                target="_blank"
+                                class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
+                                Escribinos Al WhatsApp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Título centrado -->
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+                Noticias de Último Momento
+            </h2>
+
+            <!-- Noticia destacada -->
+            <div class="flex flex-col lg:flex-row gap-8 items-center">
+                <!-- Imagen grande -->
+                <div class="w-full lg:w-1/2">
+                    <img src="Noti/TrofeoRobotica1.png" alt="Noticia importante"
+                        class="w-full h-[450px] object-cover rounded-2xl shadow-lg">
+                </div>
+
+                <!-- Texto de la noticia -->
+                <div class="w-full lg:w-1/2">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">La Escuela de Robótica de Santa Ana se coronó
+                        campeona provincial en la categoría Innovación Senior</h3>
+                    <p class="text-gray-700 text-lg mb-6 leading-relaxed">La Copa Robótica Misiones es un proyecto de
+                        la Escuela de Robótica para impulsar, a través de competencias integradas por robots, la
+                        investigación y educación sobre diseño, electrónica y programación.
+
+                        Durante las seis fechas de competencias del calendario 2024, el equipo de la sede Red Maker
+                        Santa Ana y los estudiantes de la E.P.E.T N° 19 de Santa Ana compitieron en la categoría de
+                        Innovación Senior.
+
+                        Estas competencias requirieron
+                        desarrollo, lógica, aprendizaje y programación electrónica, demostrando así las capacidades de
+                        creación del área de la robótica.
+                    </p>
+                    <p class="text-sm text-gray-500 mb-4">📅 07 de Diciembre de 2024</p>
+                    <a href="https://www.instagram.com/p/ejemplo_publicacion/" target="_blank"
+                        class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
+                        Ver publicación en Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sección de NOTICIAS -->
+    <section id="noticias" class="bg-gray-50 py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-black-700 mb-12">Últimas Noticias</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- TARJETA 1 -->
+                <a href="noticias.html"
+                    class="group block bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <img src="Noti/Jovenes al volante.png" alt="Imagen noticia 1"
+                        class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6 flex flex-col h-full">
+                        <p class="text-sm text-gray-500 mb-2">20/01/2025 | General</p>
+                        <h3
+                            class="text-xl font-semibold text-gray-800 mb-4 group-hover:text-green-700 transition-colors">
+                            Buenas noticias para los vecinos de La Colonia</h3>
+                        <p class="text-gray-700 mb-4">Ya contamos con una nueva perforación de agua que garantizará un
+                            mejor suministro hídrico en nuestro Barrio La Colonia...</p>
+                    </div>
+                </a>
+
+                <!-- TARJETA 2 -->
+                <a href="noticias.html"
+                    class="group block bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <img src="Noti/Acto25.png" alt="Imagen noticia 2"
+                        class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6 flex flex-col h-full">
+                        <p class="text-sm text-gray-500 mb-2">25/05/2025 | General</p>
+                        <h3
+                            class="text-xl font-semibold text-gray-800 mb-4 group-hover:text-green-700 transition-colors">
+                            Conmemoración del 25 de Mayo con Acto y Desfile Cívico-Militar</h3>
+                        <p class="text-gray-700 mb-4">El acto central se llevó a cabo en la avenida principal, con la
+                            presencia de autoridades civiles, militares y gran participación de vecinos...</p>
+                    </div>
+                </a>
+
+                <!-- TARJETA 3 -->
+                <a href="noticias.html"
+                    class="group block bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <img src="Noti/convenio.jpg" alt="Imagen noticia 3"
+                        class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6 flex flex-col h-full">
+                        <p class="text-sm text-gray-500 mb-2">27/08/2024 | General</p>
+                        <h3
+                            class="text-xl font-semibold text-gray-800 mb-4 group-hover:text-green-700 transition-colors">
+                            Convenio con la Escuela de Enfermería de la UNAM</h3>
+                        <p class="text-gray-700 mb-4">Se firmó un convenio con la Escuela de Enfermería de la UNaM, lo
+                            que permitirá cursar la carrera en Santa Ana con financiamiento de la Municipalidad.</p>
+                    </div>
+                </a>
+
+                <!-- TARJETA 4 -->
+                <a href="noticias.html"
+                    class="group block bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <img src="Noti/bacheos.jpg" alt="Imagen noticia 4"
+                        class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6 flex flex-col h-full">
+                        <p class="text-sm text-gray-500 mb-2">20/01/2025 | General</p>
+                        <h3
+                            class="text-xl font-semibold text-gray-800 mb-4 group-hover:text-green-700 transition-colors">
+                            Buenas noticias para los vecinos de La Colonia</h3>
+                        <p class="text-gray-700 mb-4">Arranca la temporada en el Camping La Boca a puro ritmo, con una
+                            sorprendente suma de visitantes tanto locales como del interior de la provincia...</p>
+                    </div>
+                </a>
+
+                <!-- TARJETA 5 -->
+                <a href="noticias.html"
+                    class="group block bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <img src="Noti/Img1.jpg" alt="Imagen noticia 5"
+                        class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6 flex flex-col h-full">
+                        <p class="text-sm text-gray-500 mb-2">20/01/2025 | General</p>
+                        <h3
+                            class="text-xl font-semibold text-gray-800 mb-4 group-hover:text-green-700 transition-colors">
+                            Buenas noticias para los vecinos de La Colonia</h3>
+                        <p class="text-gray-700 mb-4">Arranca la temporada en el Camping La Boca a puro ritmo, con una
+                            sorprendente suma de visitantes tanto locales como del interior de la provincia...</p>
+                    </div>
+                </a>
+
+                <!-- TARJETA 6 -->
+                <a href="noticias.html"
+                    class="group block bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <img src="Noti/Img2.jpg" alt="Imagen noticia 6"
+                        class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6 flex flex-col h-full">
+                        <p class="text-sm text-gray-500 mb-2">20/01/2025 | General</p>
+                        <h3
+                            class="text-xl font-semibold text-gray-800 mb-4 group-hover:text-green-700 transition-colors">
+                            Buenas noticias para los vecinos de La Colonia</h3>
+                        <p class="text-gray-700 mb-4">Arranca la temporada en el Camping La Boca a puro ritmo, con una
+                            sorprendente suma de visitantes tanto locales como del interior de la provincia...</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- ENLACE A INSTAGRAM -->
+            <div class="py-10 px-4 text-center rounded-xl mt-10">
+                <a href="https://www.instagram.com/santaanamunicipalidad/" target="_blank"
+                    class="inline-flex items-center space-x-4 text-black-800 hover:text-green-900 text-xl font-bold">
+                    <i class="fab fa-instagram text-4xl"></i>
+                    <span>¡Seguinos en Instagram para ver fotos, novedades y todo lo que pasa en Santa Ana día a
+                        día!</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="Turismo" class="px-4 py-16 bg-white">
+        <h2 class="text-4xl font-bold text-center text-black-800 mb-12">Turismo</h2>
+
+        <div class="flex flex-col lg:flex-row items-center gap-10 mb-16">
+            <!-- Carrusel de imágenes -->
+            <div class="w-full lg:w-1/2">
+                <div class="swiper mySwiper rounded-2xl shadow-lg">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="Turismo/cam.jpg" alt="Camping"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/cam1.jpg" alt="Camping"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/cam2.jpg" alt="Camping"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/cam3.jpg" alt="Camping"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                    </div>
+                    <!-- Botones de navegación -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- Descripción -->
+            <div class="lg:w-1/2">
+                <h3 class="text-2xl font-semibold text-black-700 mb-4">Camping La Boca Santa Ana</h3>
+                <p class="mb-4 text-gray-700">Ofrecemos una variedad de servicios para una estadía cómoda:</p>
+                <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
+                    <li>Mesas, bancos y parrillas</li>
+                    <li>Cantina, sanitarios y duchas</li>
+                    <li>Estacionamiento y bajada de lancha</li>
+                    <li>Seguridad, enfermería y preventistas acuáticos</li>
+                </ul>
+                <div class="flex flex-wrap gap-4">
+                    <button
+                        class="px-5 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition">Escribinos</button>
+                    <a href="https://www.google.com/maps/place/Camping+La+Boca" target="_blank"
+                        class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Nuestra
+                        Ubicación</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row items-center gap-10 mb-16">
+            <!-- Carrusel de imágenes -->
+            <div class="w-full lg:w-1/2">
+                <div class="swiper mySwiper rounded-2xl shadow-lg">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="Turismo/Cruz (1).jpg" alt="CRUZ"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Cruz (2).jpg" alt="CRUZ"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Cruz (3).jpg" alt="CRUZ"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Cruz (4).jpg" alt="CRUZ"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Cruz (5).jpg" alt="CRUZ"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Cruz (7).jpg" alt="CRUZ"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Cruz (8).jpg" alt="CRUZ"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Cruz (9).jpg" alt="CRUZ"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Cruz (10).jpg" alt="CRUZ"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Cruz (11).jpg" alt="CRUZ"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Cruz (12).jpg" alt="CRUZ"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Cruz (13).jpg" alt="CRUZ"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Cruz (14).jpg" alt="CRUZ"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Cruz (15).jpg" alt="CRUZ"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Cruz (16).jpg" alt="CRUZ"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Cruz (17).jpg" alt="CRUZ"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Cruz (18).jpg" alt="CRUZ"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Cruz (19).jpg" alt="CRUZ"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                    </div>
+                    <!-- Botones de navegación -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- Descripción -->
+            <div class="lg:w-1/2">
+                <h3 class="text-2xl font-semibold text-black-700 mb-4">Parque Tematico De La Cruz</h3>
+                <p class="mb-4 text-gray-700">El principal atractivo del parque es una imponente cruz de 82 metros de
+                    altura, compuesta por una
+                    estructura metálica de 52 metros sobre una base de hormigón de 30 metros. Los visitantes pueden
+                    ascender mediante un ascensor hasta los brazos de la cruz, desde donde se obtienen vistas
+                    panorámicas de la selva misionera. El parque cuenta con diversas instalaciones y actividades:</p>
+                <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
+                    <li>Senderos Tematicos.</li>
+                    <li>Mariposario y Orquideario.</li>
+                    <li>Teatro de la Selva.</li>
+                    <li>Anfiteatro Natural.</li>
+                    <li>Restaurante.</li>
+                    <li>Capilla.</li>
+                </ul>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://maps.app.goo.gl/eg7JM1vt5saxBtHJA?g_st=com.google.maps.preview.copy"
+                        target="_blank"
+                        class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Nuestra
+                        Ubicación</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row items-center gap-10 mb-16">
+            <!-- Carrusel de imágenes -->
+            <div class="w-full lg:w-1/2">
+                <div class="swiper mySwiper rounded-2xl shadow-lg">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (1).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (2).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (3).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (4).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (5).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (6).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (7).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (8).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (9).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (10).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (11).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (12).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (13).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (14).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (15).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (16).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (17).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (18).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (19).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (20).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (21).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (24).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/Reducciones (25).jpg" alt="RUINAS"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                    </div>
+                    <!-- Botones de navegación -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- Descripción -->
+            <div class="lg:w-1/2">
+                <h3 class="text-2xl font-semibold text-black-700 mb-4">Misión Jesuíticas Guaraní Nuestra Señora De Santa
+                    Ana</h3>
+                <p class="mb-4 text-gray-700">La Misión Jesuítica Guaraní Nuestra Señora de Santa Ana fue una de las
+                    reducciones fundadas por la
+                    Compañía de Jesús en el siglo XVII en América del Sur, durante el período colonial español.
+                    Establecida en 1633, esta misión se encuentra en la actual provincia de Misiones, Argentina,
+                    específicamente en el municipio de Santa Ana.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://maps.app.goo.gl/ZLtih2hoiVqFJrWq8?g_st=com.google.maps.preview.copy"
+                        target="_blank"
+                        class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Nuestra
+                        Ubicación</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row items-center gap-10 mb-16">
+            <!-- Carrusel de imágenes -->
+            <div class="w-full lg:w-1/2">
+                <div class="swiper mySwiper rounded-2xl shadow-lg">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="Turismo/camposan.jpg" alt="Campo SAN JUNA"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/campo (4).jpg" alt="Campo SAN JUAN"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/campo (5).jpg" alt="Campo SAN JUAN"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/campo (6).jpg" alt="Campo SAN JUAN"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/campo (7).jpg" alt="Campo SAN JUAN"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/campo (8).jpg" alt="Campo SAN JUAN"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/campo (9).jpg" alt="Campo SAN JUAN"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/campo (10).jpg" alt="Campo SAN JUAN"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/campo (11).jpg" alt="Campo SAN JUAN"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/campo (12).jpg" alt="Campo SAN JUAN"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/campo (2).jpg" alt="Campo SAN JUAN"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                        <div class="swiper-slide"><img src="Turismo/campo (3).jpg" alt="Campo SAN JUAN"
+                                class="w-full h-96 object-cover rounded-2xl"></div>
+                    </div>
+                    <!-- Botones de navegación -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- Descripción -->
+            <div class="lg:w-1/2">
+                <h3 class="text-2xl font-semibold text-black-700 mb-4">Parque Federal Campo San Juan</h3>
+                <p class="mb-4 text-gray-700">Es una reserva natural ubicada en la localidad de Santa Ana, en la
+                    provincia de Misiones, Argentina.
+                    Con una extensión de más de 5.000 hectáreas, esta área protegida se destaca por ser la primera en el
+                    país con una gestión conjunta entre el gobierno nacional y una provincia.
+                    En cuanto a su biodiversidad, el parque es hogar de más de 200 especies de aves, incluyendo al
+                    Burrito Ocelado, una especie emblemática de la región. También se pueden encontrar mamíferos como
+                    corzuelas pardas, osos meleros, carpinchos y diversas especies de zorros. La flora predominante
+                    incluye pastizales, pajonales y selvas en galería que acompañan los cursos de agua.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://maps.app.goo.gl/55TKKo9Bud3hZJ267?g_st=com.google.maps.preview.copy"
+                        target="_blank"
+                        class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Nuestra
+                        Ubicación</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <footer class="bg-black/80 text-white py-10 mt-12 rounded-t-2xl shadow-inner backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Sección de Contactos -->
+            <div class="mb-6">
+                <h2 class="text-center text-xl font-semibold mb-6">Contactos Municipales</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 justify-items-center">
+                    <!-- Municipalidad -->
+                    <a href="https://wa.me/5493765216291?text=Hola,%20quisiera%20poder%20hablar%20con%20la%20Intendenta"
+                        target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fas fa-city text-3xl"></i>
+                        <p class="text-sm">Mesa de Entrada</p>
+                    </a>
+                    <!-- Recaudaciones -->
+                    <a href="https://wa.me/5493765216293?text=Hola,%20quisiera%20información%20sobre%20Recaudaciones"
+                        target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fas fa-wallet text-3xl"></i>
+                        <p class="text-sm">Recaudaciones</p>
+                    </a>
+                    <!-- Calidad de Vida -->
+                    <a href="https://wa.me/5493765208091?text=Hola,%20quisiera%20información%20sobre%20Calidad%20de%20Vida"
+                        target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fas fa-heartbeat text-3xl"></i>
+                        <p class="text-sm">Calidad de Vida</p>
+                    </a>
+                    <!-- Obra Pública -->
+                    <a href="https://wa.me/5493765208039?text=Hola,%20quisiera%20información%20sobre%20Obra%20Pública"
+                        target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fas fa-tools text-3xl"></i>
+                        <p class="text-sm">Obra Pública</p>
+                    </a>
+                    <!-- Agua Potable -->
+                    <a href="https://wa.me/5493765216294?text=Hola,%20quisiera%20información%20sobre%20Agua%20Potable"
+                        target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fas fa-tint text-3xl"></i>
+                        <p class="text-sm">Agua Potable</p>
+                    </a>
+                    <!-- Feriantes -->
+                    <a href="https://chat.whatsapp.com/IKqujeJkOi54nDEFW3yyCT" target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fab fa-whatsapp text-3xl"></i>
+                        <p class="text-sm">Grupo Feriantes</p>
+                    </a>
+                </div>
+            </div>
+            <!-- Derechos -->
+            <p class="text-center text-xs md:text-sm mt-8">&copy; Municipalidad de Santa Ana. Todos los derechos
+                reservados.</p>
+        </div>
+    </footer>
+</body>
