@@ -13,7 +13,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link rel="shortcut icon" href="santa.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="santa.ico" type="image/x-icon" />
 </head>
 
 <body class="bg-white text-gray-800">
@@ -172,48 +172,102 @@
             </div>
             <!-- Imagen del mapa -->
             <div class="overflow-x-auto rounded-xl shadow-xl border border-gray-200">
-                <img src="Obras/Mapa Santa Ana.jpg" alt="Mapa de obras públicas en Santa Ana" class="w-full h-auto">
+                <img src="Obras/Mapa Santa Ana.png" alt="Mapa de obras públicas en Santa Ana" class="w-full h-auto">
             </div>
             <!-- Pie de imagen -->
             <p class="text-sm text-gray-500 mt-4">📍 Mapa actualizado con zonas intervenidas — Municipalidad de Santa
                 Ana</p>
+
+            <section class="text-center py-12 px-4">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">
+                    Incorporación de nuevos juegos en la Plaza de Santa Ana.
+                </h3>
+
+                <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+                    En el marco de las acciones de mejora de los espacios públicos de la localidad, se llevó a cabo la
+                    instalación de nuevos juegos infantiles en la plaza central de Santa Ana.
+
+                    El objetivo principal es ofrecer a los niños y niñas de la comunidad un espacio de recreación más
+                    seguro, atractivo y completo, fomentando la integración familiar y el disfrute al aire libre.
+
+                    Con esta incorporación, seguimos trabajando para fortalecer los lugares de encuentro social y
+                    brindar a los vecinos un entorno adecuado para el esparcimiento y la convivencia.
+
+                    Municipalidad de Santa Ana.
+                </p>
+            </section>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+                <!-- Imagenes -->
+                <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer" onclick="openModal('Obras/PLAZA.jpg')">
+                    <img src="Obras/PLAZA.jpg" alt="Obreros trabajando"
+                        class="w-full h-60 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
+                    onclick="openModal('Obras/PLAZA (1).jpg')">
+                    <img src="Obras/PLAZA (1).jpg" alt="Obra publica"
+                        class="w-full h-60 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
+                    onclick="openModal('Obras/PLAZA (2).jpg')">
+                    <img src="Obras/PLAZA (2).jpg" alt="Personal en obra pública"
+                        class="w-full h-60 object-cover hover:scale-105 transition duration-300">
+                </div>
+            </div>
+
             <!-- Galería de obras en acción -->
             <div class="mt-16 relative z-0">
-                <h3 class="text-3xl font-bold text-gray-800 text-center mb-8">Trabajos en Proceso</h3>
-                <p class="text-center text-gray-600 mb-6 max-w-2xl mx-auto">
-                    Personal municipal y maquinaria en acción durante las tareas de mejora de caminos, asfaltado y
-                    mantenimiento urbano.
-                </p>
+                <section class="text-center py-12 px-4">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">
+                        Trabajos realizados en el Cerro de Santa Ana
+                    </h3>
+
+                    <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+                        Personal municipal y maquinaria en acción durante las tareas de mejora de caminos, para
+                        facilitar el
+                        acceso de los vecinos y la seguridad de los mismos.
+                    </p>
+
+                    <ul class="max-w-xl mx-auto text-left text-gray-700 list-disc list-inside space-y-2">
+                        <li>Calle acceso a la Comunidad aborigen Santa Ana Miri</li>
+                        <li>Escuela del cerro 166</li>
+                        <li>Calle de Scherr</li>
+                        <li>Entrada a las cabañas DyD</li>
+                        <li>Entrada a las cabañas La Victoria</li>
+                        <li>Itatí Juañuk</li>
+                        <li>Entrada a La Tranquilidad</li>
+                    </ul>
+                </section>
+
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
                     <!-- Imagenes -->
                     <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                        onclick="openModal('Obras/bacheos - copia.jpg')">
-                        <img src="Obras/bacheos - copia.jpg" alt="Obreros trabajando"
+                        onclick="openModal('Obras/arreglo cerro (1).jpg')">
+                        <img src="Obras/arreglo cerro (1).jpg" alt="Personal en obra pública"
                             class="w-full h-60 object-cover hover:scale-105 transition duration-300">
                     </div>
                     <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                        onclick="openModal('Obras/bacheos - copia.jpg')">
-                        <img src="Obras/bacheos - copia.jpg" alt="Máquina asfaltando"
+                        onclick="openModal('Obras/arreglo cerro (2).jpg')">
+                        <img src="Obras/arreglo cerro (2).jpg" alt="Personal en obra pública"
                             class="w-full h-60 object-cover hover:scale-105 transition duration-300">
                     </div>
                     <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                        onclick="openModal('Obras/bacheos - copia.jpg')">
-                        <img src="Obras/bacheos - copia.jpg" alt="Personal en obra pública"
+                        onclick="openModal('Obras/arreglo cerro (3).jpg')">
+                        <img src="Obras/arreglo cerro (3).jpg" alt="Personal en obra pública"
                             class="w-full h-60 object-cover hover:scale-105 transition duration-300">
                     </div>
                     <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                        onclick="openModal('Obras/bacheos - copia.jpg')">
-                        <img src="Obras/bacheos - copia.jpg" alt="Maquinaria vial"
+                        onclick="openModal('Obras/arreglo cerro (4).jpg')">
+                        <img src="Obras/arreglo cerro (4).jpg" alt="Personal en obra pública"
                             class="w-full h-60 object-cover hover:scale-105 transition duration-300">
                     </div>
                     <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                        onclick="openModal('Obras/bacheos - copia.jpg')">
-                        <img src="Obras/bacheos - copia.jpg" alt="Trabajos de mantenimiento"
+                        onclick="openModal('Obras/arreglo cerro.jpg')">
+                        <img src="Obras/arreglo cerro.jpg" alt="Personal en obra pública"
                             class="w-full h-60 object-cover hover:scale-105 transition duration-300">
                     </div>
                     <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                        onclick="openModal('Obras/bacheos - copia.jpg')">
-                        <img src="Obras/bacheos - copia.jpg" alt="Retroexcavadora en acción"
+                        onclick="openModal('Obras/arreglo cerro (5).jpg')">
+                        <img src="Obras/arreglo cerro (5).jpg" alt="Personal en obra pública"
                             class="w-full h-60 object-cover hover:scale-105 transition duration-300">
                     </div>
                 </div>
@@ -233,6 +287,72 @@
                     </div>
                 </div>
             </div>
+            <section class="text-center py-12 px-4">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">
+                    Arreglos en las Manzanas 203 - 204 - 236 - 235.
+                </h3>
+
+                <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Se realizaron tareas de nivelación y mantenimiento de los caminos de tierra en las manzanas 203,
+                    204, 235 y 236, con el objetivo de mejorar la transitabilidad y el acceso para los vecinos de la
+                    zona.
+
+                    Estas mejoras forman parte de un plan de mantenimiento vial que busca facilitar la circulación,
+                    especialmente en días de lluvia, y garantizar mayor seguridad para quienes viven o transitan por el
+                    lugar.
+                </p>
+            </section>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+                <!-- Imagenes -->
+                <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
+                    onclick="openModal('Obras/Manzana 203.jpg')">
+                    <img src="Obras/Manzana 203.jpg" alt="Obreros trabajando"
+                        class="w-full h-60 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
+                    onclick="openModal('Obras/Manzana 203(1).jpg')">
+                    <img src="Obras/Manzana 203(1).jpg" alt="Obra publica"
+                        class="w-full h-60 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
+                    onclick="openModal('Obras/Manzana 203(2).jpg')">
+                    <img src="Obras/Manzana 203(2).jpg" alt="Personal en obra pública"
+                        class="w-full h-60 object-cover hover:scale-105 transition duration-300">
+                </div>
+            </div>
+
+            <section class="text-center py-12 px-4">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">
+                    Mejoras en los caminos de tierra – Manzanas 236 y 245
+                </h3>
+
+                <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+                    El equipo municipal llevó a cabo trabajos de arreglo y mantenimiento en los caminos de tierra de la
+                    manzana 236, la manzana 245 y en el sector inferior de esta última.
+                    Estas tareas tuvieron como objetivo mejorar la circulación y el acceso de los vecinos, especialmente
+                    en días de lluvia, garantizando mayor seguridad y comodidad para todos los que transitan por la
+                    zona.
+                </p>
+            </section>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+                <!-- Imagenes -->
+                <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
+                    onclick="openModal('Obras/Manza 245.jpg')">
+                    <img src="Obras/Manza 245.jpg" alt="Obreros trabajando"
+                        class="w-full h-60 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
+                    onclick="openModal('Obras/Manza 245 (1).jpg')">
+                    <img src="Obras/Manza 245 (1).jpg" alt="Obra publica"
+                        class="w-full h-60 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
+                    onclick="openModal('Obras/Manza 245 (2).jpg')">
+                    <img src="Obras/Manza 245 (2).jpg" alt="Personal en obra pública"
+                        class="w-full h-60 object-cover hover:scale-105 transition duration-300">
+                </div>
+            </div>
+
         </div>
     </section>
     </div>
@@ -303,7 +423,6 @@
             modal.classList.add('hidden');
         }
     </script>
-
 </body>
 
 </html>

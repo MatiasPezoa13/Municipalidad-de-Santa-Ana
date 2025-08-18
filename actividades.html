@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="es">
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades Municipales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="santa.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<body class="w-full min-h-screen overflow-x-hidden">
+    <!-- HEADER - ocupa 100% de ancho -->
+    <header class="shadow-md p-2 w-full" style="background-color: #fbff00;">
+        <div class="flex items-center justify-center flex-wrap gap-6 px-4">
+            <!-- Logo + Título -->
+            <div class="flex items-center gap-3">
+                <img src="img/logosan.png" alt="Logo Municipalidad" class="w-24 h-24 object-contain" />
+                <h1 class="text-lg font-bold text-black">MUNICIPALIDAD DE SANTA ANA</h1>
+            </div>
+            <!-- Menú de navegación -->
+            <nav class="mt-2 md:mt-0 justify-center">
+                <ul class="flex flex-wrap gap-4 text-sm font-semibold text-black">
+                    <!-- GOBIERNO -->
+                    <li class="relative group">
+                        <a href="#" class="hover:text-green-900" data-toggle="gobierno">GOBIERNO</a>
+                        <div data-menu="gobierno" class="hidden absolute z-10 bg-white shadow-xl rounded-lg p-4 mt-2 w-64 border border-gray-200
+               left-0 group-hover:block">
+                            <ul class="space-y-2 text-sm text-gray-800">
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user-tie text-green-600"></i> Intendenta Lic. M. Mabel
+                                        Pezoa</a></li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user-tie text-green-600"></i> Presidente HCD Prof. Eikman
+                                        Matías</a></li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user text-green-600"></i> Vice-Presidente Mariela Scholles</a>
+                                </li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user text-green-600"></i>Concejal Otilia Alderete</a>
+                                </li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user text-green-600"></i>Concejal Olivera Sandro</a>
+                                </li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user text-green-600"></i>Concejal Dario Vera</a></li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user-cog text-green-600"></i> Secretaria del Concejo Salina
+                                        Priscila</a></li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user-cog text-green-600"></i> Pro-Secretaria Mezetti
+                                        Daniela</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- NOTICIAS -->
+                    <li><a href="noticias.html" class="hover:text-green-900">NOTICIAS</a></li>
+                    <!-- TURISMO -->
+                    <li><a href="#Turismo" class="hover:text-green-900">TURISMO</a></li>
+                    <!-- OBRAS PUBLICAS -->
+                    <li><a href="obras-publicas.html" class="hover:text-green-900">OBRAS PUBLICAS</a></li>
+                    <!-- CONTACTOS -->
+                    <li class="relative group">
+                        <a href="#contactos" class="hover:text-green-900" data-toggle="contactos">CONTACTOS</a>
+                        <div data-menu="contactos" class="hidden absolute z-10 bg-white shadow-xl rounded-lg p-4 mt-2 w-64 border border-gray-200
+               left-0 group-hover:block">
+                            <ul class="space-y-2 text-sm text-gray-800">
+                                <li><a href="https://wa.me/5493765216291?text=Hola,%20quisiera%20información%20sobre%20la%20Municipalidad"
+                                        target="_blank"
+                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fab fa-whatsapp text-green-600"></i> Mesa de Entrada</a></li>
+                                <li><a href="https://wa.me/5493765216293?text=Hola,%20quisiera%20información%20sobre%20Recaudaciones"
+                                        target="_blank"
+                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fab fa-whatsapp text-green-600"></i> Recaudaciones</a></li>
+                                <li><a href="https://wa.me/5493765208091?text=Hola,%20quisiera%20información%20sobre%20Calidad%20De%20Vida"
+                                        target="_blank"
+                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fab fa-whatsapp text-green-600"></i> Calidad de Vida</a></li>
+                                <li><a href="https://wa.me/5493765208039?text=Hola,%20quisiera%20información%20sobre%20Obra%20Pública"
+                                        target="_blank"
+                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fab fa-whatsapp text-green-600"></i> Obra Pública</a></li>
+                                <li><a href="https://wa.me/5493765216294?text=Hola,%20quisiera%20información%20sobre%20Agua%20Potable"
+                                        target="_blank"
+                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fab fa-whatsapp text-green-600"></i> Agua Potable</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- BARRA INFERIOR 100% ANCHO -->
+    <div class="w-full text-black" style="background-color: #fbff00;">
+        <div class="flex flex-wrap justify-center items-center gap-2 py-1 px-4 text-sm">
+            <span>FM 94.7</span>
+            <span>|</span>
+            <span>@santaanamunicipalidad</span>
+            <span>|</span>
+            <span>Av. San Martín & Belgrano</span>
+            <span>|</span>
+            <i class="fas fa-phone"></i>
+            <span>+54 9 3765-216291</span>
+        </div>
+    </div>
+    <!-- Script para mostrar u ocultar los menús desplegables -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggles = document.querySelectorAll("[data-toggle]");
+            toggles.forEach(toggle => {
+                toggle.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const menuName = toggle.getAttribute("data-toggle");
+                    const menu = document.querySelector(`[data-menu="${menuName}"]`);
+                    // Cierra otros menús abiertos
+                    document.querySelectorAll("[data-menu]").forEach(m => {
+                        if (m !== menu) m.classList.add("hidden");
+                    });
+                    // Toggle de visibilidad
+                    menu.classList.toggle("hidden");
+                });
+            });
+            // Oculta el menú si se hace clic fuera
+            document.addEventListener("click", (e) => {
+                if (!e.target.closest("[data-toggle]") && !e.target.closest("[data-menu]")) {
+                    document.querySelectorAll("[data-menu]").forEach(m => m.classList.add("hidden"));
+                }
+            });
+        });
+    </script>
+    <section id="cursos" class="py-16 bg-yellow-50">
+        <div class="max-w-6xl mx-auto px-6">
+
+            <!-- Título -->
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-800">📚 Cursos </h2>
+                <p class="text-gray-600 mt-2">Talleres y cursos que se organizan en el pueblo de forma puntual</p>
+                <div class="mt-4 h-1 w-20 bg-yellow-400 mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Carrusel Swiper -->
+            <div class="swiper mySwiperCursos">
+                <div class="swiper-wrapper">
+
+                    <!-- Curso 1 -->
+                    <div class="swiper-slide">
+                        <a href="talleres/expontaneo/audiovisual.jpg" target="_blank">
+                            <img src="talleres/expontaneo/audiovisual.jpg" alt="Curso de Audiovisual"
+                                class="w-full h-64 object-cover rounded-xl shadow-md hover:opacity-90 transition" />
+                        </a>
+                        <h3 class="text-xl font-semibold mt-3 text-gray-800">Curso de Audiovisual</h3>
+                        <p class="text-gray-600">📅 09 de Agosto - 📍 Salón Municipal</p>
+                    </div>
+
+                    <!-- Curso 2 -->
+                    <div class="swiper-slide">
+                        <a href="talleres/expontaneo/huertas.jpg" target="_blank">
+                            <img src="talleres/expontaneo/huertas.jpg" alt="Taller de huertas"
+                                class="w-full h-64 object-cover rounded-xl shadow-md hover:opacity-90 transition" />
+                        </a>
+                        <h3 class="text-xl font-semibold mt-3 text-gray-800">Taller de Ciclo de Capacitacion Sobre
+                            Huertas
+                        </h3>
+                        <p class="text-gray-600">📅 20 de Agosto - 📍 S.U.M Cultural de Santa Ana</p>
+                    </div>
+
+                    <!-- Curso 3 -->
+                    <div class="swiper-slide">
+                        <a href="talleres/expontaneo/Manipulacion De Alimentos.jpg" target="_blank">
+                            <img src="talleres/expontaneo/Manipulacion De Alimentos.jpg" alt="Charla de Historia Local"
+                                class="w-full h-64 object-cover rounded-xl shadow-md hover:opacity-90 transition" />
+                        </a>
+                        <h3 class="text-xl font-semibold mt-3 text-gray-800">Curso de Manipulacion Segura de Alimentos
+                        </h3>
+                        <p class="text-gray-600">📅 20 de Agosto - 📍 Salon Municipal</p>
+                    </div>
+
+                </div>
+                <!-- Botones -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <!-- Paginación -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiperCursos", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+            },
+        });
+    </script>
+
+
+
+
+    <!-- Sección Actividades -->
+    <section id="actividades" class="max-w-7xl mx-auto px-4 py-10">
+        <h2 class="text-3xl font-bold text-center mb-8">Actividades y Talleres Municipales</h2>
+
+        <p class="text-center mb-12 text-gray-700 max-w-3xl mx-auto">Aquí encontrarás toda la información sobre los
+            cursos, talleres y actividades que ofrecemos. Podés ver horarios, descripción, imágenes y videos para
+            conocer mejor cada actividad.</p>
+        <a href="santaana.html"
+            class="inline-flex items-center gap-2 text-white bg-green-600 hover:bg-green-700 transition duration-300 px-4 py-2 rounded-full shadow-md text-center font-semibold">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+            Volver al inicio
+        </a>
+
+        <!-- Actividad: Patín -->
+        <article class="mb-16 border rounded-lg p-6 shadow-md">
+            <h3 class="text-2xl font-semibold mb-2">Patín</h3>
+            <p class="mb-4 text-gray-600">Curso destinado a niños y jóvenes para aprender técnicas básicas y avanzadas
+                de patinaje artístico y recreativo. Fomentamos la coordinación, el equilibrio y la diversión en un
+                ambiente seguro.</p>
+            <ul class="mb-4 list-disc list-inside text-gray-700">
+                <li><strong>Días:</strong> Martes y Jueves</li>
+                <li><strong>Horarios:</strong> 16:00 a 18:00 hs</li>
+                <li><strong>Lugar:</strong> Polideportivo Municipal</li>
+                <li><strong>Profesor:</strong> Mariana López</li>
+                <li><strong>Cupo:</strong> Limitado a 20 participantes</li>
+                <li><strong>Costo:</strong> Gratuito</li>
+                <li><strong>Inscribite:</strong> <a
+                        href="https://wa.me/543765216291?text=Hola%20Mariana,%20quiero%20inscribirme%20al%20taller"
+                        target="_blank">+543765216291</a></li>
+            </ul>
+            <!-- Carrusel fotos y videos -->
+            <div class="swiper mySwiperPatin max-w-4xl mx-auto rounded-lg overflow-hidden">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="Talleres/Patin/patin1.jpg" alt="Clase de Patín 1"
+                            class="w-full object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/patin2.jpg" alt="Clase de Patín 2" class="w-full object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <video controls class="w-full rounded-lg">
+                            <source src="videos/patin-clase.mp4" type="video/mp4" />
+                            Tu navegador no soporta el video.
+                        </video>
+                    </div>
+                </div>
+                <!-- Controles -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </article>
+
+        <article class="mb-16 border rounded-lg p-6 shadow-md">
+            <h3 class="text-2xl font-semibold mb-2">Yoga</h3>
+            <p class="mb-4 text-gray-600">El taller de yoga comunitario es
+                una excelente iniciativa para promover el bienestar y la salud en la comunidad. Al ofrecer un espacio
+                gratuito y seguro, se puede llegar a más personas y fomentar la práctica del yoga como una herramienta
+                para mejorar la calidad de vida. ¡Es una excelente forma de invertir en la salud y el bienestar de la
+                comunidad!</p>
+            <ul class="mb-4 list-disc list-inside text-gray-700">
+                <li><strong>Días:</strong> Lunes y Miércoles.</li>
+                <li><strong>Horarios:</strong> Infantil a 17:00 y Adultos 19:30 hs</li>
+                <li><strong>Lugar:</strong> S.U.M </li>
+                <li><strong>Profesor:</strong> Alicia Cardozo</li>
+                <li><strong>Costo:</strong> Gratuito</li>
+                <li><strong>Inscribite:</strong> <a
+                        href="https://wa.me/5493764211086?text=Hola,%20quiero%20inscribirme%20en%20Yoga"
+                        target="_blank">+5493764211086</a></li>
+            </ul>
+
+            <!-- Carrusel fotos y videos -->
+            <div class="swiper mySwiperPatin max-w-4xl mx-auto rounded-lg overflow-hidden">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="Talleres/Yoga/YOGA (1).jpg" alt="Clase de Yoga 1"
+                            class="w-full object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Talleres/Yoga/YOGA (2).jpg" alt="Clase de Patín 2"
+                            class="w-full object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Talleres/Yoga/YOGA (3).jpg" alt="Clase de Patín 2"
+                            class="w-full object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Talleres/Yoga/YOGA (4).jpg" alt="Clase de Patín 2"
+                            class="w-full object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Talleres/Yoga/YOGA (5).jpg" alt="Clase de Patín 2"
+                            class="w-full object-cover rounded-lg" />
+                    </div>
+                </div>
+                <!-- Controles -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </article>
+
+        <article class="mb-16 border rounded-lg p-6 shadow-md">
+            <h3 class="text-2xl font-semibold mb-2">Voleibol NEWCOM</h3>
+            <p class="mb-4 text-gray-600">Disfruta de una actividad inclusiva y divertida todos los viernes a las 17:00
+                hs. Ideal para todas las edades, con un ambiente comunitario y sin costo</p>
+            <ul class="mb-4 list-disc list-inside text-gray-700">
+                <li><strong>Días:</strong> Viernes.</li>
+                <li><strong>Horarios:</strong> 17:00 hs.</li>
+                <li><strong>Lugar:</strong> Polideportivo Municipal Santa Ana </li>
+                <li><strong>Profesores:</strong> Rocio Arrieta - Miqueas Rizky</li>
+                <li><strong>Costo:</strong> Gratuito</li>
+                <li><strong>Inscribite:</strong> <a
+                        href="https://wa.me/5493764579480?text=Hola,%20quiero%20inscribirme%20en%20Voleibol%20NEWCOM"
+                        target="_blank">+5493764579480</a></li>
+            </ul>
+
+            <!-- Carrusel fotos y videos -->
+            <div class="swiper mySwiperPatin max-w-4xl mx-auto rounded-lg overflow-hidden">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="Talleres/Voleibol NEWCOM/NEWCOM (1).jpg" alt="NEWCOM"
+                            class="w-full object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Talleres/Voleibol NEWCOM/NEWCOM (2).jpg" alt="NEWCOM"
+                            class="w-full object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Talleres/Voleibol NEWCOM/NEWCOM (3).jpg" alt="NEWCOM"
+                            class="w-full object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Talleres/Voleibol NEWCOM/NEWCOM (4).jpg" alt="NEWCOM"
+                            class="w-full object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Talleres/Voleibol NEWCOM/NEWCOM (5).jpg" alt="NEWCOM"
+                            class="w-full object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Talleres/Voleibol NEWCOM/NEWCOM (6).jpg" alt="NEWCOM"
+                            class="w-full object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <video controls class="w-full rounded-lg">
+                            <source src="Talleres/Voleibol NEWCOM/NEWCOM (1).mp4" type="video/mp4" />
+                            Tu navegador no soporta el video.
+                        </video>
+                    </div>
+                </div>
+                <!-- Controles -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </article>
+
+        <article class="mb-16 border rounded-lg p-6 shadow-md">
+            <h3 class="text-2xl font-semibold mb-2">Zumba</h3>
+            <p class="mb-4 text-gray-600">La experiencia “Zumba” es una actividad que sirve para mejorar la condición
+                física tonificar los músculos quemar calorías, reducir el estrés y mejorar el estado de ánimo además de
+                ser una actividad divertida y social, es un ejercicio integral que beneficia tanto el cuerpo como la
+                mente y una de las formas de estar en movimiento y mejorar la salud y calidad de vida.</p>
+            <ul class="mb-4 list-disc list-inside text-gray-700">
+                <li><strong>Días:</strong> Martes y Jueves.</li>
+                <li><strong>Horarios:</strong> 18:30 hs.</li>
+                <li><strong>Lugar:</strong> S.U.M </li>
+                <li><strong>Profesores:</strong> ---- </li>
+                <li><strong>Costo:</strong> Gratuito</li>
+                <li><strong>Inscribite:</strong> <a
+                        href="https://wa.me/5493764211086?text=Hola,%20quiero%20inscribirme%20en%20Zumba"
+                        target="_blank">+5493764211086</a></li>
+            </ul>
+
+            <!-- Carrusel fotos y videos -->
+            <div class="swiper mySwiperPatin max-w-4xl mx-auto rounded-lg overflow-hidden">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="Talleres/Zumba/ZUMBA (3).jpg" alt="Clase de Zumba"
+                            class="w-full h-95 md:h-100 object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Talleres/Zumba/ZUMBA (2).jpg" alt="Clase de Zumba"
+                            class="w-full h-95 md:h-100 object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Talleres/Zumba/ZUMBA (4).jpg" alt="Clase de Zumba"
+                            class="w-full h-95 md:h-100 object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Talleres/Zumba/ZUMBA (1).jpg" alt="Clase de Zumba"
+                            class="w-full h-95 md:h-100 object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <video controls class="w-full  h-80 md:h-96 object-cover rounded-lg">
+                            <source src="Talleres/Zumba/ZUMBA (1).mp4" type="video/mp4" />
+                            Tu navegador no soporta el video.
+                        </video>
+                    </div>
+                </div>
+                <!-- Controles -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </article>
+
+
+        <article class="mb-16 border rounded-lg p-6 shadow-md">
+            <h3 class="text-2xl font-semibold mb-2">Robotica</h3>
+            <p class="mb-4 text-gray-600">la robótica educativa alcanza un nuevo nivel.
+
+                Nuestros estudiantes no solo aprenden conceptos… ¡los aplican en proyectos reales que integran
+                electrónica, programación y automatización!.</p>
+            <ul class="mb-4 list-disc list-inside text-gray-700">
+                <li><strong>Días:</strong> Lunes a Viernes.</li>
+                <li><strong>Horarios:</strong> 13hs.</li>
+                <li><strong>Lugar:</strong> Escuela de Robotica de Santa Ana</li>
+                <li><strong>Profesores:</strong> ---- </li>
+                <li><strong>Costo:</strong> Gratuito</li>
+                <li><strong>Inscribite:</strong> <a
+                        href="https://wa.me/5493764727920?text=Hola,%20quiero%20inscribirme%20en%20Robotica"
+                        target="_blank">+5493764727920</a></li>
+            </ul>
+
+            <!-- Carrusel fotos y videos -->
+            <div class="swiper mySwiperPatin max-w-4xl mx-auto rounded-lg overflow-hidden">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="Talleres/Robotica/robotica (1).jpg" alt="Clase de Zumba"
+                            class="w-full object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Talleres/Robotica/robotica (2).jpg" alt="Clase de Zumba"
+                            class="w-full object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Talleres/Robotica/robotica (3).jpg" alt="Clase de Zumba"
+                            class="w-full object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Talleres/Robotica/robotica (4).jpg" alt="Clase de Zumba"
+                            class="w-full object-cover rounded-lg" />
+                    </div>
+                </div>
+                <!-- Controles -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </article>
+        <article class="mb-16 border rounded-lg p-6 shadow-md">
+            <h3 class="text-2xl font-semibold mb-2">Brasanelli</h3>
+            <p class="mb-4 text-gray-600">El taller de arte es un espacio de donde salió tres cortes de técnico cerámica
+                dependienda de la UNAM, asube briendo varios talleres como dibujo, cerámica y otros. Fue beneficiado
+                muchas personas ya sea adulto joven y niños</p>
+            <ul class="mb-4 list-disc list-inside text-gray-700">
+                <li><strong>Días:</strong> Lunes a Viernes.</li>
+                <li><strong>Horarios:</strong> 13hs.</li>
+                <li><strong>Lugar:</strong> Escuela de Robotica de Santa Ana</li>
+                <li><strong>Profesores:</strong> ---- </li>
+                <li><strong>Costo:</strong> Gratuito</li>
+                <li><strong>Inscribite:</strong> <a
+                        href="https://wa.me/5493764727920?text=Hola,%20quiero%20inscribirme%20en%20Robotica"
+                        target="_blank">+5493764727920</a></li>
+            </ul>
+
+            <!-- Carrusel fotos y videos -->
+            <div class="swiper mySwiperPatin max-w-4xl mx-auto rounded-lg overflow-hidden">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="Talleres/Brasanelli/brasanelli (1).jpg" alt="clase de brasanelli"
+                            class="w-full h-96 object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Talleres/Brasanelli/brasanelli (2).jpg" alt="clase de brasanelli"
+                            class="w-full h-96 object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Talleres/Brasanelli/brasanelli (3).jpg" alt="clase de brasanelli"
+                            class="w-full h-96 object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Talleres/Brasanelli/brasanelli (6).jpg" alt="clase de brasanelli"
+                            class="w-full h-96 object-cover rounded-lg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Talleres/Brasanelli/brasanelli (9).jpg" alt="clase de brasanelli"
+                            class="w-full h-96 object-cover rounded-lg" />
+                    </div>
+                </div>
+                <!-- Controles -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </article>
+
+    </section>
+    <!-- Script inicializando swiper para Patín -->
+    <script>
+        const swiperPatin = new Swiper(".mySwiperPatin", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+    <footer class="bg-black/80 text-white py-10 mt-12 rounded-t-2xl shadow-inner backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Sección de Contactos -->
+            <div class="mb-6">
+                <h2 class="text-center text-xl font-semibold mb-6">Contactos Municipales</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 justify-items-center">
+                    <!-- Municipalidad -->
+                    <a href="https://wa.me/5493765216291?text=Hola,%20quisiera%20poder%20hablar%20con%20la%20Intendenta"
+                        target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fas fa-city text-3xl"></i>
+                        <p class="text-sm">Mesa de Entrada</p>
+                    </a>
+                    <!-- Recaudaciones -->
+                    <a href="https://wa.me/5493765216293?text=Hola,%20quisiera%20información%20sobre%20Recaudaciones"
+                        target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fas fa-wallet text-3xl"></i>
+                        <p class="text-sm">Recaudaciones</p>
+                    </a>
+                    <!-- Calidad de Vida -->
+                    <a href="https://wa.me/5493765208091?text=Hola,%20quisiera%20información%20sobre%20Calidad%20de%20Vida"
+                        target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fas fa-heartbeat text-3xl"></i>
+                        <p class="text-sm">Calidad de Vida</p>
+                    </a>
+                    <!-- Obra Pública -->
+                    <a href="https://wa.me/5493765208039?text=Hola,%20quisiera%20información%20sobre%20Obra%20Pública"
+                        target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fas fa-tools text-3xl"></i>
+                        <p class="text-sm">Obra Pública</p>
+                    </a>
+                    <!-- Agua Potable -->
+                    <a href="https://wa.me/5493765216294?text=Hola,%20quisiera%20información%20sobre%20Agua%20Potable"
+                        target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fas fa-tint text-3xl"></i>
+                        <p class="text-sm">Agua Potable</p>
+                    </a>
+                    <!-- Feriantes -->
+                    <a href="https://chat.whatsapp.com/IKqujeJkOi54nDEFW3yyCT" target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fab fa-whatsapp text-3xl"></i>
+                        <p class="text-sm">Grupo Feriantes</p>
+                    </a>
+                </div>
+            </div>
+            <!-- Derechos -->
+            <p class="text-center text-xs md:text-sm mt-8">&copy; Municipalidad de Santa Ana. Todos los derechos
+                reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

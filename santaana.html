@@ -59,12 +59,11 @@
                         </div>
                     </li>
                     <!-- NOTICIAS -->
-                    <li><a href="#noticias" class="hover:text-green-900">NOTICIAS</a>
-                    </li>
+                    <li><a href="noticias.html" class="hover:text-green-900">NOTICIAS</a></li>
                     <!-- TURISMO -->
                     <li><a href="#Turismo" class="hover:text-green-900">TURISMO</a></li>
                     <!-- ACTIVIDADES -->
-                    <li><a href="#actividades" class="hover:text-green-900">ACTIVIDADES</a></li>
+                    <li><a href="actividades.html" class="hover:text-green-900">ACTIVIDADES</a></li>
                     <!-- OBRAS PUBLICAS -->
                     <li><a href="obras-publicas.html" class="hover:text-green-900">OBRAS PUBLICAS</a></li>
                     <!-- CONTACTOS -->
@@ -185,13 +184,14 @@
             carousel.style.transform = `translateX(-${index * 100}%)`;
         }, 8000); // Cambio cada 8 segundos
     </script>
-    <!-- Actividades Municipales -->
     <section id="actividades" class="bg-[#ECECEC] py-16 px-4">
         <div class="max-w-6xl mx-auto bg-white rounded-3xl shadow-xl p-10">
-            <h2 class="text-4xl font-bold text-gray-800 text-center mb-10">Actividades Municipales:</h2>
+            <h2 class="text-4xl font-bold text-gray-800 text-center mb-10">
+                Actividades Municipales:
+            </h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Columna 1: Actividades Deportivas -->
+                <!-- Columna 1: Talleres Municipales -->
                 <div>
                     <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Talleres Municipales</h3>
                     <ul class="space-y-6">
@@ -199,317 +199,177 @@
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-4">
                                 <img src="img/PATIN.png" alt="Patin" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">Patin - Viernes a 18:30hs Prof. Aylen
-                                    Werner.</span>
+                                <span class="text-lg text-gray-700 font-medium">
+                                    Patin - Viernes a 18:30hs Prof. Aylen Werner.
+                                </span>
                             </div>
-                            <a href="https://wa.me/5493754444608?text=Hola,%20quiero%20inscribirme%20en%20Patin"
-                                target="_blank"
-                                class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
-                                WhatsApp
-                            </a>
+                            <div class="flex gap-2">
+                                <a href="https://wa.me/5493754444608?text=Hola,%20quiero%20inscribirme%20en%20Patin"
+                                    target="_blank"
+                                    class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
+                                    WhatsApp
+                                </a>
+                            </div>
                         </li>
                         <!-- Yoga -->
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-4">
                                 <img src="img/yogaa.png" alt="Yoga" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">Yoga - (Lunes - Miércoles) Infantil
-                                    17:00 - Adulto 19:30</span>
+                                <span class="text-lg text-gray-700 font-medium">
+                                    Yoga - (Lunes - Miércoles) Infantil 17:00 - Adulto 19:30
+                                </span>
                             </div>
-                            <a href="https://wa.me/5493764211086?text=Hola,%20quiero%20inscribirme%20en%20Yoga"
-                                target="_blank"
-                                class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
-                                WhatsApp
-                            </a>
+                            <div class="flex gap-2">
+                                <a href="https://wa.me/5493764211086?text=Hola,%20quiero%20inscribirme%20en%20Yoga"
+                                    target="_blank"
+                                    class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
+                                    WhatsApp
+                                </a>
+                            </div>
                         </li>
                         <!-- Voleibol Newcom -->
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-4">
                                 <img src="img/Voleibol Newcom.png" alt="Voleibol Newcom" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">Voleibol NEWCOM Polideportivo Municipal
-                                    Santa Ana - Viernes 17:00hs</span>
+                                <span class="text-lg text-gray-700 font-medium">
+                                    Voleibol NEWCOM Polideportivo Municipal Santa Ana - Viernes 17:00hs
+                                </span>
                             </div>
-                            <a href="https://wa.me/5493764579480?text=Hola,%20quiero%20inscribirme%20en%20Voleibol%20NEWCOM"
-                                target="_blank"
-                                class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
-                                WhatsApp
-                            </a>
+                            <div class="flex gap-2">
+                                <a href="https://wa.me/5493764579480?text=Hola,%20quiero%20inscribirme%20en%20Voleibol%20NEWCOM"
+                                    target="_blank"
+                                    class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
+                                    WhatsApp
+                                </a>
+                            </div>
                         </li>
                         <!-- Zumba -->
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-4">
                                 <img src="img/zumba.png" alt="Zumba" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">Zumba - (Martes y Jueves)
-                                    18:30hs.</span>
+                                <span class="text-lg text-gray-700 font-medium">
+                                    Zumba - (Martes y Jueves) 18:30hs.
+                                </span>
                             </div>
-                            <a href="https://wa.me/5493764211086?text=Hola,%20quiero%20inscribirme%20en%20Zumba"
-                                target="_blank"
-                                class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
-                                WhatsApp
-                            </a>
+                            <div class="flex gap-2">
+                                <a href="https://wa.me/5493764211086?text=Hola,%20quiero%20inscribirme%20en%20Zumba"
+                                    target="_blank"
+                                    class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
+                                    WhatsApp
+                                </a>
+                            </div>
                         </li>
                         <!-- Robotica -->
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-4">
                                 <img src="img/Robotica.png" alt="Robotica" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">Robotica - 5 años en adelante.</span>
+                                <span class="text-lg text-gray-700 font-medium">
+                                    Robotica - 5 años en adelante.
+                                </span>
                             </div>
-                            <a href="https://wa.me/5493764727920?text=Hola,%20quiero%20inscribirme%20en%20Zumba"
-                                target="_blank"
-                                class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
-                                WhatsApp
-                            </a>
+                            <div class="flex gap-2">
+                                <a href="https://wa.me/5493764727920?text=Hola,%20quiero%20inscribirme%20en%20Robotica"
+                                    target="_blank"
+                                    class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
+                                    WhatsApp
+                                </a>
+                            </div>
                         </li>
                         <!-- Futbol -->
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-4">
                                 <img src="img/Futbol.png" alt="Futbol" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">Campeonato local de fútbol: Veterano,
-                                    senior y la liga.</span>
+                                <span class="text-lg text-gray-700 font-medium">
+                                    Campeonato local de fútbol: Veterano, senior y la liga.
+                                </span>
                             </div>
-                            <a href="https://wa.me/5493764727920?text=Hola,%20quiero%20inscribirme%20en%20Zumba"
-                                target="_blank"
-                                class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
-                                WhatsApp
-                            </a>
+                            <div class="flex gap-2">
+                                <a href="https://wa.me/5493764393175?text=Hola,%20quiero%20inscribirme%20en%20el%20Torneo"
+                                    target="_blank"
+                                    class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
+                                    WhatsApp
+                                </a>
+                            </div>
                         </li>
                         <!-- Feriantes -->
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-4">
                                 <img src="img/feriantes (1).png" alt="Feriantes" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">Feriantes Frente a la Ex-Municipalidad.
-                                    Martes y jueves 07hs a 11hs Viernes de 18hs a 21hs</span>
+                                <span class="text-lg text-gray-700 font-medium">
+                                    Feriantes Frente a la Ex-Municipalidad. Martes y jueves 07hs a 11hs Viernes de 18hs
+                                    a 21hs
+                                </span>
                             </div>
-                            <a href="https://wa.me/5493764727920?text=Hola,%20quiero%20inscribirme%20en%20Zumba"
-                                target="_blank"
-                                class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
-                                WhatsApp
-                            </a>
+                            <div class="flex gap-2">
+                                <a href="https://wa.me/5493764727920?text=Hola,%20quiero%20informacion%20sobre%20los%20feriantes"
+                                    target="_blank"
+                                    class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
+                                    WhatsApp
+                                </a>
+                            </div>
                         </li>
-
                     </ul>
                 </div>
                 <!-- Columna 2: Actividades del C.I.C -->
                 <div>
                     <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">C.I.C</h3>
                     <ul class="space-y-6">
-                        <!--Sipted-->
-                        <li class="flex items-center justify-between">
-                            <div class="flex items-center gap-4">
-                                <img src="img/redondo.png" alt="Veterinaria" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">Sipted</span>
-                            </div>
+                        <li class="flex items-center gap-4">
+                            <img src="img/redondo.png" alt="Sipted" class="w-12 h-12">
+                            <span class="text-lg text-gray-700 font-medium">Sipted</span>
                         </li>
-                        <!-- Trabajador social-->
-                        <li class="flex items-center justify-between">
-                            <div class="flex items-center gap-4">
-                                <img src="img/redondo.png" alt="Veterinaria" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">Trabajador Social</span>
-                            </div>
+                        <li class="flex items-center gap-4">
+                            <img src="img/redondo.png" alt="Trabajador Social" class="w-12 h-12">
+                            <span class="text-lg text-gray-700 font-medium">Trabajador Social</span>
                         </li>
-                        <!--Doctor de pami Ozuna-->
-                        <li class="flex items-center justify-between">
-                            <div class="flex items-center gap-4">
-                                <img src="img/redondo.png" alt="Veterinaria" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">Doctor de pami Ozuna</span>
-                            </div>
+                        <li class="flex items-center gap-4">
+                            <img src="img/redondo.png" alt="Doctor de pami Ozuna" class="w-12 h-12">
+                            <span class="text-lg text-gray-700 font-medium">Doctor de pami Ozuna</span>
                         </li>
-                        <!-- Veterinaria -->
-                        <li class="flex items-center justify-between">
-                            <div class="flex items-center gap-4">
-                                <img src="img/redondo.png" alt="Veterinaria" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">Veterinaria</span>
-                            </div>
+                        <li class="flex items-center gap-4">
+                            <img src="img/redondo.png" alt="Veterinaria" class="w-12 h-12">
+                            <span class="text-lg text-gray-700 font-medium">Veterinaria</span>
                         </li>
-                        <!--Sala de computación de la epet-->
-                        <li class="flex items-center justify-between">
-                            <div class="flex items-center gap-4">
-                                <img src="img/redondo.png" alt="Veterinaria" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">Sala de computación de la epet</span>
-                            </div>
+                        <li class="flex items-center gap-4">
+                            <img src="img/redondo.png" alt="Sala de computación de la epet" class="w-12 h-12">
+                            <span class="text-lg text-gray-700 font-medium">Sala de computación de la epet</span>
                         </li>
-                        <!--Hambre cero-->
-                        <li class="flex items-center justify-between">
-                            <div class="flex items-center gap-4">
-                                <img src="img/redondo.png" alt="Veterinaria" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">Hambre cero</span>
-                            </div>
+                        <li class="flex items-center gap-4">
+                            <img src="img/redondo.png" alt="Hambre cero" class="w-12 h-12">
+                            <span class="text-lg text-gray-700 font-medium">Hambre cero</span>
                         </li>
-                        <!-- Procipo-->
-                        <li class="flex items-center justify-between">
-                            <div class="flex items-center gap-4">
-                                <img src="img/redondo.png" alt="Veterinaria" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">Procipo</span>
-                            </div>
+                        <li class="flex items-center gap-4">
+                            <img src="img/redondo.png" alt="Procipo" class="w-12 h-12">
+                            <span class="text-lg text-gray-700 font-medium">Procipo</span>
                         </li>
                         <!-- Celíaco -->
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-4">
-                                <img src="img/redondo.png" alt="Veterinaria" class="w-12 h-12">
+                                <img src="img/redondo.png" alt="Celíaco" class="w-12 h-12">
                                 <span class="text-lg text-gray-700 font-medium">Celíaco</span>
                             </div>
-                            <a href="https://wa.me/5493765208091?text=Hola,%20quiero%20informacion%20sobre"
-                                target="_blank"
-                                class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
-                                Escribinos Al WhatsApp
-                            </a>
+                            <div class="flex gap-2">
+                                <a href="https://wa.me/5493765208091?text=Hola,%20quiero%20informacion%20sobre%20celiaquía"
+                                    target="_blank"
+                                    class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
+                                    WhatsApp
+                                </a>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="bg-white py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <!-- Título centrado -->
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
-                Noticias de Último Momento
-            </h2>
-
-            <!-- Noticia destacada -->
-            <div class="flex flex-col lg:flex-row gap-8 items-center">
-                <!-- Imagen grande -->
-                <div class="w-full lg:w-1/2">
-                    <img src="Noti/TrofeoRobotica1.png" alt="Noticia importante"
-                        class="w-full h-[450px] object-cover rounded-2xl shadow-lg">
-                </div>
-
-                <!-- Texto de la noticia -->
-                <div class="w-full lg:w-1/2">
-                    <h3 class="text-3xl font-bold text-gray-800 mb-4">La Escuela de Robótica de Santa Ana se coronó
-                        campeona provincial en la categoría Innovación Senior</h3>
-                    <p class="text-gray-700 text-lg mb-6 leading-relaxed">La Copa Robótica Misiones es un proyecto de
-                        la Escuela de Robótica para impulsar, a través de competencias integradas por robots, la
-                        investigación y educación sobre diseño, electrónica y programación.
-
-                        Durante las seis fechas de competencias del calendario 2024, el equipo de la sede Red Maker
-                        Santa Ana y los estudiantes de la E.P.E.T N° 19 de Santa Ana compitieron en la categoría de
-                        Innovación Senior.
-
-                        Estas competencias requirieron
-                        desarrollo, lógica, aprendizaje y programación electrónica, demostrando así las capacidades de
-                        creación del área de la robótica.
-                    </p>
-                    <p class="text-sm text-gray-500 mb-4">📅 07 de Diciembre de 2024</p>
-                    <a href="https://www.instagram.com/p/ejemplo_publicacion/" target="_blank"
-                        class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
-                        Ver publicación en Instagram
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Sección de NOTICIAS -->
-    <section id="noticias" class="bg-gray-50 py-16 px-4">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-4xl font-bold text-center text-black-700 mb-12">Últimas Noticias</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- TARJETA 1 -->
-                <a href="noticias.html"
-                    class="group block bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                    <img src="Noti/Jovenes al volante.png" alt="Imagen noticia 1"
-                        class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="p-6 flex flex-col h-full">
-                        <p class="text-sm text-gray-500 mb-2">20/01/2025 | General</p>
-                        <h3
-                            class="text-xl font-semibold text-gray-800 mb-4 group-hover:text-green-700 transition-colors">
-                            Buenas noticias para los vecinos de La Colonia</h3>
-                        <p class="text-gray-700 mb-4">Ya contamos con una nueva perforación de agua que garantizará un
-                            mejor suministro hídrico en nuestro Barrio La Colonia...</p>
-                    </div>
-                </a>
-
-                <!-- TARJETA 2 -->
-                <a href="noticias.html"
-                    class="group block bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                    <img src="Noti/Acto25.png" alt="Imagen noticia 2"
-                        class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="p-6 flex flex-col h-full">
-                        <p class="text-sm text-gray-500 mb-2">25/05/2025 | General</p>
-                        <h3
-                            class="text-xl font-semibold text-gray-800 mb-4 group-hover:text-green-700 transition-colors">
-                            Conmemoración del 25 de Mayo con Acto y Desfile Cívico-Militar</h3>
-                        <p class="text-gray-700 mb-4">El acto central se llevó a cabo en la avenida principal, con la
-                            presencia de autoridades civiles, militares y gran participación de vecinos...</p>
-                    </div>
-                </a>
-
-                <!-- TARJETA 3 -->
-                <a href="noticias.html"
-                    class="group block bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                    <img src="Noti/convenio.jpg" alt="Imagen noticia 3"
-                        class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="p-6 flex flex-col h-full">
-                        <p class="text-sm text-gray-500 mb-2">27/08/2024 | General</p>
-                        <h3
-                            class="text-xl font-semibold text-gray-800 mb-4 group-hover:text-green-700 transition-colors">
-                            Convenio con la Escuela de Enfermería de la UNAM</h3>
-                        <p class="text-gray-700 mb-4">Se firmó un convenio con la Escuela de Enfermería de la UNaM, lo
-                            que permitirá cursar la carrera en Santa Ana con financiamiento de la Municipalidad.</p>
-                    </div>
-                </a>
-
-                <!-- TARJETA 4 -->
-                <a href="noticias.html"
-                    class="group block bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                    <img src="Noti/bacheos.jpg" alt="Imagen noticia 4"
-                        class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="p-6 flex flex-col h-full">
-                        <p class="text-sm text-gray-500 mb-2">20/01/2025 | General</p>
-                        <h3
-                            class="text-xl font-semibold text-gray-800 mb-4 group-hover:text-green-700 transition-colors">
-                            Buenas noticias para los vecinos de La Colonia</h3>
-                        <p class="text-gray-700 mb-4">Arranca la temporada en el Camping La Boca a puro ritmo, con una
-                            sorprendente suma de visitantes tanto locales como del interior de la provincia...</p>
-                    </div>
-                </a>
-
-                <!-- TARJETA 5 -->
-                <a href="noticias.html"
-                    class="group block bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                    <img src="Noti/Img1.jpg" alt="Imagen noticia 5"
-                        class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="p-6 flex flex-col h-full">
-                        <p class="text-sm text-gray-500 mb-2">20/01/2025 | General</p>
-                        <h3
-                            class="text-xl font-semibold text-gray-800 mb-4 group-hover:text-green-700 transition-colors">
-                            Buenas noticias para los vecinos de La Colonia</h3>
-                        <p class="text-gray-700 mb-4">Arranca la temporada en el Camping La Boca a puro ritmo, con una
-                            sorprendente suma de visitantes tanto locales como del interior de la provincia...</p>
-                    </div>
-                </a>
-
-                <!-- TARJETA 6 -->
-                <a href="noticias.html"
-                    class="group block bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                    <img src="Noti/Img2.jpg" alt="Imagen noticia 6"
-                        class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="p-6 flex flex-col h-full">
-                        <p class="text-sm text-gray-500 mb-2">20/01/2025 | General</p>
-                        <h3
-                            class="text-xl font-semibold text-gray-800 mb-4 group-hover:text-green-700 transition-colors">
-                            Buenas noticias para los vecinos de La Colonia</h3>
-                        <p class="text-gray-700 mb-4">Arranca la temporada en el Camping La Boca a puro ritmo, con una
-                            sorprendente suma de visitantes tanto locales como del interior de la provincia...</p>
-                    </div>
-                </a>
-            </div>
-
-            <!-- ENLACE A INSTAGRAM -->
-            <div class="py-10 px-4 text-center rounded-xl mt-10">
-                <a href="https://www.instagram.com/santaanamunicipalidad/" target="_blank"
-                    class="inline-flex items-center space-x-4 text-black-800 hover:text-green-900 text-xl font-bold">
-                    <i class="fab fa-instagram text-4xl"></i>
-                    <span>¡Seguinos en Instagram para ver fotos, novedades y todo lo que pasa en Santa Ana día a
-                        día!</span>
+            <!-- Botón Ver más -->
+            <div class="flex justify-center mt-12">
+                <a href="actividades.html"
+                    class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300 text-center w-full sm:w-auto">
+                    Ver más sobre las actividades
                 </a>
             </div>
         </div>
     </section>
-
     <section id="Turismo" class="px-4 py-16 bg-white">
         <h2 class="text-4xl font-bold text-center text-black-800 mb-12">Turismo</h2>
-
         <div class="flex flex-col lg:flex-row items-center gap-10 mb-16">
             <!-- Carrusel de imágenes -->
             <div class="w-full lg:w-1/2">

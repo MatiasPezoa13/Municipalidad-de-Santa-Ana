@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Equipos De Futbol | Municipalidad</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="shortcut icon" href="santa.ico" type="image/x-icon" />
+</head>
+
+<body class="bg-white text-gray-800 min-h-screen flex flex-col">
+
+    <!-- HEADER -->
+    <header class="shadow-md p-2 w-full" style="background-color: #fbff00;">
+        <div class="flex items-center justify-center flex-wrap gap-6 px-4">
+            <div class="flex items-center gap-3">
+                <img src="img/logosan.png" alt="Logo Municipalidad" class="w-24 h-24 object-contain" />
+                <h1 class="text-lg font-bold text-black">MUNICIPALIDAD DE SANTA ANA</h1>
+            </div>
+
+            <nav class="mt-2 md:mt-0 justify-center">
+                <ul class="flex flex-wrap gap-4 text-sm font-semibold text-black">
+                    <li class="relative group">
+                        <a href="#" class="hover:text-green-900" data-toggle="gobierno">GOBIERNO</a>
+                        <div data-menu="gobierno"
+                            class="hidden absolute z-10 bg-white shadow-xl rounded-lg p-4 mt-2 w-64 border border-gray-200 left-0 group-hover:block">
+                            <ul class="space-y-2 text-sm text-gray-800">
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user-tie text-green-600"></i> Intendenta Lic. M. Mabel
+                                        Pezoa</a></li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user-tie text-green-600"></i> Presidente HCD Prof. Eikman
+                                        Matías</a></li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user text-green-600"></i> Vice-Presidente Mariela Scholles</a>
+                                </li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user text-green-600"></i>Concejal Otilia Alderete</a></li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user text-green-600"></i>Concejal Olivera Sandro</a></li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user text-green-600"></i>Concejal Dario Vera</a></li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user-cog text-green-600"></i> Secretaria del Concejo Salina
+                                        Priscila</a></li>
+                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fas fa-user-cog text-green-600"></i> Pro-Secretaria Mezetti
+                                        Daniela</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="noticias.html" class="hover:text-green-900">NOTICIAS</a></li>
+                    <li><a href="santaana.html" class="hover:text-green-900">TURISMO</a></li>
+                    <li><a href="santaana.html" class="hover:text-green-900">ACTIVIDADES</a></li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-green-900" data-toggle="contactos">CONTACTOS</a>
+                        <div data-menu="contactos"
+                            class="hidden absolute z-10 bg-white shadow-xl rounded-lg p-4 mt-2 w-64 border border-gray-200 left-0 group-hover:block">
+                            <ul class="space-y-2 text-sm text-gray-800">
+                                <li><a href="https://wa.me/5493765216291?text=Hola,%20quisiera%20información%20sobre%20la%20Municipalidad"
+                                        target="_blank"
+                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fab fa-whatsapp text-green-600"></i> Mesa de Entrada</a></li>
+                                <li><a href="https://wa.me/5493765216293?text=Hola,%20quisiera%20información%20sobre%20Recaudaciones"
+                                        target="_blank"
+                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fab fa-whatsapp text-green-600"></i> Recaudaciones</a></li>
+                                <li><a href="https://wa.me/5493765208091?text=Hola,%20quisiera%20información%20sobre%20Calidad%20De%20Vida"
+                                        target="_blank"
+                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fab fa-whatsapp text-green-600"></i> Calidad de Vida</a></li>
+                                <li><a href="https://wa.me/5493765208039?text=Hola,%20quisiera%20información%20sobre%20Obra%20Pública"
+                                        target="_blank"
+                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fab fa-whatsapp text-green-600"></i> Obra Pública</a></li>
+                                <li><a href="https://wa.me/5493765216294?text=Hola,%20quisiera%20información%20sobre%20Agua%20Potable"
+                                        target="_blank"
+                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
+                                            class="fab fa-whatsapp text-green-600"></i> Agua Potable</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BARRA INFERIOR -->
+    <div class="w-full text-black" style="background-color: #fbff00;">
+        <div class="flex flex-wrap justify-center items-center gap-2 py-1 px-4 text-sm">
+            <span>FM 94.7</span>
+            <span>|</span>
+            <span>@santaanamunicipalidad</span>
+            <span>|</span>
+            <span>Av. San Martín & Belgrano</span>
+            <span>|</span>
+            <i class="fas fa-phone"></i>
+            <span>+54 9 3765-216291</span>
+        </div>
+    </div>
+
+    <main class="flex-grow max-w-5xl mx-auto px-6 py-12 font-sans text-gray-900">
+
+
+        <header class="bg-white border-b border-gray-300 shadow-sm py-6 mb-8">
+            <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+                <h1 class="text-4xl font-bold text-center mb-12 tracking-wide border-b-4 border-yellow-400 pb-4">
+                    Equipos de la Liga Municipal
+                </h1>
+
+                <!-- Botón estético en verde -->
+                <a href="santaana.html"
+                    class="inline-flex items-center gap-2 text-white bg-green-600 hover:bg-green-700 transition duration-300 px-4 py-2 rounded-full shadow-md text-sm font-semibold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                    </svg>
+                    Volver al inicio
+                </a>
+            </div>
+        </header>
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-5xl mx-auto space-y-12">
+
+                <!-- Título general -->
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-2"> Estadísticas de la Liga</h2>
+                    <p class="text-gray-600">Posiciones y goleadores actualizados</p>
+                    <div class="mt-4 h-1 w-24 bg-red-500 mx-auto rounded-full"></div>
+                </div>
+
+                <!-- Tabla de posiciones -->
+                <div class="bg-white shadow-lg rounded-xl p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-center text-gray-700">Tabla de Posiciones</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left border border-gray-200 rounded-lg overflow-hidden">
+                            <thead class="bg-gray-100 text-gray-700">
+                                <tr>
+                                    <th class="px-3 py-2">#</th>
+                                    <th class="px-3 py-2">Equipo</th>
+                                    <th class="px-3 py-2">Pts</th>
+                                    <th class="px-3 py-2">PJ</th>
+                                    <th class="px-3 py-2">DG</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-t hover:bg-gray-50">
+                                    <td class="px-3 py-2">1</td>
+                                    <td class="px-3 py-2">Ex - Alumnos</td>
+                                    <td class="px-3 py-2">15</td>
+                                    <td class="px-3 py-2">6</td>
+                                    <td class="px-3 py-2">+10</td>
+                                </tr>
+                                <tr class="border-t hover:bg-gray-50">
+                                    <td class="px-3 py-2">2</td>
+                                    <td class="px-3 py-2">Inmortales</td>
+                                    <td class="px-3 py-2">13</td>
+                                    <td class="px-3 py-2">6</td>
+                                    <td class="px-3 py-2">+8</td>
+                                </tr>
+                                <tr class="border-t hover:bg-gray-50">
+                                    <td class="px-3 py-2">3</td>
+                                    <td class="px-3 py-2">Juventud Catolica</td>
+                                    <td class="px-3 py-2">10</td>
+                                    <td class="px-3 py-2">6</td>
+                                    <td class="px-3 py-2">+3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Tabla de goleadores -->
+                <div class="bg-white shadow-lg rounded-xl p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-center text-gray-700">Tabla de Goleadores</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left border border-gray-200 rounded-lg overflow-hidden">
+                            <thead class="bg-gray-100 text-gray-700">
+                                <tr>
+                                    <th class="px-3 py-2">#</th>
+                                    <th class="px-3 py-2">Jugador</th>
+                                    <th class="px-3 py-2">Equipo</th>
+                                    <th class="px-3 py-2">Goles</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-t hover:bg-gray-50">
+                                    <td class="px-3 py-2">1</td>
+                                    <td class="px-3 py-2">Walter Maidana</td>
+                                    <td class="px-3 py-2">Puerto Unido</td>
+                                    <td class="px-3 py-2">7</td>
+                                </tr>
+                                <tr class="border-t hover:bg-gray-50">
+                                    <td class="px-3 py-2">2</td>
+                                    <td class="px-3 py-2">Mauro Toledo</td>
+                                    <td class="px-3 py-2">Puerto Unido</td>
+                                    <td class="px-3 py-2">5</td>
+                                </tr>
+                                <tr class="border-t hover:bg-gray-50">
+                                    <td class="px-3 py-2">3</td>
+                                    <td class="px-3 py-2">Juan Pérez</td>
+                                    <td class="px-3 py-2">Ex - Alumnos</td>
+                                    <td class="px-3 py-2">4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="space-y-12">
+            <!-- Equipo 1 -->
+            <article class="flex flex-col sm:flex-row items-center gap-6 border-b border-gray-300 pb-8">
+                <img src="Equipos/EX-ALUMNOS.jpg" alt="EX - ALUMNOS"
+                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2">Ex - Alumnos</h2>
+                    <p class="italic text-sm text-gray-600 mb-3">Desde 1945 hasta la actualidad</p>
+                    <p class="text-justify text-base leading-relaxed max-w-xl">
+                        Fundado en 1945, es el club más tradicional del pueblo, conocido por su fuerte cantera y sus
+                        clásicos encuentros regionales.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Equipo 2 -->
+            <article class="flex flex-col sm:flex-row items-center gap-6 border-b border-gray-300 pb-8">
+                <img src="Equipos/INMORTALES.jpg" alt="INMORTALES"
+                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2">Inmortales</h2>
+                    <p class="italic text-sm text-gray-600 mb-3">1970 - Presente</p>
+                    <p class="text-justify text-base leading-relaxed max-w-xl">
+                        Un club joven que ha crecido rápidamente, destacándose en torneos regionales y por su compromiso
+                        social en el barrio.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Equipo 3 -->
+            <article class="flex flex-col sm:flex-row items-center gap-6 border-b border-gray-300 pb-8">
+                <img src="Equipos/MARTIN CHICO.jpg" alt="MARTIN CHICO"
+                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2">Martin Chico</h2>
+                    <p class="italic text-sm text-gray-600 mb-3">1955 - 1998</p>
+                    <p class="text-justify text-base leading-relaxed max-w-xl">
+                        Aunque ya no compite oficialmente, fue un club emblemático que aportó grandes jugadores al
+                        fútbol local.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Equipo 4 -->
+            <article class="flex flex-col sm:flex-row items-center gap-6 border-b border-gray-300 pb-8">
+                <img src="Equipos/10 VIVIENDA.jpg" alt="10 VIVIENDA"
+                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2">10 Vivienda</h2>
+                    <p class="italic text-sm text-gray-600 mb-3">1962 - Presente</p>
+                    <p class="text-justify text-base leading-relaxed max-w-xl">
+                        Reconocido por su escuela de fútbol infantil y por su estadio con capacidad para 3,000
+                        espectadores.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Equipo 5 -->
+            <article class="flex flex-col sm:flex-row items-center gap-6 border-b border-gray-300 pb-8">
+                <img src="Equipos/JUVENTUD CATOLICA.png" alt="JUVENTUD CATOLICA"
+                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2">Juventud Catolica</h2>
+                    <p class="italic text-sm text-gray-600 mb-3">1980 - Presente</p>
+                    <p class="text-justify text-base leading-relaxed max-w-xl">
+                        Club de espíritu independiente, conocido por sus colores rojo y blanco y su afición apasionada.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Equipo 6 -->
+            <article class="flex flex-col sm:flex-row items-center gap-6 border-b border-gray-300 pb-8">
+                <img src="Equipos/13 DE JUNIO.png" alt="13 DE JUNIO"
+                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2">13 De Junio</h2>
+                    <p class="italic text-sm text-gray-600 mb-3">1948 - 2010</p>
+                    <p class="text-justify text-base leading-relaxed max-w-xl">
+                        Tuvo una época dorada en los años 70 y 80, y dejó un legado de grandes campeonatos locales.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Equipo 7 -->
+            <article class="flex flex-col sm:flex-row items-center gap-6 border-b border-gray-300 pb-8">
+                <img src="Equipos/PU.jpg" alt="Escudo De P.U"
+                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2">Club Puerto Unido</h2>
+                    <p class="italic text-sm text-gray-600 mb-3">2019 - Presente</p>
+                    <p class="text-justify text-base leading-relaxed max-w-xl">
+                        Formado en el año 2019 así mismo Compitiendo 6 Torneos lo cual aun no se pudo levantar el trofeo
+                        pero si llegando siempre a instancia finales
+                        Un equipo consolidado y respetado en lo qué va en competencia
+                        Teniendo como objetivo ganar el campeonato y así dar una alegría a nuestra gente
+                        El equipo fue formado x Falcón Hector actual Técnico del equipo.
+                        Por el club pasaron muy buenos jugadores el cual seria difícil nombrar a todos. Destacando en la
+                        actualidad x su compromiso y sacrificio serian: WALTER MAIDANA, MAURO TOLEDO, ROQUE MARTIN,
+                        FALCÓN TOMÁS Y FALCÓN DAVID.
+                    </p>
+                </div>
+                <!-- Imagen del equipo a la derecha -->
+                <div class="w-full lg:w-1/2 flex justify-center mt-6 lg:mt-0">
+                    <img src="Equipos/Puerto Unidos.jpg" alt="Equipo completo Club Puerto Unido"
+                        class="rounded-xl shadow-md w-full max-w-md object-cover" />
+                </div>
+            </article>
+
+            <!-- Equipo 8 -->
+            <article class="flex flex-col sm:flex-row items-center gap-6 border-b border-gray-300 pb-8">
+                <img src="Equipos/CABU.jpg" alt="Escudo CABU"
+                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2">C.A.B.U</h2>
+                    <p class="italic text-sm text-gray-600 mb-3">1975 - 2005</p>
+                    <p class="text-justify text-base leading-relaxed max-w-xl">
+                        Club con una base sólida en el fútbol amateur, con una historia de varios títulos locales.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Equipo 9 -->
+            <article class="flex flex-col sm:flex-row items-center gap-6 border-b border-gray-300 pb-8">
+                <img src="Equipos/CAñA.jpg" alt="Escudo Caña"
+                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2">Club C.A.Ñ.A Pto. Santa Ana</h2>
+                    <p class="italic text-sm text-gray-600 mb-3">1968 - Presente</p>
+                    <p class="text-justify text-base leading-relaxed max-w-xl">
+                        Equipo que destaca por su cantera juvenil y compromiso con el desarrollo deportivo local.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Equipo 10 -->
+            <article class="flex flex-col sm:flex-row items-center gap-6 border-b border-gray-300 pb-8">
+                <img src="Equipos/DELTA F.C.png" alt="Escudo Delta F.C"
+                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2">Club Delta F.C</h2>
+                    <p class="italic text-sm text-gray-600 mb-3">2000 - Presente</p>
+                    <p class="text-justify text-base leading-relaxed max-w-xl">
+                        El club más joven, con una visión innovadora en el fútbol local y proyectos para el futuro.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Equipo 11 -->
+            <article class="flex flex-col lg:flex-row items-center gap-8 border-b border-gray-300 pb-8">
+                <!-- Columna izquierda: escudo + texto -->
+                <div class="flex flex-col sm:flex-row items-start gap-6">
+                    <img src="Equipos/FORTALEZA.jpg" alt="Escudo Club Fortaleza"
+                        class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
+                    <div>
+                        <h2 class="text-2xl font-semibold mb-2">Club Fortaleza</h2>
+                        <p class="italic text-sm text-gray-600 mb-3">2021 - 2025</p>
+                        <p class="text-justify text-base leading-relaxed max-w-xl">
+                            Nuestro equipo se formó en el año 2021 y, desde entonces, hemos crecido juntos dentro y
+                            fuera de
+                            la cancha. Aunque todavía no hemos logrado ganar la liga, seguimos trabajando con dedicación
+                            y
+                            pasión por este deporte que tanto nos une.
+                            <br><br>
+                            Llevamos cuatro años compartiendo este camino, y algo que nos enorgullece es que el grupo se
+                            mantiene firme: prácticamente todos los que empezamos seguimos juntos. Cada jugador es una
+                            pieza
+                            clave en este equipo, y ese compromiso colectivo es lo que nos hace fuertes.
+                        </p>
+                    </div>
+                </div>
+                <!-- Imagen del equipo a la derecha -->
+                <div class="w-full lg:w-1/2 flex justify-center mt-6 lg:mt-0">
+                    <img src="Equipos/fortaleza-equipo.jpg" alt="Equipo completo Club Fortaleza"
+                        class="rounded-xl shadow-md w-full max-w-md object-cover" />
+                </div>
+            </article>
+
+
+
+            <!-- Equipo 12 -->
+            <article class="flex flex-col sm:flex-row items-center gap-6 border-b border-gray-300 pb-8">
+                <img src="Equipos/36 K-JITA.png" alt="Escudo Club 36 K-JITAS"
+                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2">36 K-JITAS</h2>
+                    <p class="italic text-sm text-gray-600 mb-3">1985 - Presente</p>
+                    <p class="text-justify text-base leading-relaxed max-w-xl">
+                        Conocido por sus colores distintivos y su espíritu competitivo en ligas amateurs.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Equipo 13 -->
+            <article class="flex flex-col sm:flex-row items-center gap-6 pb-8">
+                <img src="Equipos/CHIPERIA.png" alt="Escudo Club Chiperia"
+                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2">Club Chiperia La Negrita</h2>
+                    <p class="italic text-sm text-gray-600 mb-3">1978 - Presente</p>
+                    <p class="text-justify text-base leading-relaxed max-w-xl">
+                        Orgullosos de su tradición y con una gran base social que apoya a cada partido.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-black/80 text-white py-10 mt-12 rounded-t-2xl shadow-inner backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="mb-6">
+                <h2 class="text-center text-xl font-semibold mb-6">Contactos Municipales</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 justify-items-center">
+                    <a href="https://wa.me/5493765216291?text=Hola,%20quisiera%20poder%20hablar%20con%20la%20Intendenta"
+                        target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fas fa-city text-3xl"></i>
+                        <p class="text-sm">Mesa de Entrada</p>
+                    </a>
+                    <a href="https://wa.me/5493765216293?text=Hola,%20quisiera%20información%20sobre%20Recaudaciones"
+                        target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fas fa-wallet text-3xl"></i>
+                        <p class="text-sm">Recaudaciones</p>
+                    </a>
+                    <a href="https://wa.me/5493765208091?text=Hola,%20quisiera%20información%20sobre%20Calidad%20de%20Vida"
+                        target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fas fa-heartbeat text-3xl"></i>
+                        <p class="text-sm">Calidad de Vida</p>
+                    </a>
+                    <a href="https://wa.me/5493765208039?text=Hola,%20quisiera%20información%20sobre%20Obra%20Pública"
+                        target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fas fa-tools text-3xl"></i>
+                        <p class="text-sm">Obra Pública</p>
+                    </a>
+                    <a href="https://wa.me/5493765216294?text=Hola,%20quisiera%20información%20sobre%20Agua%20Potable"
+                        target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fas fa-tint text-3xl"></i>
+                        <p class="text-sm">Agua Potable</p>
+                    </a>
+                    <a href="https://chat.whatsapp.com/IKqujeJkOi54nDEFW3yyCT" target="_blank"
+                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
+                        <i class="fab fa-whatsapp text-3xl"></i>
+                        <p class="text-sm">Grupo Feriantes</p>
+                    </a>
+                </div>
+            </div>
+            <p class="text-center text-xs md:text-sm mt-8">&copy; Municipalidad de Santa Ana. Todos los derechos
+                reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function openModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modalImg.src = imageSrc;
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.add('hidden');
+        }
+    </script>
+
+</body>
+
+</html>
