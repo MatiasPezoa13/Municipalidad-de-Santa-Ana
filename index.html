@@ -4,713 +4,644 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Municipalidad de Santa Ana</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Municipalidad de Santa Ana | Gestión Mabel Pezoa</title>
     <link rel="shortcut icon" href="santa.ico" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        muniYellow: '#fbff00',
+                        muniDark: '#1a1a1a',
+                        muniGray: '#f4f4f9'
+                    },
+                    shadows: {
+                        'soft': '0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+        }
+    </style>
 </head>
 
-<body class="w-full min-h-screen overflow-x-hidden">
-    <!-- HEADER - ocupa 100% de ancho -->
-    <header class="shadow-md p-2 w-full" style="background-color: #fbff00;">
-        <div class="flex items-center justify-center flex-wrap gap-6 px-4">
-            <!-- Logo + Título -->
-            <div class="flex items-center gap-3">
-                <img src="img/logosan.png" alt="Logo Municipalidad" class="w-24 h-24 object-contain" />
-                <h1 class="text-lg font-bold text-black">MUNICIPALIDAD DE SANTA ANA</h1>
+<body class="bg-muniGray font-sans text-slate-900 overflow-x-hidden">
+
+    <div class="w-full py-2 px-4 hidden md:block" style="background-color:#fbff00;">
+        <div
+            class="max-w-7xl mx-auto flex justify-between items-center text-xs font-semibold uppercase tracking-widest text-black">
+            <div class="flex gap-4">
+                <span><i class="fas fa-radio mr-2"></i>FM 94.7</span>
+                <span><i class="fas fa-map-marker-alt mr-2"></i>Av. San Martín & Belgrano</span>
             </div>
-            <!-- Menú de navegación -->
-            <nav class="mt-2 md:mt-0 justify-center">
-                <ul class="flex flex-wrap gap-4 text-sm font-semibold text-black">
-                    <!-- GOBIERNO -->
-                    <li class="relative group">
-                        <a href="#" class="hover:text-green-900" data-toggle="gobierno">GOBIERNO</a>
-                        <div data-menu="gobierno" class="hidden absolute z-10 bg-white shadow-xl rounded-lg p-4 mt-2 w-64 border border-gray-200
-               left-0 group-hover:block">
-                            <ul class="space-y-2 text-sm text-gray-800">
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user-tie text-green-600"></i> Intendenta Lic. M. Mabel
-                                        Pezoa</a></li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user-tie text-green-600"></i> Presidente HCD Prof. Eikman
-                                        Matías</a></li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user text-green-600"></i> Vice-Presidente Mariela Scholles</a>
-                                </li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user text-green-600"></i>Concejal Otilia Alderete</a>
-                                </li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user text-green-600"></i>Concejal Olivera Sandro</a>
-                                </li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user text-green-600"></i>Concejal Dario Vera</a></li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user-cog text-green-600"></i> Secretaria del Concejo Salina
-                                        Priscila</a></li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user-cog text-green-600"></i> Pro-Secretaria Mezetti
-                                        Daniela</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <!-- NOTICIAS -->
-                    <li><a href="noticias.html" class="hover:text-green-900">NOTICIAS</a></li>
-                    <!-- TURISMO -->
-                    <li><a href="#Turismo" class="hover:text-green-900">TURISMO</a></li>
-                    <!-- ACTIVIDADES -->
-                    <li><a href="actividades.html" class="hover:text-green-900">ACTIVIDADES</a></li>
-                    <!-- OBRAS PUBLICAS -->
-                    <li><a href="obras-publicas.html" class="hover:text-green-900">OBRAS PUBLICAS</a></li>
-                    <li><a href="equipos.html" class="hover:text-green-900">LIGA MUNICIPAL</a></li>
-                    <!-- CONTACTOS -->
-                    <li class="relative group">
-                        <a href="#contactos" class="hover:text-green-900" data-toggle="contactos">CONTACTOS</a>
-                        <div data-menu="contactos" class="hidden absolute z-10 bg-white shadow-xl rounded-lg p-4 mt-2 w-64 border border-gray-200
-               left-0 group-hover:block">
-                            <ul class="space-y-2 text-sm text-gray-800">
-                                <li><a href="https://wa.me/5493765216291?text=Hola,%20quisiera%20información%20sobre%20la%20Municipalidad"
-                                        target="_blank"
-                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fab fa-whatsapp text-green-600"></i> Mesa de Entrada</a></li>
-                                <li><a href="https://wa.me/5493765216293?text=Hola,%20quisiera%20información%20sobre%20Recaudaciones"
-                                        target="_blank"
-                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fab fa-whatsapp text-green-600"></i> Recaudaciones</a></li>
-                                <li><a href="https://wa.me/5493765208091?text=Hola,%20quisiera%20información%20sobre%20Calidad%20De%20Vida"
-                                        target="_blank"
-                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fab fa-whatsapp text-green-600"></i> Calidad de Vida</a></li>
-                                <li><a href="https://wa.me/5493765208039?text=Hola,%20quisiera%20información%20sobre%20Obra%20Pública"
-                                        target="_blank"
-                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fab fa-whatsapp text-green-600"></i> Obra Pública</a></li>
-                                <li><a href="https://wa.me/5493765216294?text=Hola,%20quisiera%20información%20sobre%20Agua%20Potable"
-                                        target="_blank"
-                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fab fa-whatsapp text-green-600"></i> Agua Potable</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!-- BARRA INFERIOR 100% ANCHO -->
-    <div class="w-full text-black" style="background-color: #fbff00;">
-        <div class="flex flex-wrap justify-center items-center gap-2 py-1 px-4 text-sm">
-            <span>FM 94.7</span>
-            <span>|</span>
-            <span>@santaanamunicipalidad</span>
-            <span>|</span>
-            <span>Av. San Martín & Belgrano</span>
-            <span>|</span>
-            <i class="fas fa-phone"></i>
-            <span>+54 9 3765-216291</span>
+            <div class="flex gap-4">
+                <a href="#" class="hover:underline transition">
+                    <i class="fab fa-facebook mr-2"></i>@santaanamunicipalidad
+                </a>
+                <span><i class="fas fa-phone mr-2"></i>+54 9 3765-216291</span>
+            </div>
         </div>
     </div>
-    <!-- Script para mostrar u ocultar los menús desplegables -->
+
+
+    <header class="sticky top-0 z-50" style="background-color:#fbff00;">
+        <nav class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <img src="img/logosan.png" alt="Logo"
+                    class="h-14 w-auto transform hover:scale-105 transition duration-300" />
+                <div class="leading-tight">
+                    <h1 class="text-sm font-black text-black">SANTA ANA</h1>
+                    <p class="text-[10px] text-gray-800 font-bold uppercase tracking-tighter">
+                        Municipalidad
+                    </p>
+                </div>
+            </div>
+
+            <!-- Menu Desktop -->
+            <ul class="hidden lg:flex items-center gap-8 text-sm font-bold text-black">
+                <li class="relative group">
+                    <button class="flex items-center gap-1 hover:opacity-80 transition">
+                        GOBIERNO
+                        <i class="fas fa-chevron-down text-[10px]"></i>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 mt-2 w-64 bg-white shadow-2xl rounded-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 p-4 text-gray-800">
+                        <a href="#" class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase">
+                            Intendenta Lic. Mabel Pezoa
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Presidente Honorable Concejo Deliberante Prof. Eikman Matias
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Vice-Presidente Mariela Scholles
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Concejal Otilia Alderete
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Concejal Olivera Sandro
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Concejal Vera Dario
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Secretaria del Concejo Salina Priscila
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Pro - Secretaria Mezetti Daniela
+                        </a>
+                    </div>
+                </li>
+
+                <li><a href="noticias.html" class="hover:opacity-80 transition">NOTICIAS</a></li>
+                <li><a href="#Turismo" class="hover:opacity-80 transition">TURISMO</a></li>
+                <li><a href="actividades.html" class="hover:opacity-80 transition">ACTIVIDADES</a></li>
+                <li>
+                    <a href="https://wa.me/5493765216291"
+                        class="bg-black text-yellow-300 px-5 py-2 rounded-full shadow-md hover:scale-105 transition">
+                        CONTACTO
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Mobile button -->
+            <button class="lg:hidden text-2xl text-black" id="btn-mobile">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+
+    <section class="relative h-[90vh] w-full bg-black overflow-hidden">
+        <div id="carousel" class="flex transition-transform duration-[1500ms] ease-out w-full h-full">
+            <img src="Encabezado/1.png" class="w-full h-full object-cover flex-shrink-0 brightness-[0.6]" />
+            <img src="Encabezado/2.png" class="w-full h-full object-cover flex-shrink-0 brightness-[0.6]" />
+            <img src="Encabezado/3.png" class="w-full h-full object-cover flex-shrink-0 brightness-[0.6]" />
+        </div>
+
+        <div class="absolute inset-0 hero-gradient flex items-center pb-25">
+            <div class="max-w-7xl mx-auto px-6 w-full">
+                <span
+                    class="inline-block bg-muniYellow text-black px-4 py-1 rounded-full text-xs font-black mb-4 uppercase tracking-widest animate-bounce">
+                    Novedades 2026
+                </span>
+                <h2 class="text-4xl md:text-7xl font-black text-white max-w-3xl leading-none">
+                    Unidos por el <br>
+                    <span
+                        class="text-muniYellow underline decoration-wavy decoration-2 underline-offset-8">Bienestar</span>
+                    Local
+                </h2>
+                <p class="text-white/80 mt-6 text-lg md:text-xl max-w-xl font-medium">
+                    Gestión Mabel Pezoa: Trabajando cada día para transformar nuestra querida Santa Ana.
+                </p>
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <a href="#actividades"
+                        class="bg-white text-black px-8 py-4 rounded-full font-black hover:bg-muniYellow transition duration-300 shadow-xl">
+                        Ver Actividades
+                    </a>
+                    <a href="noticias.html"
+                        class="border-2 border-white/50 text-white px-8 py-4 rounded-full font-black hover:bg-white/10 transition backdrop-blur-sm">
+                        Últimas Noticias
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl z-30 overflow-x-auto no-scrollbar">
+            <div class="flex gap-4 pb-2">
+                <a href="tel:4497027"
+                    class="min-w-[110px] bg-white/90 backdrop-blur p-4 rounded-2xl shadow-2xl flex flex-col items-center gap-2 hover:-translate-y-2 transition duration-300 border-b-4 border-red-500 group">
+                    <img src="img/logo hos (1).png" class="w-10 h-10 object-contain group-hover:scale-110 transition"
+                        alt="Hospital">
+                    <span class="text-[9px] font-black text-gray-500 uppercase">Hospital</span>
+                </a>
+                <a href="tel:4497100"
+                    class="min-w-[110px] bg-white/90 backdrop-blur p-4 rounded-2xl shadow-2xl flex flex-col items-center gap-2 hover:-translate-y-2 transition duration-300 border-b-4 border-orange-500 group">
+                    <img src="img/logo bomber (2).png" class="w-10 h-10 object-contain group-hover:scale-110 transition"
+                        alt="Bomberos">
+                    <span class="text-[9px] font-black text-gray-500 uppercase">Bomberos</span>
+                </a>
+                <a href="tel:4497100"
+                    class="min-w-[110px] bg-white/90 backdrop-blur p-4 rounded-2xl shadow-2xl flex flex-col items-center gap-2 hover:-translate-y-2 transition duration-300 border-b-4 border-blue-600 group">
+                    <img src="img/logo hos.png" class="w-10 h-10 object-contain group-hover:scale-110 transition"
+                        alt="Policia">
+                    <span class="text-[9px] font-black text-gray-500 uppercase">Policía</span>
+                </a>
+                <a href="#"
+                    class="min-w-[110px] bg-white/90 backdrop-blur p-4 rounded-2xl shadow-2xl flex flex-col items-center gap-2 hover:-translate-y-2 transition duration-300 border-b-4 border-muniYellow group">
+                    <img src="img/logo corre (1).png" class="w-10 h-10 object-contain group-hover:scale-110 transition"
+                        alt="Peaje">
+                    <span class="text-[9px] font-black text-gray-500 uppercase">Peaje</span>
+                </a>
+                <a href="tel:0376-4497734"
+                    class="min-w-[110px] bg-white/90 backdrop-blur p-4 rounded-2xl shadow-2xl flex flex-col items-center gap-2 hover:-translate-y-2 transition duration-300 border-b-4 border-blue-400 group">
+                    <img src="img/logo hos (2).png" class="w-10 h-10 object-contain group-hover:scale-110 transition"
+                        alt="Prefectura">
+                    <span class="text-[9px] font-black text-gray-500 uppercase">Prefectura</span>
+                </a>
+                <a href="tel:4497100"
+                    class="min-w-[110px] bg-white/90 backdrop-blur p-4 rounded-2xl shadow-2xl flex flex-col items-center gap-2 hover:-translate-y-2 transition duration-300 border-b-4 border-muniYellow group">
+                    <img src="img/logo comando (1).png"
+                        class="w-10 h-10 object-contain group-hover:scale-110 transition" alt="Comando">
+                    <span class="text-[9px] font-black text-gray-500 uppercase">Comando</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <a href="obras-publicas.html"
+                class="group bg-white p-8 rounded-[2rem] shadow-xl border border-gray-100 flex items-center justify-between transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
+                <div class="flex items-center gap-5">
+                    <div
+                        class="w-14 h-14 bg-muniDark rounded-2xl flex items-center justify-center group-hover:bg-muniYellow transition-colors">
+                        <i class="fas fa-hammer text-white group-hover:text-black text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-black text-muniDark uppercase italic">Obras Públicas</h3>
+                        <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Infraestructura</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right text-gray-300 group-hover:text-muniYellow transition-colors"></i>
+            </a>
+
+            <a href="equipos.html"
+                class="group bg-white p-8 rounded-[2rem] shadow-xl border border-gray-100 flex items-center justify-between transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
+                <div class="flex items-center gap-5">
+                    <div
+                        class="w-14 h-14 bg-muniDark rounded-2xl flex items-center justify-center group-hover:bg-muniYellow transition-colors">
+                        <i class="fas fa-trophy text-white group-hover:text-black text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-black text-muniDark uppercase italic">Liga Municipal</h3>
+                        <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Deportes</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right text-gray-300 group-hover:text-muniYellow transition-colors"></i>
+            </a>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h3 class="text-muniDark text-3xl md:text-5xl font-black mb-6 leading-tight italic">"Un próspero 2026 para
+                todos los vecinos de Santa Ana"</h3>
+            <div class="h-1.5 w-24 bg-muniYellow mx-auto mb-8 rounded-full"></div>
+            <p class="text-gray-500 text-lg font-medium leading-relaxed">
+                La Municipalidad de Santa Ana saluda a toda la comunidad y les desea un año colmado de salud, trabajo,
+                unión y bienestar para todas las familias misioneras.
+            </p>
+        </div>
+    </section>
+
+    <section id="actividades" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+                <div>
+                    <span class="text-muniYellow font-black uppercase tracking-widest text-sm">Comunidad en
+                        Movimiento</span>
+                    <h2 class="text-4xl font-black text-muniDark mt-2 uppercase">Actividades Municipales</h2>
+                </div>
+                <a href="actividades.html"
+                    class="text-sm font-bold border-b-2 border-muniYellow pb-1 hover:text-gray-500 transition">Ver
+                    cronograma completo de las actividades municipales →</a>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div
+                    class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition duration-500 border border-gray-100">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div
+                            class="w-12 h-12 bg-muniYellow rounded-2xl flex items-center justify-center shadow-lg shadow-muniYellow/20">
+                            <i class="fas fa-palette text-black"></i>
+                        </div>
+                        <h3 class="text-2xl font-black uppercase tracking-tight">Talleres Culturales</h3>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div
+                            class="group flex items-center justify-between p-4 rounded-2xl hover:bg-muniGray transition">
+                            <div class="flex items-center gap-4">
+                                <img src="img/PATIN.png" class="w-10 h-10 object-contain" alt="">
+                                <div>
+                                    <p class="font-black text-sm uppercase">Patín Artístico</p>
+                                    <p class="text-xs text-gray-500 font-bold">Viernes 18:30hs · Prof. Aylen Werner</p>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/5493754444608"
+                                class="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center hover:bg-green-600 hover:text-white transition shadow-sm"><i
+                                    class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <div
+                            class="group flex items-center justify-between p-4 rounded-2xl hover:bg-muniGray transition border-t border-gray-50">
+                            <div class="flex items-center gap-4">
+                                <img src="img/yogaa.png" class="w-10 h-10 object-contain" alt="">
+                                <div>
+                                    <p class="font-black text-sm uppercase">Yoga Integral</p>
+                                    <p class="text-xs text-gray-500 font-bold">Lun y Mié · Infantil 17hs / Adulto
+                                        19:30hs</p>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center hover:bg-green-600 hover:text-white transition shadow-sm"><i
+                                    class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <div
+                            class="group flex items-center justify-between p-4 rounded-2xl hover:bg-muniGray transition border-t border-gray-50">
+                            <div class="flex items-center gap-4">
+                                <img src="img/Voleibol Newcom.png" class="w-10 h-10 object-contain" alt="">
+                                <div>
+                                    <p class="font-black text-sm uppercase">Voleibol Newcom</p>
+                                    <p class="text-xs text-gray-500 font-bold">Mar y Vier · 16:30hs a 20hs
+                                        19:30hs</p>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/5493764579480?text=Hola,%20quiero%20inscribirme%20en%20Voleibol%20NEWCOM"
+                                class="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center hover:bg-green-600 hover:text-white transition shadow-sm"><i
+                                    class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <div
+                            class="group flex items-center justify-between p-4 rounded-2xl hover:bg-muniGray transition border-t border-gray-50">
+                            <div class="flex items-center gap-4">
+                                <img src="img/zumba.png" class="w-10 h-10 object-contain" alt="">
+                                <div>
+                                    <p class="font-black text-sm uppercase">Zumba</p>
+                                    <p class="text-xs text-gray-500 font-bold">Mar y Juev · 18:30hs
+                                        19:30hs</p>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/5493764211086?text=Hola,%20quiero%20inscribirme%20en%20Zumba"
+                                class="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center hover:bg-green-600 hover:text-white transition shadow-sm"><i
+                                    class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <div
+                            class="group flex items-center justify-between p-4 rounded-2xl hover:bg-muniGray transition border-t border-gray-50">
+                            <div class="flex items-center gap-4">
+                                <img src="img//Robotica.png" class="w-10 h-10 object-contain" alt="">
+                                <div>
+                                    <p class="font-black text-sm uppercase">Robotica</p>
+                                    <p class="text-xs text-gray-500 font-bold">A partir de 5 años en adelante.</p>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/5493764727920?text=Hola,%20quiero%20inscribirme%20en%20Robotica"
+                                class="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center hover:bg-green-600 hover:text-white transition shadow-sm"><i
+                                    class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <div
+                            class="group flex items-center justify-between p-4 rounded-2xl hover:bg-muniGray transition border-t border-gray-50">
+                            <div class="flex items-center gap-4">
+                                <img src="img/feriantes (1).png" class="w-10 h-10 object-contain" alt="">
+                                <div>
+                                    <p class="font-black text-sm uppercase">Feriantes</p>
+                                    <p class="text-xs text-gray-500 font-bold"> Feriantes Frente a la Ex-Municipalidad.
+                                        <strong>Martes y jueves 07hs a 11hs. Viernes de 18hs
+                                            a 21hs</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/5493764727920?text=Hola,%20quiero%20informacion%20sobre%20los%20feriantes"
+                                class="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center hover:bg-green-600 hover:text-white transition shadow-sm"><i
+                                    class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition duration-500 border border-gray-100">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div
+                            class="w-12 h-12 bg-muniDark rounded-2xl flex items-center justify-center shadow-lg shadow-black/10">
+                            <i class="fas fa-hand-holding-heart text-muniYellow"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-black uppercase tracking-tight text-muniDark leading-none">
+                                Servicios C.I.C</h3>
+                            <p class="text-[10px] text-gray-400 font-bold uppercase mt-1">Gestión Social y Salud</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+
+                        <div
+                            class="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center text-center gap-2 group hover:bg-muniDark transition duration-300">
+                            <i class="fas fa-graduation-cap text-muniDark group-hover:text-muniYellow text-xl"></i>
+                            <p class="text-[10px] font-black uppercase group-hover:text-white">Sipted</p>
+                        </div>
+
+                        <div
+                            class="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center text-center gap-2 group hover:bg-muniDark transition duration-300">
+                            <i class="fas fa-users-rectangle text-muniDark group-hover:text-muniYellow text-xl"></i>
+                            <p class="text-[10px] font-black uppercase group-hover:text-white">Social</p>
+                        </div>
+
+                        <div
+                            class="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center text-center gap-2 group hover:bg-muniDark transition duration-300">
+                            <i class="fas fa-stethoscope text-muniDark group-hover:text-muniYellow text-xl"></i>
+                            <p class="text-[10px] font-black uppercase group-hover:text-white">PAMI Ozuna</p>
+                        </div>
+
+                        <div
+                            class="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center text-center gap-2 group hover:bg-muniDark transition duration-300">
+                            <i class="fas fa-paw text-muniDark group-hover:text-muniYellow text-xl"></i>
+                            <p class="text-[10px] font-black uppercase group-hover:text-white">Veterinaria</p>
+                        </div>
+
+                        <div
+                            class="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center text-center gap-2 group hover:bg-muniDark transition duration-300">
+                            <i class="fas fa-apple-whole text-muniDark group-hover:text-muniYellow text-xl"></i>
+                            <p class="text-[10px] font-black uppercase group-hover:text-white">Hambre Cero</p>
+                        </div>
+
+                        <div
+                            class="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center text-center gap-2 group hover:bg-muniDark transition duration-300">
+                            <i class="fas fa-folder-tree text-muniDark group-hover:text-muniYellow text-xl"></i>
+                            <p class="text-[10px] font-black uppercase group-hover:text-white">Procipo</p>
+                        </div>
+
+                        <div
+                            class="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center text-center gap-2 group hover:bg-muniDark transition duration-300">
+                            <i
+                                class="fas fa-wheat-awn-circle-exclamation text-muniDark group-hover:text-muniYellow text-xl"></i>
+                            <p class="text-[10px] font-black uppercase group-hover:text-white">Celíacos</p>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="https://wa.me/5493765208091?text=Hola,%20deseo%20consultar%20sobre%20los%20servicios%20del%20CIC"
+                            target="_blank"
+                            class="flex items-center justify-center gap-3 w-full bg-muniDark text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-muniYellow hover:text-black transition duration-300 shadow-lg shadow-black/10">
+                            <i class="fab fa-whatsapp text-lg"></i>
+                            Consultas Acción Social
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="relative rounded-[40px] overflow-hidden shadow-2xl bg-muniDark group">
+                <div class="flex flex-col lg:flex-row items-center">
+                    <div class="lg:w-1/2 overflow-hidden">
+                        <img src="noticias/estudiantina.png"
+                            class="w-full h-[500px] object-cover group-hover:scale-110 transition duration-[2s]"
+                            alt="Estudiantina">
+                    </div>
+                    <div class="lg:w-1/2 p-12 text-white">
+                        <span class="text-muniYellow font-black text-sm uppercase tracking-widest">Cultura &
+                            Eventos</span>
+                        <h2 class="text-4xl font-black mt-4 leading-none uppercase">Estudiantina 2025: <br>Un éxito
+                            rotundo</h2>
+                        <p class="mt-6 text-gray-400 font-medium leading-relaxed">
+                            Una multitud acompañó las demostraciones artísticas y culturales de las escuelas del
+                            municipio gestionado por <span class="text-white font-bold">Mabel Pezoa</span>. La avenida
+                            principal se llenó de brillo con la elección de reyes de nivel primario.
+                        </p>
+                        <div class="mt-10">
+                            <a href="noticias.html"
+                                class="inline-block bg-white text-black px-10 py-4 rounded-full font-black hover:bg-muniYellow transition transform hover:-translate-x-2">LEER
+                                MÁS →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Turismo" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span
+                    class="bg-muniYellow text-black px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest">Destinos</span>
+                <h2 class="text-4xl md:text-5xl font-black text-muniDark mt-4 uppercase italic">Explora Santa Ana</h2>
+            </div>
+
+            <div class="max-w-5xl mx-auto">
+                <div class="swiper mySwiper h-[400px] rounded-[3rem] shadow-2xl border-8 border-white overflow-hidden">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide relative">
+                            <img src="Turismo/cam.jpg" class="w-full h-full object-cover" alt="Camping La Boca">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent">
+                            </div>
+                            <div
+                                class="absolute bottom-8 left-8 right-8 md:right-auto bg-white/95 backdrop-blur-md p-6 rounded-3xl shadow-2xl max-w-sm">
+                                <h4 class="font-black text-xl text-muniDark uppercase italic leading-none">Camping La
+                                    Boca</h4>
+                                <p class="text-[10px] text-gray-500 mt-2 font-bold uppercase tracking-wider">Parrillas ·
+                                    Bajada de lancha · Seguridad</p>
+                                <div class="mt-4 w-10 h-1 bg-muniYellow rounded-full"></div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide relative">
+                            <img src="Turismo/Cruz (1).jpg" class="w-full h-full object-cover" alt="Parque de la Cruz">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent">
+                            </div>
+                            <div
+                                class="absolute bottom-8 left-8 right-8 md:right-auto bg-white/95 backdrop-blur-md p-6 rounded-3xl shadow-2xl max-w-sm">
+                                <h4 class="font-black text-xl text-muniDark uppercase italic leading-none">Parque de la
+                                    Cruz</h4>
+                                <p class="text-[10px] text-gray-500 mt-2 font-bold uppercase tracking-wider">Vistas
+                                    panorámicas únicas en Misiones</p>
+                                <div class="mt-4 w-10 h-1 bg-muniYellow rounded-full"></div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide relative">
+                            <img src="Turismo/Reducciones (1).jpg" class="w-full h-full object-cover"
+                                alt="Parque de la Cruz">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent">
+                            </div>
+                            <div
+                                class="absolute bottom-8 left-8 right-8 md:right-auto bg-white/95 backdrop-blur-md p-6 rounded-3xl shadow-2xl max-w-sm">
+                                <h4 class="font-black text-xl text-muniDark uppercase italic leading-none">Misión
+                                    Jesuíticas Guaraní Nuestra Señora De Santa
+                                    Ana</h4>
+                                <div class="mt-4 w-10 h-1 bg-muniYellow rounded-full"></div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide relative">
+                            <img src="Turismo/campo (6).jpg" class="w-full h-full object-cover" alt="Parque de la Cruz">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent">
+                            </div>
+                            <div
+                                class="absolute bottom-8 left-8 right-8 md:right-auto bg-white/95 backdrop-blur-md p-6 rounded-3xl shadow-2xl max-w-sm">
+                                <h4 class="font-black text-xl text-muniDark uppercase italic leading-none">Parque
+                                    Federal Campo San Juan</h4>
+                                <p class="text-[10px] text-gray-500 mt-2 font-bold uppercase tracking-wider">Vistas
+                                    panorámicas únicas en Misiones</p>
+                                <div class="mt-4 w-10 h-1 bg-muniYellow rounded-full"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="swiper-button-next !text-white !w-12 !h-12 bg-black/20 backdrop-blur rounded-full after:!text-sm hover:bg-muniYellow hover:!text-black transition">
+                    </div>
+                    <div
+                        class="swiper-button-prev !text-white !w-12 !h-12 bg-black/20 backdrop-blur rounded-full after:!text-sm hover:bg-muniYellow hover:!text-black transition">
+                    </div>
+                    <div class="swiper-pagination !bottom-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const toggles = document.querySelectorAll("[data-toggle]");
-            toggles.forEach(toggle => {
-                toggle.addEventListener("click", (e) => {
-                    e.preventDefault();
-                    const menuName = toggle.getAttribute("data-toggle");
-                    const menu = document.querySelector(`[data-menu="${menuName}"]`);
-                    // Cierra otros menús abiertos
-                    document.querySelectorAll("[data-menu]").forEach(m => {
-                        if (m !== menu) m.classList.add("hidden");
-                    });
-                    // Toggle de visibilidad
-                    menu.classList.toggle("hidden");
-                });
-            });
-            // Oculta el menú si se hace clic fuera
-            document.addEventListener("click", (e) => {
-                if (!e.target.closest("[data-toggle]") && !e.target.closest("[data-menu]")) {
-                    document.querySelectorAll("[data-menu]").forEach(m => m.classList.add("hidden"));
-                }
+        document.addEventListener('DOMContentLoaded', function () {
+            new Swiper(".mySwiper", {
+                loop: true,
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
             });
         });
     </script>
-    <!-- Carrusel automático con barra de iconos transparente -->
-    <div class="relative overflow-hidden h-[650px] w-screen">
-        <!-- Carrusel -->
-        <div id="carousel" class="flex transition-transform duration-[8000] ease-in-out w-full h-full">
-            <img src="Encabezado/1.png" alt="Imagen 1" class="w-full h-full object-cover flex-shrink-0" />
-            <img src="Encabezado/2.png" alt="Imagen 2" class="w-full h-full object-cover flex-shrink-0" />
-            <img src="Encabezado/3.png" alt="Imagen 3" class="w-full h-full object-cover flex-shrink-0" />
-            <img src="Encabezado/4.png" alt="Imagen 4" class="w-full h-full object-cover flex-shrink-0" />
-            <img src="Encabezado/5.png" alt="Imagen 5" class="w-full h-full object-cover flex-shrink-0" />
+
+    <footer class="bg-muniDark text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <img src="img/logosan.png" class="h-20 brightness-200 mb-6" alt="">
+                <p class="text-gray-400 text-sm font-medium">Trabajando por el desarrollo sustentable y el bienestar de
+                    cada vecino de Santa Ana, Misiones.</p>
+            </div>
+            <div>
+                <h5 class="font-black text-muniYellow uppercase text-sm mb-6 tracking-widest">Menú Rápido</h5>
+                <ul class="space-y-3 text-sm text-gray-300">
+                    <li><a href="https://wa.me/5493765216291?text=Hola,%20quisiera%20poder%20hablar%20con%20la%20Intendenta"
+                            class="hover:text-white transition">Mesa de entrada</a></li>
+                    <li><a href="https://wa.me/5493765216293?text=Hola,%20quisiera%20información%20sobre%20Recaudaciones"
+                            class="hover:text-white transition">Recaudaciones</a></li>
+                    <li><a href="https://wa.me/5493765208091?text=Hola,%20quisiera%20información%20sobre%20Calidad%20de%20Vida"
+                            class="hover:text-white transition">Calidad de Vida</a></li>
+                    <li><a href="https://wa.me/5493765208039?text=Hola,%20quisiera%20información%20sobre%20Obra%20Pública"
+                            class="hover:text-white transition">Obra Pública</a></li>
+                    <li><a href="https://wa.me/5493765216294?text=Hola,%20quisiera%20información%20sobre%20Agua%20Potable"
+                            class="hover:text-white transition">Agua Potable</a></li>
+                    <li><a href="https://chat.whatsapp.com/IKqujeJkOi54nDEFW3yyCT"
+                            class="hover:text-white transition">Feriantes</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-black text-muniYellow uppercase text-sm mb-6 tracking-widest">Nuestra Ubicación</h5>
+                <div
+                    class="rounded-2xl overflow-hidden h-32 opacity-50 grayscale hover:grayscale-0 transition duration-500">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14169.117145780512!2d-55.5786411!3d-27.3981084!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be28d4474327%3A0x89798544d67319c5!2sMunicipalidad%20De%20Santa%20Ana!5e0!3m2!1ses-419!2sar!4v1716388484196!5m2!1ses-419!2sar"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
         </div>
-        <!-- Barra de Iconos flotando sobre el carrusel -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 
-    rounded-xl px-6 py-4 
-    flex flex-wrap md:flex-nowrap justify-center items-center gap-6 
-    shadow-lg border border-gray-300 
-    bg-white/70 backdrop-blur-md 
-    w-[95%] sm:w-[85%] md:w-[70%] lg:w-[50%] xl:w-[40%] max-w-5xl">
-            <a href="tel:4497027" class="group hover:bg-green-700 p-3 rounded-full transition duration-300">
-                <img src="img/logo hos (1).png" alt="Hospital Nivel I Santa Ana" class="w-16 h-16">
-            </a>
-            <a href="tel:4497100" class="group hover:bg-green-700 p-3 rounded-full transition duration-300">
-                <img src="img/logo bomber (2).png" alt="Bomberos Santa Ana" class="w-16 h-16">
-            </a>
-            <a href="tel:4497100" class="group hover:bg-green-700 p-3 rounded-full transition duration-300">
-                <img src="img/logo hos.png" alt="Policía de Misiones" class="w-16 h-16">
-            </a>
-            <a href="tel:0376-4497734" class="group hover:bg-green-700 p-3 rounded-full transition duration-300">
-                <img src="img/logo hos (2).png" alt="Prefectura Naval Argentina" class="w-16 h-16">
-            </a>
-            <a href="tel:" class="group hover:bg-green-700 p-3 rounded-full transition duration-300">
-                <img src="img/logo corre (1).png" alt="Peaje" class="w-16 h-16">
-            </a>
-            <a href="tel:4497100" class="group hover:bg-green-700 p-3 rounded-full transition duration-300">
-                <img src="img/logo comando (1).png" alt="Comando Radioelectrico" class="w-16 h-16">
-            </a>
+        <div
+            class="max-w-7xl mx-auto px-6 border-t border-white/10 mt-20 pt-10 text-center text-[10px] text-gray-500 font-bold uppercase tracking-widest">
+            © 2026 Municipalidad de Santa Ana - Misiones | Todos los derechos reservados
         </div>
-    </div>
-    <!-- Script del carrusel automático -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+        // Swiper Config
+        const swiper = new Swiper(".mySwiper", {
+            loop: true,
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+            autoplay: { delay: 5000 },
+        });
+
+        // Carrusel Hero Manual mejorado
         const carousel = document.getElementById('carousel');
         const slides = carousel.children.length;
         let index = 0;
         setInterval(() => {
             index = (index + 1) % slides;
             carousel.style.transform = `translateX(-${index * 100}%)`;
-        }, 8000); // Cambio cada 8 segundos
-    </script>
-    <section id="actividades" class="bg-[#ECECEC] py-16 px-4">
-        <div class="max-w-6xl mx-auto bg-white rounded-3xl shadow-xl p-10">
-            <h2 class="text-4xl font-bold text-gray-800 text-center mb-10">
-                Actividades Municipales:
-            </h2>
+        }, 8000);
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Columna 1: Talleres Municipales -->
-                <div>
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Talleres Municipales</h3>
-                    <ul class="space-y-6">
-                        <!-- Patin -->
-                        <li class="flex items-center justify-between">
-                            <div class="flex items-center gap-4">
-                                <img src="img/PATIN.png" alt="Patin" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">
-                                    Patin - Viernes a 18:30hs Prof. Aylen Werner.
-                                </span>
-                            </div>
-                            <div class="flex gap-2">
-                                <a href="https://wa.me/5493754444608?text=Hola,%20quiero%20inscribirme%20en%20Patin"
-                                    target="_blank"
-                                    class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
-                                    WhatsApp
-                                </a>
-                            </div>
-                        </li>
-                        <!-- Yoga -->
-                        <li class="flex items-center justify-between">
-                            <div class="flex items-center gap-4">
-                                <img src="img/yogaa.png" alt="Yoga" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">
-                                    Yoga - (Lunes - Miércoles) Infantil 17:00 - Adulto 19:30
-                                </span>
-                            </div>
-                            <div class="flex gap-2">
-                                <a href="https://wa.me/5493764211086?text=Hola,%20quiero%20inscribirme%20en%20Yoga"
-                                    target="_blank"
-                                    class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
-                                    WhatsApp
-                                </a>
-                            </div>
-                        </li>
-                        <!-- Voleibol Newcom -->
-                        <li class="flex items-center justify-between">
-                            <div class="flex items-center gap-4">
-                                <img src="img/Voleibol Newcom.png" alt="Voleibol Newcom" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">
-                                    Voleibol NEWCOM Polideportivo Municipal Santa Ana - Viernes 17:00hs
-                                </span>
-                            </div>
-                            <div class="flex gap-2">
-                                <a href="https://wa.me/5493764579480?text=Hola,%20quiero%20inscribirme%20en%20Voleibol%20NEWCOM"
-                                    target="_blank"
-                                    class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
-                                    WhatsApp
-                                </a>
-                            </div>
-                        </li>
-                        <!-- Zumba -->
-                        <li class="flex items-center justify-between">
-                            <div class="flex items-center gap-4">
-                                <img src="img/zumba.png" alt="Zumba" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">
-                                    Zumba - (Martes y Jueves) 18:30hs.
-                                </span>
-                            </div>
-                            <div class="flex gap-2">
-                                <a href="https://wa.me/5493764211086?text=Hola,%20quiero%20inscribirme%20en%20Zumba"
-                                    target="_blank"
-                                    class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
-                                    WhatsApp
-                                </a>
-                            </div>
-                        </li>
-                        <!-- Robotica -->
-                        <li class="flex items-center justify-between">
-                            <div class="flex items-center gap-4">
-                                <img src="img/Robotica.png" alt="Robotica" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">
-                                    Robotica - 5 años en adelante.
-                                </span>
-                            </div>
-                            <div class="flex gap-2">
-                                <a href="https://wa.me/5493764727920?text=Hola,%20quiero%20inscribirme%20en%20Robotica"
-                                    target="_blank"
-                                    class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
-                                    WhatsApp
-                                </a>
-                            </div>
-                        </li>
-                        <!-- Futbol -->
-                        <li class="flex items-center justify-between">
-                            <div class="flex items-center gap-4">
-                                <img src="img/Futbol.png" alt="Futbol" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">
-                                    Campeonato local de fútbol: Veterano, senior y la liga.
-                                </span>
-                            </div>
-                            <div class="flex gap-2">
-                                <a href="https://wa.me/5493764393175?text=Hola,%20quiero%20inscribirme%20en%20el%20Torneo"
-                                    target="_blank"
-                                    class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
-                                    WhatsApp
-                                </a>
-                            </div>
-                        </li>
-                        <!-- Feriantes -->
-                        <li class="flex items-center justify-between">
-                            <div class="flex items-center gap-4">
-                                <img src="img/feriantes (1).png" alt="Feriantes" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">
-                                    Feriantes Frente a la Ex-Municipalidad. Martes y jueves 07hs a 11hs Viernes de 18hs
-                                    a 21hs
-                                </span>
-                            </div>
-                            <div class="flex gap-2">
-                                <a href="https://wa.me/5493764727920?text=Hola,%20quiero%20informacion%20sobre%20los%20feriantes"
-                                    target="_blank"
-                                    class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
-                                    WhatsApp
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Columna 2: Actividades del C.I.C -->
-                <div>
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">C.I.C</h3>
-                    <ul class="space-y-6">
-                        <li class="flex items-center gap-4">
-                            <img src="img/redondo.png" alt="Sipted" class="w-12 h-12">
-                            <span class="text-lg text-gray-700 font-medium">Sipted</span>
-                        </li>
-                        <li class="flex items-center gap-4">
-                            <img src="img/redondo.png" alt="Trabajador Social" class="w-12 h-12">
-                            <span class="text-lg text-gray-700 font-medium">Trabajador Social</span>
-                        </li>
-                        <li class="flex items-center gap-4">
-                            <img src="img/redondo.png" alt="Doctor de pami Ozuna" class="w-12 h-12">
-                            <span class="text-lg text-gray-700 font-medium">Doctor de pami Ozuna</span>
-                        </li>
-                        <li class="flex items-center gap-4">
-                            <img src="img/redondo.png" alt="Veterinaria" class="w-12 h-12">
-                            <span class="text-lg text-gray-700 font-medium">Veterinaria</span>
-                        </li>
-                        <li class="flex items-center gap-4">
-                            <img src="img/redondo.png" alt="Sala de computación de la epet" class="w-12 h-12">
-                            <span class="text-lg text-gray-700 font-medium">Sala de computación de la epet</span>
-                        </li>
-                        <li class="flex items-center gap-4">
-                            <img src="img/redondo.png" alt="Hambre cero" class="w-12 h-12">
-                            <span class="text-lg text-gray-700 font-medium">Hambre cero</span>
-                        </li>
-                        <li class="flex items-center gap-4">
-                            <img src="img/redondo.png" alt="Procipo" class="w-12 h-12">
-                            <span class="text-lg text-gray-700 font-medium">Procipo</span>
-                        </li>
-                        <!-- Celíaco -->
-                        <li class="flex items-center justify-between">
-                            <div class="flex items-center gap-4">
-                                <img src="img/redondo.png" alt="Celíaco" class="w-12 h-12">
-                                <span class="text-lg text-gray-700 font-medium">Celíaco</span>
-                            </div>
-                            <div class="flex gap-2">
-                                <a href="https://wa.me/5493765208091?text=Hola,%20quiero%20informacion%20sobre%20celiaquía"
-                                    target="_blank"
-                                    class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-sm font-semibold">
-                                    WhatsApp
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Botón Ver más -->
-            <div class="flex justify-center mt-12">
-                <a href="actividades.html"
-                    class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300 text-center w-full sm:w-auto">
-                    Ver más sobre las actividades
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 🔥 NOTICIA PRINCIPAL DESTACADA -->
-    <section class="w-full bg-white py-16 px-6">
-        <div class="max-w-6xl mx-auto bg-white rounded-3xl shadow-xl p-10">
-
-            <!-- Imagen de la noticia -->
-            <img src="noticias/estudiantina.png" alt="Noticia destacada" class="w-full h-80 object-cover">
-
-            <!-- Contenido -->
-            <div class="p-8 text-center">
-                <h2 class="text-4xl font-extrabold text-gray-900 mb-4"> Noticia Importante del Día</h2>
-
-                <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                    Finalmente se vivió la primera noche de la fiesta grande de los estudiantes de Santa Ana, la
-                    <strong>ESTUDIANTINA 2025 con elección de los reyes de las escuelas primarias.</strong>
-
-                    Una multitud acompañó las demostraciones artísticas y culturales de las escuelas primarias y
-                    secundarias del municipio que gestiona <strong>Mabel Pezoa</strong> en el espacio tradicional de la
-                    avenida principal
-                    del Pueblo.
-                </p>
-
-                <a href="noticias.html"
-                    class="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition">
-                    Leer noticia completa
-                </a>
-            </div>
-
-        </div>
-    </section>
-
-
-    <section id="Turismo" class="px-4 py-16 bg-white">
-        <h2 class="text-4xl font-bold text-center text-black-800 mb-12">Turismo</h2>
-        <div class="flex flex-col lg:flex-row items-center gap-10 mb-16">
-            <!-- Carrusel de imágenes -->
-            <div class="w-full lg:w-1/2">
-                <div class="swiper mySwiper rounded-2xl shadow-lg">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="Turismo/cam.jpg" alt="Camping"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/cam1.jpg" alt="Camping"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/cam2.jpg" alt="Camping"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/cam3.jpg" alt="Camping"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                    </div>
-                    <!-- Botones de navegación -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-            <!-- Descripción -->
-            <div class="lg:w-1/2">
-                <h3 class="text-2xl font-semibold text-black-700 mb-4">Camping La Boca Santa Ana</h3>
-                <p class="mb-4 text-gray-700">Ofrecemos una variedad de servicios para una estadía cómoda:</p>
-                <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
-                    <li>Mesas, bancos y parrillas</li>
-                    <li>Cantina, sanitarios y duchas</li>
-                    <li>Estacionamiento y bajada de lancha</li>
-                    <li>Seguridad, enfermería y preventistas acuáticos</li>
-                </ul>
-                <div class="flex flex-wrap gap-4">
-                    <button
-                        class="px-5 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition">Escribinos</button>
-                    <a href="https://www.google.com/maps/place/Camping+La+Boca" target="_blank"
-                        class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Nuestra
-                        Ubicación</a>
-                </div>
-            </div>
-        </div>
-        <div class="flex flex-col lg:flex-row items-center gap-10 mb-16">
-            <!-- Carrusel de imágenes -->
-            <div class="w-full lg:w-1/2">
-                <div class="swiper mySwiper rounded-2xl shadow-lg">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="Turismo/Cruz (1).jpg" alt="CRUZ"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Cruz (2).jpg" alt="CRUZ"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Cruz (3).jpg" alt="CRUZ"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Cruz (4).jpg" alt="CRUZ"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Cruz (5).jpg" alt="CRUZ"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Cruz (7).jpg" alt="CRUZ"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Cruz (8).jpg" alt="CRUZ"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Cruz (9).jpg" alt="CRUZ"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Cruz (10).jpg" alt="CRUZ"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Cruz (11).jpg" alt="CRUZ"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Cruz (12).jpg" alt="CRUZ"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Cruz (13).jpg" alt="CRUZ"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Cruz (14).jpg" alt="CRUZ"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Cruz (15).jpg" alt="CRUZ"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Cruz (16).jpg" alt="CRUZ"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Cruz (17).jpg" alt="CRUZ"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Cruz (18).jpg" alt="CRUZ"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Cruz (19).jpg" alt="CRUZ"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                    </div>
-                    <!-- Botones de navegación -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-            <!-- Descripción -->
-            <div class="lg:w-1/2">
-                <h3 class="text-2xl font-semibold text-black-700 mb-4">Parque Tematico De La Cruz</h3>
-                <p class="mb-4 text-gray-700">El principal atractivo del parque es una imponente cruz de 82 metros de
-                    altura, compuesta por una
-                    estructura metálica de 52 metros sobre una base de hormigón de 30 metros. Los visitantes pueden
-                    ascender mediante un ascensor hasta los brazos de la cruz, desde donde se obtienen vistas
-                    panorámicas de la selva misionera. El parque cuenta con diversas instalaciones y actividades:</p>
-                <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
-                    <li>Senderos Tematicos.</li>
-                    <li>Mariposario y Orquideario.</li>
-                    <li>Teatro de la Selva.</li>
-                    <li>Anfiteatro Natural.</li>
-                    <li>Restaurante.</li>
-                    <li>Capilla.</li>
-                </ul>
-                <div class="flex flex-wrap gap-4">
-                    <a href="https://maps.app.goo.gl/eg7JM1vt5saxBtHJA?g_st=com.google.maps.preview.copy"
-                        target="_blank"
-                        class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Nuestra
-                        Ubicación</a>
-                </div>
-            </div>
-        </div>
-        <div class="flex flex-col lg:flex-row items-center gap-10 mb-16">
-            <!-- Carrusel de imágenes -->
-            <div class="w-full lg:w-1/2">
-                <div class="swiper mySwiper rounded-2xl shadow-lg">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (1).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (2).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (3).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (4).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (5).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (6).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (7).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (8).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (9).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (10).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (11).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (12).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (13).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (14).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (15).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (16).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (17).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (18).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (19).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (20).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (21).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (24).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/Reducciones (25).jpg" alt="RUINAS"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                    </div>
-                    <!-- Botones de navegación -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-            <!-- Descripción -->
-            <div class="lg:w-1/2">
-                <h3 class="text-2xl font-semibold text-black-700 mb-4">Misión Jesuíticas Guaraní Nuestra Señora De Santa
-                    Ana</h3>
-                <p class="mb-4 text-gray-700">La Misión Jesuítica Guaraní Nuestra Señora de Santa Ana fue una de las
-                    reducciones fundadas por la
-                    Compañía de Jesús en el siglo XVII en América del Sur, durante el período colonial español.
-                    Establecida en 1633, esta misión se encuentra en la actual provincia de Misiones, Argentina,
-                    específicamente en el municipio de Santa Ana.</p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="https://maps.app.goo.gl/ZLtih2hoiVqFJrWq8?g_st=com.google.maps.preview.copy"
-                        target="_blank"
-                        class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Nuestra
-                        Ubicación</a>
-                </div>
-            </div>
-        </div>
-        <div class="flex flex-col lg:flex-row items-center gap-10 mb-16">
-            <!-- Carrusel de imágenes -->
-            <div class="w-full lg:w-1/2">
-                <div class="swiper mySwiper rounded-2xl shadow-lg">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="Turismo/camposan.jpg" alt="Campo SAN JUNA"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/campo (4).jpg" alt="Campo SAN JUAN"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/campo (5).jpg" alt="Campo SAN JUAN"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/campo (6).jpg" alt="Campo SAN JUAN"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/campo (7).jpg" alt="Campo SAN JUAN"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/campo (8).jpg" alt="Campo SAN JUAN"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/campo (9).jpg" alt="Campo SAN JUAN"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/campo (10).jpg" alt="Campo SAN JUAN"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/campo (11).jpg" alt="Campo SAN JUAN"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/campo (12).jpg" alt="Campo SAN JUAN"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/campo (2).jpg" alt="Campo SAN JUAN"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                        <div class="swiper-slide"><img src="Turismo/campo (3).jpg" alt="Campo SAN JUAN"
-                                class="w-full h-96 object-cover rounded-2xl"></div>
-                    </div>
-                    <!-- Botones de navegación -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-            <!-- Descripción -->
-            <div class="lg:w-1/2">
-                <h3 class="text-2xl font-semibold text-black-700 mb-4">Parque Federal Campo San Juan</h3>
-                <p class="mb-4 text-gray-700">Es una reserva natural ubicada en la localidad de Santa Ana, en la
-                    provincia de Misiones, Argentina.
-                    Con una extensión de más de 5.000 hectáreas, esta área protegida se destaca por ser la primera en el
-                    país con una gestión conjunta entre el gobierno nacional y una provincia.
-                    En cuanto a su biodiversidad, el parque es hogar de más de 200 especies de aves, incluyendo al
-                    Burrito Ocelado, una especie emblemática de la región. También se pueden encontrar mamíferos como
-                    corzuelas pardas, osos meleros, carpinchos y diversas especies de zorros. La flora predominante
-                    incluye pastizales, pajonales y selvas en galería que acompañan los cursos de agua.</p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="https://maps.app.goo.gl/55TKKo9Bud3hZJ267?g_st=com.google.maps.preview.copy"
-                        target="_blank"
-                        class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Nuestra
-                        Ubicación</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script>
-        const swiper = new Swiper('.mySwiper', {
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+        // Mobile Menu Logic
+        const btnMobile = document.getElementById('btn-mobile');
+        btnMobile.addEventListener('click', () => {
+            alert('Integrar Menú Lateral o Dropdown Mobile aquí');
         });
     </script>
-    <footer class="bg-black/80 text-white py-10 mt-12 rounded-t-2xl shadow-inner backdrop-blur-sm">
-        <div class="max-w-7xl mx-auto px-4">
-            <!-- Sección de Contactos -->
-            <div class="mb-6">
-                <h2 class="text-center text-xl font-semibold mb-6">Contactos Municipales</h2>
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 justify-items-center">
-                    <!-- Municipalidad -->
-                    <a href="https://wa.me/5493765216291?text=Hola,%20quisiera%20poder%20hablar%20con%20la%20Intendenta"
-                        target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fas fa-city text-3xl"></i>
-                        <p class="text-sm">Mesa de Entrada</p>
-                    </a>
-                    <!-- Recaudaciones -->
-                    <a href="https://wa.me/5493765216293?text=Hola,%20quisiera%20información%20sobre%20Recaudaciones"
-                        target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fas fa-wallet text-3xl"></i>
-                        <p class="text-sm">Recaudaciones</p>
-                    </a>
-                    <!-- Calidad de Vida -->
-                    <a href="https://wa.me/5493765208091?text=Hola,%20quisiera%20información%20sobre%20Calidad%20de%20Vida"
-                        target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fas fa-heartbeat text-3xl"></i>
-                        <p class="text-sm">Calidad de Vida</p>
-                    </a>
-                    <!-- Obra Pública -->
-                    <a href="https://wa.me/5493765208039?text=Hola,%20quisiera%20información%20sobre%20Obra%20Pública"
-                        target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fas fa-tools text-3xl"></i>
-                        <p class="text-sm">Obra Pública</p>
-                    </a>
-                    <!-- Agua Potable -->
-                    <a href="https://wa.me/5493765216294?text=Hola,%20quisiera%20información%20sobre%20Agua%20Potable"
-                        target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fas fa-tint text-3xl"></i>
-                        <p class="text-sm">Agua Potable</p>
-                    </a>
-                    <!-- Feriantes -->
-                    <a href="https://chat.whatsapp.com/IKqujeJkOi54nDEFW3yyCT" target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fab fa-whatsapp text-3xl"></i>
-                        <p class="text-sm">Grupo Feriantes</p>
-                    </a>
-                </div>
-            </div>
-            <!-- Derechos -->
-            <p class="text-center text-xs md:text-sm mt-8">&copy; Municipalidad de Santa Ana. Todos los derechos
-                reservados.</p>
-        </div>
-    </footer>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </html>

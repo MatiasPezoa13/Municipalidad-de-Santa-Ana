@@ -12,226 +12,286 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
-<body class="w-full min-h-screen overflow-x-hidden">
-    <!-- HEADER - ocupa 100% de ancho -->
-    <header class="shadow-md p-2 w-full" style="background-color: #fbff00;">
-        <div class="flex items-center justify-center flex-wrap gap-6 px-4">
-            <!-- Logo + Título -->
-            <div class="flex items-center gap-3">
-                <img src="img/logosan.png" alt="Logo Municipalidad" class="w-24 h-24 object-contain" />
-                <h1 class="text-lg font-bold text-black">MUNICIPALIDAD DE SANTA ANA</h1>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    muniYellow: '#fbff00',
+                    muniDark: '#1a1a1a',
+                    muniGray: '#f4f4f9'
+                },
+                shadows: {
+                    'soft': '0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05)'
+                }
+            }
+        }
+    }
+</script>
+<style>
+    .glass {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+    }
+
+    .hero-gradient {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+    }
+</style>
+</head>
+
+<body class="bg-muniGray font-sans text-slate-900 overflow-x-hidden">
+
+    <div class="w-full py-2 px-4 hidden md:block" style="background-color:#fbff00;">
+        <div
+            class="max-w-7xl mx-auto flex justify-between items-center text-xs font-semibold uppercase tracking-widest text-black">
+            <div class="flex gap-4">
+                <span><i class="fas fa-radio mr-2"></i>FM 94.7</span>
+                <span><i class="fas fa-map-marker-alt mr-2"></i>Av. San Martín & Belgrano</span>
             </div>
-            <!-- Menú de navegación -->
-            <nav class="mt-2 md:mt-0 justify-center">
-                <ul class="flex flex-wrap gap-4 text-sm font-semibold text-black">
-                    <!-- GOBIERNO -->
-                    <li class="relative group">
-                        <a href="#" class="hover:text-green-900" data-toggle="gobierno">GOBIERNO</a>
-                        <div data-menu="gobierno" class="hidden absolute z-10 bg-white shadow-xl rounded-lg p-4 mt-2 w-64 border border-gray-200
-               left-0 group-hover:block">
-                            <ul class="space-y-2 text-sm text-gray-800">
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user-tie text-green-600"></i> Intendenta Lic. M. Mabel
-                                        Pezoa</a></li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user-tie text-green-600"></i> Presidente HCD Prof. Eikman
-                                        Matías</a></li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user text-green-600"></i> Vice-Presidente Mariela Scholles</a>
-                                </li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user text-green-600"></i>Concejal Otilia Alderete</a>
-                                </li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user text-green-600"></i>Concejal Olivera Sandro</a>
-                                </li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user text-green-600"></i>Concejal Dario Vera</a></li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user-cog text-green-600"></i> Secretaria del Concejo Salina
-                                        Priscila</a></li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user-cog text-green-600"></i> Pro-Secretaria Mezetti
-                                        Daniela</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <!-- NOTICIAS -->
-                    <li><a href="noticias.html" class="hover:text-green-900">NOTICIAS</a></li>
-                    <!-- TURISMO -->
-                    <li><a href="#Turismo" class="hover:text-green-900">TURISMO</a></li>
-                    <!-- OBRAS PUBLICAS -->
-                    <li><a href="obras-publicas.html" class="hover:text-green-900">OBRAS PUBLICAS</a></li>
-                    <!-- CONTACTOS -->
-                    <li class="relative group">
-                        <a href="#contactos" class="hover:text-green-900" data-toggle="contactos">CONTACTOS</a>
-                        <div data-menu="contactos" class="hidden absolute z-10 bg-white shadow-xl rounded-lg p-4 mt-2 w-64 border border-gray-200
-               left-0 group-hover:block">
-                            <ul class="space-y-2 text-sm text-gray-800">
-                                <li><a href="https://wa.me/5493765216291?text=Hola,%20quisiera%20información%20sobre%20la%20Municipalidad"
-                                        target="_blank"
-                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fab fa-whatsapp text-green-600"></i> Mesa de Entrada</a></li>
-                                <li><a href="https://wa.me/5493765216293?text=Hola,%20quisiera%20información%20sobre%20Recaudaciones"
-                                        target="_blank"
-                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fab fa-whatsapp text-green-600"></i> Recaudaciones</a></li>
-                                <li><a href="https://wa.me/5493765208091?text=Hola,%20quisiera%20información%20sobre%20Calidad%20De%20Vida"
-                                        target="_blank"
-                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fab fa-whatsapp text-green-600"></i> Calidad de Vida</a></li>
-                                <li><a href="https://wa.me/5493765208039?text=Hola,%20quisiera%20información%20sobre%20Obra%20Pública"
-                                        target="_blank"
-                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fab fa-whatsapp text-green-600"></i> Obra Pública</a></li>
-                                <li><a href="https://wa.me/5493765216294?text=Hola,%20quisiera%20información%20sobre%20Agua%20Potable"
-                                        target="_blank"
-                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fab fa-whatsapp text-green-600"></i> Agua Potable</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!-- BARRA INFERIOR 100% ANCHO -->
-    <div class="w-full text-black" style="background-color: #fbff00;">
-        <div class="flex flex-wrap justify-center items-center gap-2 py-1 px-4 text-sm">
-            <span>FM 94.7</span>
-            <span>|</span>
-            <span>@santaanamunicipalidad</span>
-            <span>|</span>
-            <span>Av. San Martín & Belgrano</span>
-            <span>|</span>
-            <i class="fas fa-phone"></i>
-            <span>+54 9 3765-216291</span>
+            <div class="flex gap-4">
+                <a href="#" class="hover:underline transition">
+                    <i class="fab fa-facebook mr-2"></i>@santaanamunicipalidad
+                </a>
+                <span><i class="fas fa-phone mr-2"></i>+54 9 3765-216291</span>
+            </div>
         </div>
     </div>
-    <!-- Script para mostrar u ocultar los menús desplegables -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const toggles = document.querySelectorAll("[data-toggle]");
-            toggles.forEach(toggle => {
-                toggle.addEventListener("click", (e) => {
-                    e.preventDefault();
-                    const menuName = toggle.getAttribute("data-toggle");
-                    const menu = document.querySelector(`[data-menu="${menuName}"]`);
-                    // Cierra otros menús abiertos
-                    document.querySelectorAll("[data-menu]").forEach(m => {
-                        if (m !== menu) m.classList.add("hidden");
-                    });
-                    // Toggle de visibilidad
-                    menu.classList.toggle("hidden");
-                });
-            });
-            // Oculta el menú si se hace clic fuera
-            document.addEventListener("click", (e) => {
-                if (!e.target.closest("[data-toggle]") && !e.target.closest("[data-menu]")) {
-                    document.querySelectorAll("[data-menu]").forEach(m => m.classList.add("hidden"));
-                }
-            });
-        });
-    </script>
-    <section id="cursos" class="py-16 bg-yellow-50">
-        <div class="max-w-6xl mx-auto px-6">
 
-            <!-- Título -->
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-bold text-gray-800"> Cursos </h2>
-                <p class="text-gray-600 mt-2">Talleres y cursos que se organizan en el pueblo de forma puntual</p>
-                <div class="mt-4 h-1 w-20 bg-yellow-400 mx-auto rounded-full"></div>
+
+    <header class="sticky top-0 z-50" style="background-color:#fbff00;">
+        <nav class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <img src="img/logosan.png" alt="Logo"
+                    class="h-14 w-auto transform hover:scale-105 transition duration-300" />
+                <div class="leading-tight">
+                    <h1 class="text-sm font-black text-black">SANTA ANA</h1>
+                    <p class="text-[10px] text-gray-800 font-bold uppercase tracking-tighter">
+                        Municipalidad
+                    </p>
+                </div>
             </div>
 
-            <!-- Carrusel Swiper -->
-            <div class="swiper mySwiperCursos">
+            <!-- Menu Desktop -->
+            <ul class="hidden lg:flex items-center gap-8 text-sm font-bold text-black">
+                <li class="relative group">
+                    <button class="flex items-center gap-1 hover:opacity-80 transition">
+                        GOBIERNO
+                        <i class="fas fa-chevron-down text-[10px]"></i>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 mt-2 w-64 bg-white shadow-2xl rounded-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 p-4 text-gray-800">
+                        <a href="#" class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase">
+                            Intendenta Lic. Mabel Pezoa
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Presidente Honorable Concejo Deliberante Prof. Eikman Matias
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Vice-Presidente Mariela Scholles
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Concejal Otilia Alderete
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Concejal Olivera Sandro
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Concejal Vera Dario
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Secretaria del Concejo Salina Priscila
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Pro - Secretaria Mezetti Daniela
+                        </a>
+                    </div>
+                </li>
+
+                <li><a href="noticias.html" class="hover:opacity-80 transition">NOTICIAS</a></li>
+                <li><a href="#Turismo" class="hover:opacity-80 transition">TURISMO</a></li>
+                <li><a href="actividades.html" class="hover:opacity-80 transition">ACTIVIDADES</a></li>
+                <li>
+                    <a href="https://wa.me/5493765216291"
+                        class="bg-black text-yellow-300 px-5 py-2 rounded-full shadow-md hover:scale-105 transition">
+                        CONTACTO
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Mobile button -->
+            <button class="lg:hidden text-2xl text-black" id="btn-mobile">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    <section id="cursos" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 relative">
+
+            <div class="text-center mb-12">
+                <span
+                    class="bg-muniYellow text-black text-[10px] font-black px-4 py-1.5 rounded-full uppercase italic">Nuevas
+                    Oportunidades</span>
+                <h2 class="text-4xl font-black text-black mt-4 italic tracking-tighter uppercase">Cursos y Talleres</h2>
+                <p class="text-gray-500 font-bold text-xs mt-2 uppercase italic tracking-widest">Organizados de forma
+                    puntual en el pueblo</p>
+                <div class="mt-4 h-1.5 w-24 bg-muniYellow mx-auto rounded-full"></div>
+            </div>
+
+            <div class="swiper mySwiperCursos relative group">
                 <div class="swiper-wrapper">
 
-                    <!-- Curso 1 -->
-                    <div class="swiper-slide">
-                        <a href="Talleres/expon/Audiovisual.jpg" target="_blank">
-                            <img src="Talleres/expon/Audiovisual.jpg" alt=""
-                                class="w-full h-64 object-cover rounded-xl shadow-md hover:opacity-90 transition" />
-                        </a>
-                        <h3 class="text-xl font-semibold mt-3 text-gray-800">Curso de Audiovisual</h3>
-                        <p class="text-gray-600">📅 09 de Agosto - 📍 Salón Municipal</p>
+                    <div class="swiper-slide pb-10">
+                        <div
+                            class="bg-white rounded-[2rem] shadow-xl border border-gray-100 overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300">
+                            <div class="h-48 overflow-hidden">
+                                <img src="Talleres/expon/Audiovisual.jpg" class="w-full h-full object-cover" />
+                            </div>
+                            <div class="p-5 flex-grow">
+                                <h3 class="text-base font-black text-black italic uppercase leading-tight">Curso de
+                                    Audiovisual</h3>
+                                <div class="mt-4 space-y-2">
+                                    <p class="text-[10px] font-bold text-gray-500 uppercase italic flex items-center">
+                                        <i class="far fa-calendar-alt text-muniYellow mr-2"></i> 09 de Agosto
+                                    </p>
+                                    <p class="text-[10px] font-bold text-gray-400 uppercase italic flex items-center">
+                                        <i class="fas fa-map-marker-alt text-muniYellow mr-2"></i> Salón Municipal
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Curso 2 -->
-                    <div class="swiper-slide">
-                        <a href="Talleres/expon/Huertas.jpg" target="_blank">
-                            <img src="Talleres/expon/Huertas.jpg" alt=""
-                                class="w-full h-64 object-cover rounded-xl shadow-md hover:opacity-90 transition" />
-                        </a>
-                        <h3 class="text-xl font-semibold mt-3 text-gray-800">Taller de Ciclo de Capacitacion Sobre
-                            Huertas
-                        </h3>
-                        <p class="text-gray-600">📅 20 de Agosto - 📍 S.U.M Cultural de Santa Ana</p>
+                    <div class="swiper-slide pb-10">
+                        <div
+                            class="bg-white rounded-[2rem] shadow-xl border border-gray-100 overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300">
+                            <div class="h-48 overflow-hidden">
+                                <img src="Talleres/expon/Huertas.jpg" class="w-full h-full object-cover" />
+                            </div>
+                            <div class="p-5 flex-grow">
+                                <h3 class="text-base font-black text-black italic uppercase leading-tight">Capacitación
+                                    sobre Huertas</h3>
+                                <div class="mt-4 space-y-2">
+                                    <p class="text-[10px] font-bold text-gray-500 uppercase italic flex items-center">
+                                        <i class="far fa-calendar-alt text-muniYellow mr-2"></i> 20 de Agosto
+                                    </p>
+                                    <p class="text-[10px] font-bold text-gray-400 uppercase italic flex items-center">
+                                        <i class="fas fa-map-marker-alt text-muniYellow mr-2"></i> S.U.M Cultural
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Curso 3 -->
-                    <div class="swiper-slide">
-                        <a href="Talleres/expon/Manipulacion De Alimentos.jpg" target="_blank">
-                            <img src="Talleres/expon/Manipulacion De Alimentos.jpg" alt="Charla de Historia Local"
-                                class="w-full h-64 object-cover rounded-xl shadow-md hover:opacity-90 transition" />
-                        </a>
-                        <h3 class="text-xl font-semibold mt-3 text-gray-800">Curso de Manipulacion Segura de Alimentos
-                        </h3>
-                        <p class="text-gray-600">📅 20 de Agosto - 📍 Salon Municipal</p>
+                    <div class="swiper-slide pb-10">
+                        <div
+                            class="bg-white rounded-[2rem] shadow-xl border border-gray-100 overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300">
+                            <div class="h-48 overflow-hidden">
+                                <img src="Talleres/expon/Manipulacion De Alimentos.jpg"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <div class="p-5 flex-grow">
+                                <h3 class="text-base font-black text-black italic uppercase leading-tight">Manipulación
+                                    de Alimentos</h3>
+                                <div class="mt-4 space-y-2">
+                                    <p class="text-[10px] font-bold text-gray-500 uppercase italic flex items-center">
+                                        <i class="far fa-calendar-alt text-muniYellow mr-2"></i> 20 de Agosto
+                                    </p>
+                                    <p class="text-[10px] font-bold text-gray-400 uppercase italic flex items-center">
+                                        <i class="fas fa-map-marker-alt text-muniYellow mr-2"></i> Salón Municipal
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Curso 4 -->
-                    <div class="swiper-slide">
-                        <a href="Talleres/expon/Curso de Excel.jpg" target="_blank">
-                            <img src="Talleres/expon/Curso de Excel.jpg" alt="Curso de Excel"
-                                class="w-full h-64 object-cover rounded-xl shadow-md hover:opacity-90 transition" />
-                        </a>
-                        <h3 class="text-xl font-semibold mt-3 text-gray-800">Curso de Uso De Excel
-                        </h3>
-                        <p class="text-gray-600">📅 01 de Agosto - 📍 Salon Municipal</p>
+
+                    <div class="swiper-slide pb-10">
+                        <div
+                            class="bg-white rounded-[2rem] shadow-xl border border-gray-100 overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300">
+                            <div class="h-48 overflow-hidden">
+                                <img src="Talleres/expon/Curso de Excel.jpg" class="w-full h-full object-cover" />
+                            </div>
+                            <div class="p-5 flex-grow">
+                                <h3 class="text-base font-black text-black italic uppercase leading-tight">Curso de Uso
+                                    de Excel</h3>
+                                <div class="mt-4 space-y-2">
+                                    <p class="text-[10px] font-bold text-gray-500 uppercase italic flex items-center">
+                                        <i class="far fa-calendar-alt text-muniYellow mr-2"></i> 01 de Agosto
+                                    </p>
+                                    <p class="text-[10px] font-bold text-gray-400 uppercase italic flex items-center">
+                                        <i class="fas fa-map-marker-alt text-muniYellow mr-2"></i> Salón Municipal
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Curso 5 -->
-                    <div class="swiper-slide">
-                        <a href="Talleres/expon/Taller Folklore.jpg" target="_blank">
-                            <img src="Talleres/expon/Taller Folklore.jpg" alt="Curso de Excel"
-                                class="w-full h-64 object-cover rounded-xl shadow-md hover:opacity-90 transition" />
-                        </a>
-                        <h3 class="text-xl font-semibold mt-3 text-gray-800">Taller de Folklore
-                        </h3>
-                        <p class="text-gray-600">📍 S.U.M Cultural y Salon Municipal</p>
+
+                    <div class="swiper-slide pb-10">
+                        <div
+                            class="bg-white rounded-[2rem] shadow-xl border border-gray-100 overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300">
+                            <div class="h-48 overflow-hidden">
+                                <img src="Talleres/expon/Taller Folklore.jpg" class="w-full h-full object-cover" />
+                            </div>
+                            <div class="p-5 flex-grow">
+                                <h3 class="text-base font-black text-black italic uppercase leading-tight">Taller de
+                                    Folklore</h3>
+                                <div class="mt-4 space-y-2">
+                                    <p class="text-[10px] font-bold text-gray-400 uppercase italic flex items-center">
+                                        <i class="fas fa-map-marker-alt text-muniYellow mr-2"></i> S.U.M Cultural
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
-                <!-- Botones -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
 
-                <!-- Paginación -->
+                <div
+                    class="swiper-button-prev !text-black bg-muniYellow !w-10 !h-10 rounded-full !-left-2 md:!-left-12 after:!text-sm shadow-lg opacity-0 group-hover:opacity-100 transition duration-300">
+                </div>
+                <div
+                    class="swiper-button-next !text-black bg-muniYellow !w-10 !h-10 rounded-full !-right-2 md:!-right-12 after:!text-sm shadow-lg opacity-0 group-hover:opacity-100 transition duration-300">
+                </div>
+
                 <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
-    <!-- Swiper JS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
     <script>
-        var swiper = new Swiper(".mySwiperCursos", {
-            slidesPerView: 1,
-            spaceBetween: 20,
+        var swiperCursos = new Swiper(".mySwiperCursos", {
+            slidesPerView: 1.2,      // En móviles se ve una y un pedacito
+            spaceBetween: 20,       // Espacio entre tarjetas
             loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
+            autoplay: { delay: 4000, disableOnInteraction: false },
+            pagination: { el: ".swiper-pagination", clickable: true },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
             breakpoints: {
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
+                640: { slidesPerView: 2 },  // Tablet: 2 tarjetas
+                1024: { slidesPerView: 4 }  // PC: 4 tarjetas exactamente como en tu imagen
             },
         });
     </script>
+
+    <style>
+        /* Estilo para los puntitos amarillos de Swiper */
+        .swiper-pagination-bullet-active {
+            background: #fbff00 !important;
+            opacity: 1;
+        }
+    </style>
+
     <!-- Sección Actividades -->
     <section id="actividades" class="max-w-7xl mx-auto px-4 py-10">
         <h2 class="text-3xl font-bold text-center mb-8">Actividades y Talleres Municipales</h2>
@@ -353,8 +413,8 @@
             <p class="mb-4 text-gray-600">Disfruta de una actividad inclusiva y divertida todos los viernes a las 17:00
                 hs. Ideal para todas las edades, con un ambiente comunitario y sin costo</p>
             <ul class="mb-4 list-disc list-inside text-gray-700">
-                <li><strong>Días:</strong> Viernes.</li>
-                <li><strong>Horarios:</strong> 17:00 hs.</li>
+                <li><strong>Días:</strong> Martes - Viernes</li>
+                <li><strong>Horarios:</strong> 16:30 - 20hs.</li>
                 <li><strong>Lugar:</strong> Polideportivo Municipal Santa Ana </li>
                 <li><strong>Profesores:</strong> Rocio Arrieta - Miqueas Rizky</li>
                 <li><strong>Costo:</strong> Gratuito</li>
@@ -555,58 +615,43 @@
         });
     </script>
 
-    <footer class="bg-black/80 text-white py-10 mt-12 rounded-t-2xl shadow-inner backdrop-blur-sm">
-        <div class="max-w-7xl mx-auto px-4">
-            <!-- Sección de Contactos -->
-            <div class="mb-6">
-                <h2 class="text-center text-xl font-semibold mb-6">Contactos Municipales</h2>
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 justify-items-center">
-                    <!-- Municipalidad -->
-                    <a href="https://wa.me/5493765216291?text=Hola,%20quisiera%20poder%20hablar%20con%20la%20Intendenta"
-                        target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fas fa-city text-3xl"></i>
-                        <p class="text-sm">Mesa de Entrada</p>
-                    </a>
-                    <!-- Recaudaciones -->
-                    <a href="https://wa.me/5493765216293?text=Hola,%20quisiera%20información%20sobre%20Recaudaciones"
-                        target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fas fa-wallet text-3xl"></i>
-                        <p class="text-sm">Recaudaciones</p>
-                    </a>
-                    <!-- Calidad de Vida -->
-                    <a href="https://wa.me/5493765208091?text=Hola,%20quisiera%20información%20sobre%20Calidad%20de%20Vida"
-                        target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fas fa-heartbeat text-3xl"></i>
-                        <p class="text-sm">Calidad de Vida</p>
-                    </a>
-                    <!-- Obra Pública -->
-                    <a href="https://wa.me/5493765208039?text=Hola,%20quisiera%20información%20sobre%20Obra%20Pública"
-                        target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fas fa-tools text-3xl"></i>
-                        <p class="text-sm">Obra Pública</p>
-                    </a>
-                    <!-- Agua Potable -->
-                    <a href="https://wa.me/5493765216294?text=Hola,%20quisiera%20información%20sobre%20Agua%20Potable"
-                        target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fas fa-tint text-3xl"></i>
-                        <p class="text-sm">Agua Potable</p>
-                    </a>
-                    <!-- Feriantes -->
-                    <a href="https://chat.whatsapp.com/IKqujeJkOi54nDEFW3yyCT" target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fab fa-whatsapp text-3xl"></i>
-                        <p class="text-sm">Grupo Feriantes</p>
-                    </a>
+    <footer class="bg-muniDark text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <img src="img/logosan.png" class="h-20 brightness-200 mb-6" alt="">
+                <p class="text-gray-400 text-sm font-medium">Trabajando por el desarrollo sustentable y el bienestar de
+                    cada vecino de Santa Ana, Misiones.</p>
+            </div>
+            <div>
+                <h5 class="font-black text-muniYellow uppercase text-sm mb-6 tracking-widest">Menú Rápido</h5>
+                <ul class="space-y-3 text-sm text-gray-300">
+                    <li><a href="https://wa.me/5493765216291?text=Hola,%20quisiera%20poder%20hablar%20con%20la%20Intendenta"
+                            class="hover:text-white transition">Mesa de entrada</a></li>
+                    <li><a href="https://wa.me/5493765216293?text=Hola,%20quisiera%20información%20sobre%20Recaudaciones"
+                            class="hover:text-white transition">Recaudaciones</a></li>
+                    <li><a href="https://wa.me/5493765208091?text=Hola,%20quisiera%20información%20sobre%20Calidad%20de%20Vida"
+                            class="hover:text-white transition">Calidad de Vida</a></li>
+                    <li><a href="https://wa.me/5493765208039?text=Hola,%20quisiera%20información%20sobre%20Obra%20Pública"
+                            class="hover:text-white transition">Obra Pública</a></li>
+                    <li><a href="https://wa.me/5493765216294?text=Hola,%20quisiera%20información%20sobre%20Agua%20Potable"
+                            class="hover:text-white transition">Agua Potable</a></li>
+                    <li><a href="https://chat.whatsapp.com/IKqujeJkOi54nDEFW3yyCT"
+                            class="hover:text-white transition">Feriantes</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-black text-muniYellow uppercase text-sm mb-6 tracking-widest">Nuestra Ubicación</h5>
+                <div
+                    class="rounded-2xl overflow-hidden h-32 opacity-50 grayscale hover:grayscale-0 transition duration-500">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14169.117145780512!2d-55.5786411!3d-27.3981084!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be28d4474327%3A0x89798544d67319c5!2sMunicipalidad%20De%20Santa%20Ana!5e0!3m2!1ses-419!2sar!4v1716388484196!5m2!1ses-419!2sar"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-            <!-- Derechos -->
-            <p class="text-center text-xs md:text-sm mt-8">&copy; Municipalidad de Santa Ana. Todos los derechos
-                reservados.</p>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-6 border-t border-white/10 mt-20 pt-10 text-center text-[10px] text-gray-500 font-bold uppercase tracking-widest">
+            © 2026 Municipalidad de Santa Ana - Misiones | Todos los derechos reservados
         </div>
     </footer>
 </body>
