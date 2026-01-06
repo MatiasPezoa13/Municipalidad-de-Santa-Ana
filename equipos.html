@@ -4,551 +4,403 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Equipos De Futbol | Municipalidad</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Equipos De Futbol | Municipalidad de Santa Ana</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="shortcut icon" href="santa.ico" type="image/x-icon" />
+    <style>
+        .group:hover .group-hover\:block {
+            display: block;
+        }
+    </style>
 </head>
 
 <body class="bg-white text-gray-800 min-h-screen flex flex-col">
 
-    <!-- HEADER -->
-    <header class="shadow-md p-2 w-full" style="background-color: #fbff00;">
-        <div class="flex items-center justify-center flex-wrap gap-6 px-4">
-            <div class="flex items-center gap-3">
-                <img src="img/logosan.png" alt="Logo Municipalidad" class="w-24 h-24 object-contain" />
-                <h1 class="text-lg font-bold text-black">MUNICIPALIDAD DE SANTA ANA</h1>
+    <div class="w-full py-2 px-4 hidden md:block" style="background-color:#fbff00;">
+        <div
+            class="max-w-7xl mx-auto flex justify-between items-center text-xs font-semibold uppercase tracking-widest text-black">
+            <div class="flex gap-4">
+                <span><i class="fas fa-radio mr-2"></i>FM 94.7</span>
+                <span><i class="fas fa-map-marker-alt mr-2"></i>Av. San Martín & Belgrano</span>
             </div>
-
-            <nav class="mt-2 md:mt-0 justify-center">
-                <ul class="flex flex-wrap gap-4 text-sm font-semibold text-black">
-                    <li class="relative group">
-                        <a href="#" class="hover:text-green-900" data-toggle="gobierno">GOBIERNO</a>
-                        <div data-menu="gobierno"
-                            class="hidden absolute z-10 bg-white shadow-xl rounded-lg p-4 mt-2 w-64 border border-gray-200 left-0 group-hover:block">
-                            <ul class="space-y-2 text-sm text-gray-800">
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user-tie text-green-600"></i> Intendenta Lic. M. Mabel
-                                        Pezoa</a></li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user-tie text-green-600"></i> Presidente HCD Prof. Eikman
-                                        Matías</a></li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user text-green-600"></i> Vice-Presidente Mariela Scholles</a>
-                                </li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user text-green-600"></i>Concejal Otilia Alderete</a></li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user text-green-600"></i>Concejal Olivera Sandro</a></li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user text-green-600"></i>Concejal Dario Vera</a></li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user-cog text-green-600"></i> Secretaria del Concejo Salina
-                                        Priscila</a></li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user-cog text-green-600"></i> Pro-Secretaria Mezetti
-                                        Daniela</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="noticias.html" class="hover:text-green-900">NOTICIAS</a></li>
-                    <li><a href="index.html" class="hover:text-green-900">TURISMO</a></li>
-                    <li><a href="actividades.html" class="hover:text-green-900">ACTIVIDADES</a></li>
-                    <li><a href="obras-publicas.html" class="hover:text-green-900">OBRAS PUBLICAS</a></li>
-                    <li class="relative group">
-                        <a href="#" class="hover:text-green-900" data-toggle="contactos">CONTACTOS</a>
-                        <div data-menu="contactos"
-                            class="hidden absolute z-10 bg-white shadow-xl rounded-lg p-4 mt-2 w-64 border border-gray-200 left-0 group-hover:block">
-                            <ul class="space-y-2 text-sm text-gray-800">
-                                <li><a href="https://wa.me/5493765216291?text=Hola,%20quisiera%20información%20sobre%20la%20Municipalidad"
-                                        target="_blank"
-                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fab fa-whatsapp text-green-600"></i> Mesa de Entrada</a></li>
-                                <li><a href="https://wa.me/5493765216293?text=Hola,%20quisiera%20información%20sobre%20Recaudaciones"
-                                        target="_blank"
-                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fab fa-whatsapp text-green-600"></i> Recaudaciones</a></li>
-                                <li><a href="https://wa.me/5493765208091?text=Hola,%20quisiera%20información%20sobre%20Calidad%20De%20Vida"
-                                        target="_blank"
-                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fab fa-whatsapp text-green-600"></i> Calidad de Vida</a></li>
-                                <li><a href="https://wa.me/5493765208039?text=Hola,%20quisiera%20información%20sobre%20Obra%20Pública"
-                                        target="_blank"
-                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fab fa-whatsapp text-green-600"></i> Obra Pública</a></li>
-                                <li><a href="https://wa.me/5493765216294?text=Hola,%20quisiera%20información%20sobre%20Agua%20Potable"
-                                        target="_blank"
-                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fab fa-whatsapp text-green-600"></i> Agua Potable</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- BARRA INFERIOR -->
-    <div class="w-full text-black" style="background-color: #fbff00;">
-        <div class="flex flex-wrap justify-center items-center gap-2 py-1 px-4 text-sm">
-            <span>FM 94.7</span>
-            <span>|</span>
-            <span>@santaanamunicipalidad</span>
-            <span>|</span>
-            <span>Av. San Martín & Belgrano</span>
-            <span>|</span>
-            <i class="fas fa-phone"></i>
-            <span>+54 9 3765-216291</span>
+            <div class="flex gap-4">
+                <a href="#" class="hover:underline transition">
+                    <i class="fab fa-facebook mr-2"></i>@santaanamunicipalidad
+                </a>
+                <span><i class="fas fa-phone mr-2"></i>+54 9 3765-216291</span>
+            </div>
         </div>
     </div>
 
-    <main class="flex-grow max-w-5xl mx-auto px-6 py-12 font-sans text-gray-900">
 
-
-        <header class="bg-white border-b border-gray-300 shadow-sm py-6 mb-8">
-            <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
-                <h1 class="text-4xl font-bold text-center mb-12 tracking-wide border-b-4 border-yellow-400 pb-4">
-                    Equipos de la Liga Municipal
-                </h1>
-
-                <!-- Botón estético en verde -->
-                <a href="index.html"
-                    class="inline-flex items-center gap-2 text-white bg-green-600 hover:bg-green-700 transition duration-300 px-4 py-2 rounded-full shadow-md text-sm font-semibold">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-                    </svg>
-                    Volver al inicio
-                </a>
+    <header class="sticky top-0 z-50" style="background-color:#fbff00;">
+        <nav class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <img src="img/logosan.png" alt="Logo"
+                    class="h-14 w-auto transform hover:scale-105 transition duration-300" />
+                <div class="leading-tight">
+                    <h1 class="text-sm font-black text-black">SANTA ANA</h1>
+                    <p class="text-[10px] text-gray-800 font-bold uppercase tracking-tighter">
+                        Municipalidad
+                    </p>
+                </div>
             </div>
-        </header>
-        <section class="space-y-12">
-            <!-- Equipo 1 -->
-            <article class="flex flex-col sm:flex-row items-center gap-6 border-b border-gray-300 pb-8">
-                <img src="Equipos/EX-ALUMNOS.jpg" alt="EX - ALUMNOS"
-                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
-                <div>
-                    <h2 class="text-2xl font-semibold mb-2">Ex - Alumnos</h2>
-                    <p class="italic text-sm text-gray-600 mb-3">-------</p>
-                    <p class="text-justify text-base leading-relaxed max-w-xl">
-                        ------------
-                    </p>
-                </div>
-            </article>
 
-            <!-- Equipo 2 -->
-            <article class="flex flex-col lg:flex-row items-center gap-8 border-b border-gray-300 pb-8">
-                <!-- Columna izquierda: escudo + texto -->
-                <div class="flex flex-col sm:flex-row items-start gap-6">
-                    <img src="Equipos/INMORTALES.jpg" alt="Escudo Inmortales"
-                        class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
-                    <div>
-                        <h2 class="text-2xl font-semibold mb-2">Inmortales</h2>
-                        <p class="italic text-sm text-gray-600 mb-3">2015 - Presente</p>
-                        <p class="text-justify text-base leading-relaxed max-w-xl">
-                            El equipo <strong>Inmortales</strong> se formó un <strong>6 de septiembre del 2015</strong>,
-                            entre familiares y amigos. El nombre se eligió para <strong>inmortalizar</strong> a los
-                            seres
-                            queridos que ya no se encuentran físicamente, pero sí en el corazón de cada jugador.
-                        </p>
-                        <p class="text-justify text-base leading-relaxed max-w-xl mt-3">
-                            En casi diez años, <strong>Inmortales</strong> logró ser uno de los equipos más fuertes y
-                            reconocidos tanto a nivel local como regional, consiguiendo una <strong>vitrina
-                                excelente</strong>
-                            con <strong>2 torneos de campeones</strong>, <strong>4 subcampeonatos</strong> y
-                            <strong>un tercer puesto</strong>.
-                        </p>
-                        <p class="text-justify text-base leading-relaxed max-w-xl mt-3">
-                            Siempre competitivos, los <strong>Inmortales</strong> son serios candidatos en cada torneo,
-                            manteniendo su esencia de <strong>compromiso, unión y pasión</strong> por el fútbol.
-                        </p>
+            <!-- Menu Desktop -->
+            <ul class="hidden lg:flex items-center gap-8 text-sm font-bold text-black">
+                <li class="relative group">
+                    <button class="flex items-center gap-1 hover:opacity-80 transition">
+                        GOBIERNO
+                        <i class="fas fa-chevron-down text-[10px]"></i>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 mt-2 w-64 bg-white shadow-2xl rounded-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 p-4 text-gray-800">
+                        <a href="#" class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase">
+                            Intendenta Lic. Mabel Pezoa
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Presidente Honorable Concejo Deliberante Prof. Eikman Matias
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Vice-Presidente Mariela Scholles
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Concejal Otilia Alderete
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Concejal Olivera Sandro
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Concejal Vera Dario
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Secretaria del Concejo Salina Priscila
+                        </a>
+                        <a href="#"
+                            class="block p-2 hover:bg-muniGray rounded-lg transition text-xs uppercase border-t mt-1 pt-3">
+                            Pro - Secretaria Mezetti Daniela
+                        </a>
+                    </div>
+                </li>
+
+                <li><a href="noticias.html" class="hover:opacity-80 transition">NOTICIAS</a></li>
+                <li><a href="#Turismo" class="hover:opacity-80 transition">TURISMO</a></li>
+                <li><a href="actividades.html" class="hover:opacity-80 transition">ACTIVIDADES</a></li>
+                <li>
+                    <a href="https://wa.me/5493765216291"
+                        class="bg-black text-yellow-300 px-5 py-2 rounded-full shadow-md hover:scale-105 transition">
+                        CONTACTO
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Mobile button -->
+            <button class="lg:hidden text-2xl text-black" id="btn-mobile">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <div class="w-full text-black font-bold border-t border-black/10 shadow-sm" style="background-color: #fbff00;">
+        <div class="flex flex-wrap justify-center items-center gap-4 py-2 px-4 text-[11px] uppercase tracking-wider">
+            <span><i class="fas fa-broadcast-tower mr-1"></i> FM 94.7 Radio Municipal</span>
+            <span class="hidden md:block">|</span>
+            <span><i class="fab fa-instagram mr-1"></i> @santaanamunicipalidad</span>
+            <span class="hidden md:block">|</span>
+            <span><i class="fas fa-map-marker-alt mr-1"></i> Av. San Martín & Belgrano</span>
+            <span class="hidden md:block">|</span>
+            <span><i class="fas fa-phone mr-1"></i> +54 9 3765-216291</span>
+        </div>
+    </div>
+
+    <main class="flex-grow max-w-6xl mx-auto px-6 py-12">
+
+        <div
+            class="flex flex-col md:flex-row justify-between items-center mb-16 border-b-4 border-yellow-400 pb-6 gap-4">
+            <h2
+                class="text-4xl md:text-5xl font-black text-black italic uppercase tracking-tighter text-center md:text-left">
+                Equipos de la <span class="text-green-700">Liga Municipal</span>
+            </h2>
+            <a href="index.html"
+                class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition flex items-center gap-2 text-sm font-bold uppercase italic shadow-lg">
+                <i class="fas fa-arrow-left"></i> Volver al Inicio
+            </a>
+        </div>
+
+        <section class="space-y-24">
+
+            <article class="flex flex-col lg:flex-row items-center gap-12 border-b border-gray-100 pb-16">
+                <div class="flex-1 space-y-6">
+                    <div class="flex items-center gap-4">
+                        <img src="Equipos/INMORTALES.jpg"
+                            class="w-24 h-24 rounded-full border-4 border-yellow-400 shadow-xl">
+                        <h3 class="text-3xl font-black uppercase italic">Inmortales</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-justify font-medium">
+                        El equipo <strong>Inmortales</strong> se formó un <strong>6 de septiembre del 2015</strong>,
+                        entre familiares y amigos de Santa Ana. El nombre fue elegido con una carga emotiva profunda:
+                        para <strong>inmortalizar</strong> a aquellos seres queridos que ya no están físicamente, pero
+                        que acompañan cada jugada desde el corazón.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed text-justify font-medium">
+                        En casi una década de historia, han logrado una vitrina envidiable: <strong>2 torneos de
+                            campeones, 4 subcampeonatos y un tercer puesto</strong>. Son conocidos por su compromiso
+                        inquebrantable y por ser serios candidatos en cada edición de la liga.
+                    </p>
+                    <div class="flex gap-2">
+                        <span
+                            class="bg-yellow-100 text-yellow-800 text-[10px] font-black px-3 py-1 rounded-full">HISTÓRICOS</span>
+                        <span
+                            class="bg-green-100 text-green-800 text-[10px] font-black px-3 py-1 rounded-full">MULTICAMPEÓN</span>
                     </div>
                 </div>
-
-                <!-- Imágenes del equipo a la derecha -->
-                <div class="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 lg:mt-0">
-                    <img src="Equipos/inmortales1re.jpg" alt="Equipo Inmortales"
-                        class="rounded-xl shadow-md w-full object-cover" />
-                    <img src="Equipos/FestejoInmortales.jpg" alt="Jugadores Inmortales"
-                        class="rounded-xl shadow-md w-full object-cover" />
-                    <img src="Equipos/inmortales2.jpg" alt="Inmortales en torneo"
-                        class="rounded-xl shadow-md w-full object-cover sm:col-span-2" />
+                <div class="w-full lg:w-1/2 grid grid-cols-2 gap-3">
+                    <img src="Equipos/inmortales1re.jpg" class="rounded-2xl shadow-lg w-full h-40 object-cover">
+                    <img src="Equipos/FestejoInmortales.jpg" class="rounded-2xl shadow-lg w-full h-40 object-cover">
+                    <img src="Equipos/inmortales2.jpg"
+                        class="rounded-2xl shadow-lg w-full h-56 object-cover col-span-2">
                 </div>
             </article>
 
-
-            <!-- Equipo 3 -->
-            <article class="flex flex-col sm:flex-row items-center gap-6 border-b border-gray-300 pb-8">
-                <img src="Equipos/MARTIN CHICO.jpg" alt="MARTIN CHICO"
-                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
-                <div>
-                    <h2 class="text-2xl font-semibold mb-2">Martin Chico</h2>
-                    <p class="italic text-sm text-gray-600 mb-3">-------</p>
-                    <p class="text-justify text-base leading-relaxed max-w-xl">
-                        -----------
+            <article class="flex flex-col lg:flex-row-reverse items-center gap-12 border-b border-gray-100 pb-16">
+                <div class="flex-1 space-y-6">
+                    <div class="flex items-center gap-4">
+                        <img src="Equipos/10 VIVIENDA.jpg"
+                            class="w-24 h-24 rounded-full border-4 border-green-600 shadow-xl">
+                        <h3 class="text-3xl font-black uppercase italic">10 Vivienda</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-justify font-medium">
+                        Conocido como el <strong>"Verde y Blanco"</strong>, fundado en 2022 por jóvenes del barrio. Han
+                        protagonizado el clásico más pasional contra Barrio Unido, alcanzando un notable 4º puesto en su
+                        debut.
                     </p>
-                </div>
-            </article>
-
-            <!-- Equipo 10 Vivienda -->
-            <article class="flex flex-col lg:flex-row items-center gap-8 border-b border-gray-300 pb-8">
-                <!-- Columna izquierda: escudo + texto -->
-                <div class="flex flex-col sm:flex-row items-start gap-6">
-                    <img src="Equipos/10 VIVIENDA.jpg" alt="Escudo 10 Vivienda"
-                        class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
-                    <div>
-                        <h2 class="text-2xl font-semibold mb-2">10 Vivienda</h2>
-                        <p class="italic text-sm text-gray-600 mb-3">2022 - Presente</p>
-                        <p class="text-justify text-base leading-relaxed max-w-xl">
-                            El equipo <strong>10 Vivienda</strong>, conocido como <strong>“el Verde y Blanco”</strong>,
-                            fue fundado en 2022 por un grupo de jóvenes amigos.
-                            En poco tiempo logró llegar a una <strong>semifinal</strong> y obtener el <strong>4º
-                                puesto</strong>, enfrentando en un clásico muy disputado a <strong>Barrio
-                                Unido</strong>.
-                        </p>
-                        <p class="text-justify text-base leading-relaxed max-w-xl mt-3">
-                            En sus inicios, la mayoría eran jugadores muy jóvenes. Entre los más experimentados estaban
-                            <strong>Marcos Piñeiro (Huevo)</strong>, <strong>Néstor Keigler (Kuki)</strong> y
-                            <strong>Leonardo González (Cuati)</strong>, acompañados por promesas como
-                            <strong>Santiago Gauto (Pulga)</strong>, <strong>Facundo González (Tuti)</strong> y
-                            <strong>Luciano Goetten (Chano)</strong>.
-                        </p>
-                        <p class="text-justify text-base leading-relaxed max-w-xl mt-3">
-                            Aunque varios jugadores emigraron tras la campaña de 2024, hoy siguen como referentes
-                            <strong>Rubén Keigler (Kape)</strong>, capitán del equipo, junto a
-                            <strong>Vallejos Leonardo (Bebu)</strong>, <strong>Enrique Almeida (Jenrri)</strong>,
-                            <strong>Pablo Cavallone (La Bestia)</strong> y <strong>Leonardo Rodríguez (Ñaro)</strong>.
-                        </p>
-                        <p class="text-justify text-base leading-relaxed max-w-xl mt-3">
-                            Con una nueva temporada en marcha, <strong>10 Vivienda</strong> busca volver a ser
-                            protagonista y superar sus marcas anteriores.
-                        </p>
+                    <div class="bg-slate-50 p-6 rounded-3xl border-l-8 border-green-600">
+                        <p class="text-sm font-bold text-gray-700 mb-2">REFERENTES HISTÓRICOS:</p>
+                        <p class="text-sm text-gray-600">Marcos Piñeiro (Huevo), Néstor Keigler (Kuki), Leonardo
+                            González (Cuati), Santiago Gauto (Pulga) y Facundo González (Tuti).</p>
+                        <p class="text-sm font-bold text-gray-700 mt-4 mb-2">PLANTEL ACTUAL:</p>
+                        <p class="text-sm text-gray-600"><strong>Rubén Keigler (Kape - Capitán)</strong>, Vallejos
+                            Leonardo (Bebu), Enrique Almeida (Jenrri), Pablo Cavallone (La Bestia) y Leonardo Rodríguez
+                            (Ñaro).</p>
                     </div>
                 </div>
-                <!-- Imagen del equipo a la derecha -->
-                <div class="w-full lg:w-1/2 flex justify-center mt-6 lg:mt-0">
-                    <img src="Equipos/10vivienda.jpg" alt="Equipo completo Club Fortaleza"
-                        class="rounded-xl shadow-md w-full max-w-md object-cover" />
+                <div class="w-full lg:w-1/2">
+                    <img src="Equipos/10vivienda.jpg" class="rounded-[40px] shadow-2xl w-full object-cover h-[400px]">
                 </div>
             </article>
 
-
-
-            <!-- Equipo 5 -->
-            <article class="flex flex-col sm:flex-row items-center gap-6 border-b border-gray-300 pb-8">
-                <img src="Equipos/JUVENTUD CATOLICA.png" alt="JUVENTUD CATOLICA"
-                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
-                <div>
-                    <h2 class="text-2xl font-semibold mb-2">Juventud Catolica</h2>
-                    <p class="italic text-sm text-gray-600 mb-3">-------</p>
-                    <p class="text-justify text-base leading-relaxed max-w-xl">
-                        ------------
+            <article class="flex flex-col lg:flex-row items-center gap-12 border-b border-gray-100 pb-16">
+                <div class="flex-1 space-y-6">
+                    <div class="flex items-center gap-4">
+                        <img src="Equipos/13 DE JUNIO.png"
+                            class="w-24 h-24 rounded-full border-4 border-red-600 shadow-xl bg-gray-50 p-2">
+                        <h3 class="text-3xl font-black uppercase italic text-red-700">13 de Junio</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-justify font-medium">
+                        Fundado en 2022 por <strong>Neri José Godoy</strong> y <strong>Leo Luis Dos Santos</strong>. El
+                        equipo honra a San Antonio de Padua (patrono de Santa Ana) con sus colores rojo y blanco.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed text-justify font-medium">
+                        Poseen una estructura profesional con 25 jugadores, DT, ayudante, secretaria y dos delegados,
+                        representando el fervor religioso y deportivo del pueblo.
                     </p>
                 </div>
+                <div class="w-full lg:w-1/2">
+                    <img src="Equipos/equipo13.jpg" class="rounded-[40px] shadow-xl w-full object-cover">
+                </div>
             </article>
 
-            <!-- Equipo 6 -->
-            <!-- Equipo 13 de Junio -->
-            <article class="flex flex-col lg:flex-row items-center gap-8 border-b border-gray-300 pb-8">
-                <!-- Columna izquierda: escudo + texto -->
-                <div class="flex flex-col sm:flex-row items-start gap-6">
-                    <img src="Equipos/13 DE JUNIO.png" alt="Escudo 13 de Junio"
-                        class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
-                    <div>
-                        <h2 class="text-2xl font-semibold mb-2">13 De Junio</h2>
-                        <p class="italic text-sm text-gray-600 mb-3">2022 - Presente</p>
-                        <p class="text-justify text-base leading-relaxed max-w-xl">
-                            El club <strong>13 de Junio</strong> fue fundado en el año 2022 por un grupo de amigos y
-                            familias que decidieron
-                            participar en la Liga Santanera. Su nombre rinde homenaje a <strong>San Antonio de
-                                Padua</strong>.
-                        </p>
-                        <p class="text-justify text-base leading-relaxed max-w-xl mt-3">
-                            Fundado por <strong>Neri José Godoy</strong>, con el apoyo de <strong>Leo Luis Dos
-                                Santos</strong>, el equipo eligió
-                            como colores distintivos la camiseta <strong>roja y blanca</strong> y el pantalón
-                            <strong>azul marino</strong>.
-                        </p>
-                        <p class="text-justify text-base leading-relaxed max-w-xl mt-3">
-                            Desde su creación ha disputado dos campeonatos y actualmente participa en su tercera
-                            edición. Aunque aún no ha logrado un título, continúa consolidándose en la liga.
-                        </p>
-                        <p class="text-justify text-base leading-relaxed max-w-xl mt-3">
-                            El club cuenta con <strong>25 jugadores</strong>, un <strong>DT</strong>, un
-                            <strong>ayudante de campo</strong>, <strong>dos delegados</strong> y una
-                            <strong>secretaria</strong>.
-                        </p>
+            <article class="flex flex-col lg:flex-row-reverse items-center gap-12 border-b border-gray-100 pb-16">
+                <div class="flex-1 space-y-6">
+                    <div class="flex items-center gap-4">
+                        <img src="Equipos/PU.jpg"
+                            class="w-24 h-24 rounded-full border-4 border-blue-600 shadow-xl bg-white p-2">
+                        <h3 class="text-3xl font-black uppercase italic text-blue-800">Puerto Unido</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-justify font-medium">
+                        Nacido en 2019 bajo la conducción de <strong>Héctor Falcón</strong>. Es el equipo que representa
+                        la garra de la zona portuaria. Tras seis torneos, se mantienen como protagonistas constantes.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed text-justify font-medium">
+                        <strong>Jugadores Destacados:</strong> Walter Maidana, Mauro Toledo, Roque Martín, Falcón Tomás
+                        y Falcón David.
+                    </p>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <img src="Equipos/Puerto Unidos.jpg" class="rounded-[40px] shadow-xl w-full object-cover">
+                </div>
+            </article>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="bg-slate-50 p-8 rounded-[40px] border-b-8 border-yellow-400">
+                    <img src="Equipos/Delta.jpg" class="w-20 h-20 mb-4 rounded-full border-2 border-white shadow">
+                    <h4 class="text-xl font-black uppercase italic mb-4">Club Delta F.C</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        Nació el <strong>1 de octubre de 2021</strong> en El Cerro Santa Ana. Fue el primer y único
+                        equipo en representar orgullosamente a los vecinos del Cerro en la liga local, marcando
+                        identidad rural y deportiva.
+                    </p>
+                    <img src="Equipos/Equipo actual.jpg" class="rounded-2xl w-full h-48 object-cover shadow-md">
+                </div>
+                <div class="bg-slate-50 p-8 rounded-[40px] border-b-8 border-green-600">
+                    <img src="Equipos/FORTALEZA.jpg" class="w-20 h-20 mb-4 rounded-full border-2 border-white shadow">
+                    <h4 class="text-xl font-black uppercase italic mb-4">Club Fortaleza</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        Desde 2021, Fortaleza se destaca por la lealtad: el 90% de los jugadores fundadores siguen en el
+                        plantel. Como dice su nombre, su mayor virtud es la <strong>unión del grupo</strong>. Delegado:
+                        Jorge Méndez.
+                    </p>
+                    <img src="Equipos/fortaleza-equipo.jpg" class="rounded-2xl w-full h-48 object-cover shadow-md">
+                </div>
+            </div>
+
+            <div class="pt-10">
+                <h4 class="text-2xl font-black uppercase italic mb-8 border-l-4 border-yellow-400 pl-4">Otros Equipos
+                    Inscriptos</h4>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <div
+                        class="text-center bg-white p-4 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <img src="Equipos/EX-ALUMNOS.jpg"
+                            class="h-16 mx-auto mb-2 grayscale hover:grayscale-0 transition">
+                        <p class="text-[10px] font-black uppercase">Ex - Alumnos</p>
+                    </div>
+                    <div
+                        class="text-center bg-white p-4 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <img src="Equipos/MARTIN CHICO.jpg" class="h-16 mx-auto mb-2">
+                        <p class="text-[10px] font-black uppercase">Martin Chico</p>
+                    </div>
+                    <div
+                        class="text-center bg-white p-4 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <img src="Equipos/JUVENTUD CATOLICA.png" class="h-16 mx-auto mb-2">
+                        <p class="text-[10px] font-black uppercase">Juventud Católica</p>
+                    </div>
+                    <div
+                        class="text-center bg-white p-4 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <img src="Equipos/CABU.jpg" class="h-16 mx-auto mb-2">
+                        <p class="text-[10px] font-black uppercase">C.A.B.U</p>
+                    </div>
+                    <div
+                        class="text-center bg-white p-4 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <img src="Equipos/CAñA.jpg" class="h-16 mx-auto mb-2">
+                        <p class="text-[10px] font-black uppercase">C.A.Ñ.A</p>
+                    </div>
+                    <div
+                        class="text-center bg-white p-4 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <img src="Equipos/36 K-JITA.png" class="h-16 mx-auto mb-2">
+                        <p class="text-[10px] font-black uppercase">36 K-JITAS</p>
+                    </div>
+                    <div
+                        class="text-center bg-white p-4 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <img src="Equipos/CHIPERIA.png" class="h-16 mx-auto mb-2">
+                        <p class="text-[10px] font-black uppercase">Chipería</p>
+                    </div>
+                    <div
+                        class="text-center bg-white p-4 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <img src="Equipos/atl. Poty.png" class="h-16 mx-auto mb-2">
+                        <p class="text-[10px] font-black uppercase">Atl. POTY</p>
+                    </div>
+                    <div
+                        class="text-center bg-white p-4 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <img src="Equipos/FECHA-LIBRE.jpg" class="h-16 mx-auto mb-2">
+                        <p class="text-[10px] font-black uppercase">Fecha Libre</p>
+                    </div>
+                    <div
+                        class="text-center bg-white p-4 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <img src="Equipos/Grupo nino.png" class="h-16 mx-auto mb-2">
+                        <p class="text-[10px] font-black uppercase">Grupo NINO</p>
+                    </div>
+                    <div
+                        class="text-center bg-white p-4 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <img src="Equipos/Verdagua.png" class="h-16 mx-auto mb-2">
+                        <p class="text-[10px] font-black uppercase">Club Verdagua</p>
                     </div>
                 </div>
-                <!-- Imagen del equipo a la derecha -->
-                <div class="w-full lg:w-1/2 flex justify-center mt-6 lg:mt-0">
-                    <img src="Equipos/equipo13.jpg" alt="Equipo completo Club 13 De Junio"
-                        class="rounded-xl shadow-md w-full max-w-md object-cover" />
-                </div>
-            </article>
-
-
-
-            <!-- Equipo Puerto Unido -->
-            <article class="flex flex-col lg:flex-row items-center gap-8 border-b border-gray-300 pb-8">
-                <!-- Columna izquierda: escudo + texto -->
-                <div class="flex flex-col sm:flex-row items-start gap-6">
-                    <img src="Equipos/PU.jpg" alt="Escudo Club Puerto Unido"
-                        class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
-                    <div>
-                        <h2 class="text-2xl font-semibold mb-2">Club Puerto Unido</h2>
-                        <p class="italic text-sm text-gray-600 mb-3">2019 - Presente</p>
-                        <p class="text-justify text-base leading-relaxed max-w-xl">
-                            El <strong>Club Puerto Unido</strong> nació en 2019 y desde entonces ha disputado seis
-                            torneos en la Liga Santanera.
-                            Aunque aún no ha conseguido un campeonato, siempre ha llegado a instancias decisivas,
-                            consolidándose como un equipo fuerte y respetado.
-                        </p>
-                        <p class="text-justify text-base leading-relaxed max-w-xl mt-3">
-                            Fue fundado por <strong>Héctor Falcón</strong>, quien sigue siendo su director técnico.
-                            El objetivo del club es claro: alcanzar un campeonato y regalarle una alegría a su gente.
-                        </p>
-                        <p class="text-justify text-base leading-relaxed max-w-xl mt-3">
-                            A lo largo de su historia han pasado grandes jugadores, pero en la actualidad destacan por
-                            su compromiso
-                            <strong>Walter Maidana</strong>, <strong>Mauro Toledo</strong>, <strong>Roque
-                                Martín</strong>,
-                            <strong>Falcón Tomás</strong> y <strong>Falcón David</strong>.
-                        </p>
-                    </div>
-                </div>
-                <!-- Imagen del equipo a la derecha -->
-                <div class="w-full lg:w-1/2 flex justify-center mt-6 lg:mt-0">
-                    <img src="Equipos/Puerto Unidos.jpg" alt="Equipo completo Club Puerto Unido"
-                        class="rounded-xl shadow-md w-full max-w-md object-cover" />
-                </div>
-            </article>
-
-
-
-            <!-- Equipo 8 -->
-            <article class="flex flex-col sm:flex-row items-center gap-6 border-b border-gray-300 pb-8">
-                <img src="Equipos/CABU.jpg" alt="Escudo CABU"
-                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
-                <div>
-                    <h2 class="text-2xl font-semibold mb-2">C.A.B.U</h2>
-                    <p class="italic text-sm text-gray-600 mb-3">--------</p>
-                    <p class="text-justify text-base leading-relaxed max-w-xl">
-                        ------------
-                    </p>
-                </div>
-            </article>
-
-            <!-- Equipo 9 -->
-            <article class="flex flex-col sm:flex-row items-center gap-6 border-b border-gray-300 pb-8">
-                <img src="Equipos/CAñA.jpg" alt="Escudo Caña"
-                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
-                <div>
-                    <h2 class="text-2xl font-semibold mb-2">Club C.A.Ñ.A Pto. Santa Ana</h2>
-                    <p class="italic text-sm text-gray-600 mb-3">-----------</p>
-                    <p class="text-justify text-base leading-relaxed max-w-xl">
-                        ------------
-                    </p>
-                </div>
-            </article>
-
-            <!-- Equipo 10 -->
-            <article class="flex flex-col lg:flex-row items-center gap-8 border-b border-gray-300 pb-8">
-                <!-- Columna izquierda: escudo + texto -->
-                <div class="flex flex-col sm:flex-row items-start gap-6">
-                    <img src="Equipos/Delta.jpg" alt="Escudo Club Delta"
-                        class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
-                    <div>
-                        <h2 class="text-2xl font-semibold mb-2">Club Delta F.C</h2>
-                        <p class="italic text-sm text-gray-600 mb-3">2021 - Presente</p>
-                        <p class="text-justify text-base leading-relaxed max-w-xl">El equipo Delta nació en el año 2021
-                            en
-                            el Cerro, fruto de la iniciativa de un grupo de amigos que decidieron organizarse para
-                            competir
-                            en la liga local. En aquel momento, Delta fue el único equipo inscripto que representaba al
-                            Cerro Santa Ana, marcando el inicio de su recorrido en la competición.
-                        </p>
-                    </div>
-                    <!-- Imagen del equipo a la derecha -->
-                    <div class="w-full lg:w-1/2 flex justify-center mt-6 lg:mt-0">
-                        <img src="Equipos/Equipo actual.jpg" alt="Equipo completo Delta"
-                            class="rounded-xl shadow-md w-full max-w-md object-cover" />
-                    </div>
-            </article>
-
-            <!-- Equipo 11 -->
-            <article class="flex flex-col lg:flex-row items-center gap-8 border-b border-gray-300 pb-8">
-                <!-- Columna izquierda: escudo + texto -->
-                <div class="flex flex-col sm:flex-row items-start gap-6">
-                    <img src="Equipos/FORTALEZA.jpg" alt="Escudo Club Fortaleza"
-                        class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
-                    <div>
-                        <h2 class="text-2xl font-semibold mb-2">Club Fortaleza</h2>
-                        <p class="italic text-sm text-gray-600 mb-3">2021 - Presente</p>
-                        <p class="text-justify text-base leading-relaxed max-w-xl">
-                            Nuestro equipo se formó en el año 2021 y, desde entonces, hemos crecido juntos dentro y
-                            fuera de
-                            la cancha. Aunque todavía no hemos logrado ganar la liga, seguimos trabajando con dedicación
-                            y
-                            pasión por este deporte que tanto nos une.
-                            <br><br>
-                            Llevamos cuatro años compartiendo este camino, y algo que nos enorgullece es que el grupo se
-                            mantiene firme: prácticamente todos los que empezamos seguimos juntos. Cada jugador es una
-                            pieza
-                            clave en este equipo, y ese compromiso colectivo es lo que nos hace fuertes.
-                        </p>
-                    </div>
-                </div>
-                <!-- Imagen del equipo a la derecha -->
-                <div class="w-full lg:w-1/2 flex justify-center mt-6 lg:mt-0">
-                    <img src="Equipos/fortaleza-equipo.jpg" alt="Equipo completo Club Fortaleza"
-                        class="rounded-xl shadow-md w-full max-w-md object-cover" />
-                </div>
-            </article>
-
-
-
-            <!-- Equipo 12 -->
-            <article class="flex flex-col sm:flex-row items-center gap-6 border-b border-gray-300 pb-8">
-                <img src="Equipos/36 K-JITA.png" alt="Escudo Club 36 K-JITAS"
-                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
-                <div>
-                    <h2 class="text-2xl font-semibold mb-2">36 K-JITAS</h2>
-                    <p class="italic text-sm text-gray-600 mb-3">-------</p>
-                    <p class="text-justify text-base leading-relaxed max-w-xl">
-                        ------------
-                    </p>
-                </div>
-            </article>
-
-            <!-- Equipo 13 -->
-            <article class="flex flex-col sm:flex-row items-center gap-6 pb-8">
-                <img src="Equipos/CHIPERIA.png" alt="Escudo Club Chiperia"
-                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
-                <div>
-                    <h2 class="text-2xl font-semibold mb-2">Club Chiperia La Negrita</h2>
-                    <p class="italic text-sm text-gray-600 mb-3">--------</p>
-                    <p class="text-justify text-base leading-relaxed max-w-xl">
-                        ------------
-                    </p>
-                </div>
-            </article>
-            <!-- Equipo 14 -->
-            <article class="flex flex-col sm:flex-row items-center gap-6 pb-8">
-                <img src="Equipos/atl. Poty.png" alt="Escudo Atletico POTY"
-                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
-                <div>
-                    <h2 class="text-2xl font-semibold mb-2">Club Atletico POTY</h2>
-                    <p class="italic text-sm text-gray-600 mb-3">-------</p>
-                    <p class="text-justify text-base leading-relaxed max-w-xl">------------
-                    </p>
-                </div>
-            </article>
-            <!-- Equipo 15 -->
-            <article class="flex flex-col sm:flex-row items-center gap-6 pb-8">
-                <img src="Equipos/FECHA-LIBRE.jpg" alt="Escudo Fecha-Libre"
-                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
-                <div>
-                    <h2 class="text-2xl font-semibold mb-2">Club Fecha-Libre</h2>
-                    <p class="italic text-sm text-gray-600 mb-3">--------</p>
-                    <p class="text-justify text-base leading-relaxed max-w-xl">
-                        ------------
-                    </p>
-                </div>
-            </article>
-            <!-- Equipo 16 -->
-            <article class="flex flex-col sm:flex-row items-center gap-6 pb-8">
-                <img src="Equipos/Grupo nino.png" alt="Escudo Grupo NINO"
-                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
-                <div>
-                    <h2 class="text-2xl font-semibold mb-2">Club Grupo NINO</h2>
-                    <p class="italic text-sm text-gray-600 mb-3">-------</p>
-                    <p class="text-justify text-base leading-relaxed max-w-xl">
-                        ------------
-                    </p>
-                </div>
-            </article>
-            <!-- Equipo 17 -->
-            <article class="flex flex-col sm:flex-row items-center gap-6 pb-8">
-                <img src="Equipos/Verdagua.png" alt="Escudo Verdagua"
-                    class="w-28 h-28 object-contain flex-shrink-0 rounded-full" />
-                <div>
-                    <h2 class="text-2xl font-semibold mb-2">Club Verdagua</h2>
-                    <p class="italic text-sm text-gray-600 mb-3">-------</p>
-                    <p class="text-justify text-base leading-relaxed max-w-xl">
-                        ------------
-                    </p>
-                </div>
-            </article>
+            </div>
         </section>
-
     </main>
 
-    <!-- FOOTER -->
-    <footer class="bg-black/80 text-white py-10 mt-12 rounded-t-2xl shadow-inner backdrop-blur-sm">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="mb-6">
-                <h2 class="text-center text-xl font-semibold mb-6">Contactos Municipales</h2>
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 justify-items-center">
-                    <a href="https://wa.me/5493765216291?text=Hola,%20quisiera%20poder%20hablar%20con%20la%20Intendenta"
-                        target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fas fa-city text-3xl"></i>
-                        <p class="text-sm">Mesa de Entrada</p>
-                    </a>
-                    <a href="https://wa.me/5493765216293?text=Hola,%20quisiera%20información%20sobre%20Recaudaciones"
-                        target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fas fa-wallet text-3xl"></i>
-                        <p class="text-sm">Recaudaciones</p>
-                    </a>
-                    <a href="https://wa.me/5493765208091?text=Hola,%20quisiera%20información%20sobre%20Calidad%20de%20Vida"
-                        target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fas fa-heartbeat text-3xl"></i>
-                        <p class="text-sm">Calidad de Vida</p>
-                    </a>
-                    <a href="https://wa.me/5493765208039?text=Hola,%20quisiera%20información%20sobre%20Obra%20Pública"
-                        target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fas fa-tools text-3xl"></i>
-                        <p class="text-sm">Obra Pública</p>
-                    </a>
-                    <a href="https://wa.me/5493765216294?text=Hola,%20quisiera%20información%20sobre%20Agua%20Potable"
-                        target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fas fa-tint text-3xl"></i>
-                        <p class="text-sm">Agua Potable</p>
-                    </a>
-                    <a href="https://chat.whatsapp.com/IKqujeJkOi54nDEFW3yyCT" target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fab fa-whatsapp text-3xl"></i>
-                        <p class="text-sm">Grupo Feriantes</p>
-                    </a>
+    <footer class="bg-black text-white pt-20 pb-10 mt-20">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+
+            <div class="space-y-6">
+                <img src="img/logosan.png" class="h-24 brightness-0 invert" alt="Logo Santa Ana">
+                <p class="text-gray-400 text-sm font-medium leading-relaxed">
+                    Trabajando por el desarrollo sustentable y el bienestar de cada vecino de <span
+                        class="text-white font-bold">Santa Ana, Misiones.</span>
+                </p>
+                <div class="flex gap-4 text-xl">
+                    <a href="#" class="text-gray-400 hover:text-[#fbff00] transition"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-[#fbff00] transition"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-[#fbff00] transition"><i
+                            class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
-            <p class="text-center text-xs md:text-sm mt-8">&copy; Municipalidad de Santa Ana. Todos los derechos
-                reservados.</p>
+
+            <div>
+                <h5
+                    class="font-black text-[#fbff00] uppercase text-sm mb-8 tracking-widest border-l-4 border-[#fbff00] pl-3">
+                    Gestión Municipal
+                </h5>
+                <ul class="grid grid-cols-1 gap-3 text-sm text-gray-300">
+                    <li><a href="https://wa.me/5493765216291"
+                            class="hover:text-[#fbff00] flex items-center gap-2 transition"><i
+                                class="fas fa-chevron-right text-[10px]"></i> Mesa de entrada</a></li>
+                    <li><a href="https://wa.me/5493765216293"
+                            class="hover:text-[#fbff00] flex items-center gap-2 transition"><i
+                                class="fas fa-chevron-right text-[10px]"></i> Recaudaciones</a></li>
+                    <li><a href="https://wa.me/5493765208091"
+                            class="hover:text-[#fbff00] flex items-center gap-2 transition"><i
+                                class="fas fa-chevron-right text-[10px]"></i> Calidad de Vida</a></li>
+                    <li><a href="https://wa.me/5493765208039"
+                            class="hover:text-[#fbff00] flex items-center gap-2 transition"><i
+                                class="fas fa-chevron-right text-[10px]"></i> Obra Pública</a></li>
+                    <li><a href="https://wa.me/5493765216294"
+                            class="hover:text-[#fbff00] flex items-center gap-2 transition"><i
+                                class="fas fa-chevron-right text-[10px]"></i> Agua Potable</a></li>
+                    <li><a href="https://chat.whatsapp.com/IKqujeJkOi54nDEFW3yyCT"
+                            class="hover:text-[#fbff00] flex items-center gap-2 transition"><i
+                                class="fas fa-chevron-right text-[10px]"></i> Comunidad Feriantes</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5
+                    class="font-black text-[#fbff00] uppercase text-sm mb-8 tracking-widest border-l-4 border-[#fbff00] pl-3">
+                    Nuestra Ubicación
+                </h5>
+                <div
+                    class="rounded-2xl overflow-hidden h-40 border border-white/10 shadow-2xl grayscale hover:grayscale-0 transition duration-700">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3546.123456789!2d-55.5815!3d-27.3711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDIyJzE2LjAiUyA1NcKwMzQnNTMuNCJX!5e0!3m2!1ses!2sar!4v1700000000000"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+                <p class="text-[10px] text-gray-500 mt-3 italic text-right uppercase">Av. San Martín y Belgrano, Santa
+                    Ana</p>
+            </div>
+
+        </div>
+
+        <div
+            class="max-w-7xl mx-auto px-6 border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest text-center md:text-left">
+                © 2026 Municipalidad de Santa Ana - Misiones | Intendencia Mabel Pezoa
+            </p>
+            <div class="bg-[#fbff00] text-black px-4 py-1 rounded-full text-[9px] font-black uppercase italic">
+                Misiones, Argentina
+            </div>
         </div>
     </footer>
-
-    <script>
-        function openModal(imageSrc) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-            modalImg.src = imageSrc;
-            modal.classList.remove('hidden');
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('imageModal');
-            modal.classList.add('hidden');
-        }
-    </script>
-
 </body>
 
 </html>

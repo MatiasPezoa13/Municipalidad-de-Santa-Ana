@@ -1,426 +1,343 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 
-</html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obras Públicas | Municipalidad</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Obras Públicas | Municipalidad de Santa Ana</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="shortcut icon" href="santa.ico" type="image/x-icon" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .text-muniDark {
+            color: #1a1a1a;
+        }
+
+        .bg-muniYellow {
+            background-color: #fbff00;
+        }
+
+        .bg-muniDark {
+            background-color: #1a1a1a;
+        }
+    </style>
 </head>
 
-<body class="bg-white text-gray-800">
-    <!-- HEADER - ocupa 100% de ancho -->
-    <header class="shadow-md p-2 w-full" style="background-color: #fbff00;">
-        <div class="flex items-center justify-center flex-wrap gap-6 px-4">
-            <!-- Logo + Título -->
-            <div class="flex items-center gap-3">
-                <img src="img/logosan.png" alt="Logo Municipalidad" class="w-24 h-24 object-contain" />
-                <h1 class="text-lg font-bold text-black">MUNICIPALIDAD DE SANTA ANA</h1>
+<body class="bg-slate-50 text-gray-800">
+
+    <div class="w-full bg-muniYellow text-black py-2 px-4 border-b border-black/10">
+        <div
+            class="max-w-7xl mx-auto flex flex-wrap justify-center md:justify-between items-center gap-4 text-[11px] font-black uppercase tracking-wider">
+            <div class="flex gap-4">
+                <span>FM 94.7</span>
+                <span class="text-black/30">|</span>
+                <span>@santaanamunicipalidad</span>
             </div>
-            <!-- Menú de navegación -->
-            <nav class="mt-2 md:mt-0 justify-center">
-                <ul class="flex flex-wrap gap-4 text-sm font-semibold text-black">
-                    <!-- GOBIERNO -->
-                    <li class="relative group">
-                        <a href="#" class="hover:text-green-900" data-toggle="gobierno">GOBIERNO</a>
-                        <div data-menu="gobierno" class="hidden absolute z-10 bg-white shadow-xl rounded-lg p-4 mt-2 w-64 border border-gray-200
-               left-0 group-hover:block">
-                            <ul class="space-y-2 text-sm text-gray-800">
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user-tie text-green-600"></i> Intendenta Lic. M. Mabel
-                                        Pezoa</a></li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user-tie text-green-600"></i> Presidente HCD Prof. Eikman
-                                        Matías</a></li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user text-green-600"></i> Vice-Presidente Mariela Scholles</a>
-                                </li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user text-green-600"></i>Concejal Otilia Alderete</a>
-                                </li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user text-green-600"></i>Concejal Olivera Sandro</a>
-                                </li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user text-green-600"></i>Concejal Dario Vera</a></li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user-cog text-green-600"></i> Secretaria del Concejo Salina
-                                        Priscila</a></li>
-                                <li><a href="#" class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fas fa-user-cog text-green-600"></i> Pro-Secretaria Mezetti
-                                        Daniela</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <!-- NOTICIAS -->
-                    <li><a href="noticias.html" class="hover:text-green-900">NOTICIAS</a></li>
-                    <!-- TURISMO -->
-                    <li><a href="index.html" class="hover:text-green-900">TURISMO</a></li>
-                    <!-- ACTIVIDADES -->
-                    <li><a href="actividades.html" class="hover:text-green-900">ACTIVIDADES</a></li>
-                    <!-- CONTACTOS -->
-                    <li class="relative group">
-                        <a href="" class="hover:text-green-900" data-toggle="contactos">CONTACTOS</a>
-                        <div data-menu="contactos" class="hidden absolute z-10 bg-white shadow-xl rounded-lg p-4 mt-2 w-64 border border-gray-200
-               left-0 group-hover:block">
-                            <ul class="space-y-2 text-sm text-gray-800">
-                                <li><a href="https://wa.me/5493765216291?text=Hola,%20quisiera%20información%20sobre%20la%20Municipalidad"
-                                        target="_blank"
-                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fab fa-whatsapp text-green-600"></i> Mesa de Entrada</a></li>
-                                <li><a href="https://wa.me/5493765216293?text=Hola,%20quisiera%20información%20sobre%20Recaudaciones"
-                                        target="_blank"
-                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fab fa-whatsapp text-green-600"></i> Recaudaciones</a></li>
-                                <li><a href="https://wa.me/5493765208091?text=Hola,%20quisiera%20información%20sobre%20Calidad%20De%20Vida"
-                                        target="_blank"
-                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fab fa-whatsapp text-green-600"></i> Calidad de Vida</a></li>
-                                <li><a href="https://wa.me/5493765208039?text=Hola,%20quisiera%20información%20sobre%20Obra%20Pública"
-                                        target="_blank"
-                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fab fa-whatsapp text-green-600"></i> Obra Pública</a></li>
-                                <li><a href="https://wa.me/5493765216294?text=Hola,%20quisiera%20información%20sobre%20Agua%20Potable"
-                                        target="_blank"
-                                        class="flex items-center gap-2 hover:text-green-800 transition"><i
-                                            class="fab fa-whatsapp text-green-600"></i> Agua Potable</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!-- BARRA INFERIOR 100% ANCHO -->
-    <div class="w-full text-black" style="background-color: #fbff00;">
-        <div class="flex flex-wrap justify-center items-center gap-2 py-1 px-4 text-sm">
-            <span>FM 94.7</span>
-            <span>|</span>
-            <span>@santaanamunicipalidad</span>
-            <span>|</span>
-            <span>Av. San Martín & Belgrano</span>
-            <span>|</span>
-            <i class="fas fa-phone"></i>
-            <span>+54 9 3765-216291</span>
+            <div class="flex items-center gap-2">
+                <i class="fas fa-phone"></i>
+                <span>+54 9 3765-216291</span>
+            </div>
         </div>
     </div>
-    <!-- Header -->
-    <header class="bg-white border-b border-gray-300 shadow-sm py-6 mb-8">
-        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
-            <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight"> Arreglos y Asfaltado en Santa Ana</h1>
 
-            <!-- Botón estético en verde -->
-            <a href="index.html"
-                class="inline-flex items-center gap-2 text-white bg-green-600 hover:bg-green-700 transition duration-300 px-4 py-2 rounded-full shadow-md text-sm font-semibold">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-                </svg>
-                Volver al inicio
-            </a>
-        </div>
+    <header class="sticky top-0 z-50 bg-[#fbff00] shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="img/logosan.png" alt="Logo"
+                    class="h-14 w-auto transform hover:scale-105 transition duration-300" />
+                <div class="leading-tight">
+                    <h1 class="text-sm font-black text-black">SANTA ANA</h1>
+                    <p class="text-[10px] text-gray-800 font-bold uppercase tracking-tighter">Municipalidad</p>
+                </div>
+            </div>
+
+            <ul class="hidden lg:flex items-center gap-8 text-sm font-bold text-black">
+                <li class="relative group">
+                    <button class="flex items-center gap-1 hover:opacity-80 transition">
+                        GOBIERNO <i class="fas fa-chevron-down text-[10px]"></i>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 mt-2 w-72 bg-white shadow-2xl rounded-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 p-4 text-gray-800">
+                        <a href="#"
+                            class="block p-2 hover:bg-gray-50 rounded-lg transition text-xs uppercase font-bold">Intendenta
+                            Lic. Mabel Pezoa</a>
+                        <a href="#"
+                            class="block p-2 hover:bg-gray-50 rounded-lg transition text-xs uppercase border-t mt-1 pt-3">Presidente
+                            HCD Prof. Eikman Matias</a>
+                        <a href="#"
+                            class="block p-2 hover:bg-gray-50 rounded-lg transition text-xs uppercase border-t mt-1 pt-3">Vice-Presidente
+                            Mariela Scholles</a>
+                        <a href="#"
+                            class="block p-2 hover:bg-gray-50 rounded-lg transition text-xs uppercase border-t mt-1 pt-3">Concejal
+                            Otilia Alderete</a>
+                        <a href="#"
+                            class="block p-2 hover:bg-gray-50 rounded-lg transition text-xs uppercase border-t mt-1 pt-3">Concejal
+                            Olivera Sandro</a>
+                        <a href="#"
+                            class="block p-2 hover:bg-gray-50 rounded-lg transition text-xs uppercase border-t mt-1 pt-3">Concejal
+                            Vera Dario</a>
+                        <a href="#"
+                            class="block p-2 hover:bg-gray-50 rounded-lg transition text-xs uppercase border-t mt-1 pt-3">Secretaria
+                            del Concejo Salina Priscila</a>
+                        <a href="#"
+                            class="block p-2 hover:bg-gray-50 rounded-lg transition text-xs uppercase border-t mt-1 pt-3">Pro
+                            - Secretaria Mezetti Daniela</a>
+                    </div>
+                </li>
+                <li><a href="noticias.html" class="hover:opacity-80 transition">NOTICIAS</a></li>
+                <li><a href="#Turismo" class="hover:opacity-80 transition">TURISMO</a></li>
+                <li><a href="actividades.html" class="hover:opacity-80 transition">ACTIVIDADES</a></li>
+                <li>
+                    <a href="https://wa.me/5493765216291"
+                        class="bg-black text-yellow-300 px-5 py-2 rounded-full shadow-md hover:scale-105 transition">CONTACTO</a>
+                </li>
+            </ul>
+
+            <button class="lg:hidden text-2xl text-black" id="btn-mobile"><i class="fas fa-bars"></i></button>
+        </nav>
     </header>
-    <!-- Script para mostrar u ocultar los menús desplegables -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const toggles = document.querySelectorAll("[data-toggle]");
-            toggles.forEach(toggle => {
-                toggle.addEventListener("click", (e) => {
-                    e.preventDefault();
-                    const menuName = toggle.getAttribute("data-toggle");
-                    const menu = document.querySelector(`[data-menu="${menuName}"]`);
-                    // Cierra otros menús abiertos
-                    document.querySelectorAll("[data-menu]").forEach(m => {
-                        if (m !== menu) m.classList.add("hidden");
-                    });
-                    // Toggle de visibilidad
-                    menu.classList.toggle("hidden");
-                });
-            });
-            // Oculta el menú si se hace clic fuera
-            document.addEventListener("click", (e) => {
-                if (!e.target.closest("[data-toggle]") && !e.target.closest("[data-menu]")) {
-                    document.querySelectorAll("[data-menu]").forEach(m => m.classList.add("hidden"));
-                }
-            });
-        });
-    </script>
-    <section class="bg-white py-16">
-        <div class="max-w-5xl mx-auto px-4 text-center">
-            <p class="text-lg text-gray-600 mb-4">
-                A continuación se muestra el mapa con las calles y zonas que fueron intervenidas con trabajos de
-                asfaltado, bacheo y mejoras en la vía pública.
-            </p>
-            <!-- Leyenda de colores -->
-            <div class="flex justify-center gap-6 items-center mb-8">
-                <div class="flex items-center gap-2">
-                    <div class="w-5 h-5 bg-orange-400 rounded-sm border border-gray-300"></div>
-                    <span class="text-gray-700 text-sm">Calles de tierra arregladas</span>
+
+    <section class="bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-16">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div class="max-w-3xl">
+                    <span class="text-green-600 font-black uppercase text-sm tracking-widest mb-2 block italic">OBRAS
+                        PUBLICAS.</span>
+                    <h2 class="text-4xl md:text-6xl font-black text-muniDark leading-tight uppercase">Obras <span
+                            class="text-green-600">& Asfaltado</span></h2>
+                    <p class="text-gray-500 mt-6 text-lg font-medium">Plan integral de mantenimiento vial y mejora de
+                        espacios públicos en Santa Ana.</p>
                 </div>
-                <div class="flex items-center gap-2">
-                    <div class="w-5 h-5 bg-yellow-300 rounded-sm border border-gray-300"></div>
-                    <span class="text-gray-700 text-sm">Calles asfaltadas</span>
-                </div>
+                <a href="index.html"
+                    class="inline-flex items-center gap-3 bg-gray-100 hover:bg-gray-200 text-muniDark font-black px-6 py-4 rounded-2xl transition-all text-sm uppercase">
+                    <i class="fas fa-arrow-left"></i> Volver al Inicio
+                </a>
             </div>
-            <!-- Imagen del mapa -->
-            <div class="overflow-x-auto rounded-xl shadow-xl border border-gray-200">
-                <img src="Obras/Mapa Santa Ana.png" alt="Mapa de obras públicas en Santa Ana" class="w-full h-auto">
-            </div>
-            <!-- Pie de imagen -->
-            <p class="text-sm text-gray-500 mt-4">📍 Mapa actualizado con zonas intervenidas — Municipalidad de Santa
-                Ana</p>
-
-            <section class="text-center py-12 px-4">
-                <h3 class="text-3xl font-bold text-gray-800 mb-4">
-                    Incorporación de nuevos juegos en la Plaza de Santa Ana.
-                </h3>
-
-                <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
-                    En el marco de las acciones de mejora de los espacios públicos de la localidad, se llevó a cabo la
-                    instalación de nuevos juegos infantiles en la plaza central de Santa Ana.
-
-                    El objetivo principal es ofrecer a los niños y niñas de la comunidad un espacio de recreación más
-                    seguro, atractivo y completo, fomentando la integración familiar y el disfrute al aire libre.
-
-                    Con esta incorporación, seguimos trabajando para fortalecer los lugares de encuentro social y
-                    brindar a los vecinos un entorno adecuado para el esparcimiento y la convivencia.
-
-                    Municipalidad de Santa Ana.
-                </p>
-            </section>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
-                <!-- Imagenes -->
-                <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer" onclick="openModal('Obras/PLAZA.jpg')">
-                    <img src="Obras/PLAZA.jpg" alt="Obreros trabajando"
-                        class="w-full h-60 object-cover hover:scale-105 transition duration-300">
-                </div>
-                <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                    onclick="openModal('Obras/PLAZA (1).jpg')">
-                    <img src="Obras/PLAZA (1).jpg" alt="Obra publica"
-                        class="w-full h-60 object-cover hover:scale-105 transition duration-300">
-                </div>
-                <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                    onclick="openModal('Obras/PLAZA (2).jpg')">
-                    <img src="Obras/PLAZA (2).jpg" alt="Personal en obra pública"
-                        class="w-full h-60 object-cover hover:scale-105 transition duration-300">
-                </div>
-            </div>
-
-            <!-- Galería de obras en acción -->
-            <div class="mt-16 relative z-0">
-                <section class="text-center py-12 px-4">
-                    <h3 class="text-3xl font-bold text-gray-800 mb-4">
-                        Trabajos realizados en el Cerro de Santa Ana
-                    </h3>
-
-                    <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
-                        Personal municipal y maquinaria en acción durante las tareas de mejora de caminos, para
-                        facilitar el
-                        acceso de los vecinos y la seguridad de los mismos.
-                    </p>
-
-                    <ul class="max-w-xl mx-auto text-left text-gray-700 list-disc list-inside space-y-2">
-                        <li>Calle acceso a la Comunidad aborigen Santa Ana Miri</li>
-                        <li>Escuela del cerro 166</li>
-                        <li>Calle de Scherr</li>
-                        <li>Entrada a las cabañas DyD</li>
-                        <li>Entrada a las cabañas La Victoria</li>
-                        <li>Itatí Juañuk</li>
-                        <li>Entrada a La Tranquilidad</li>
-                    </ul>
-                </section>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
-                    <!-- Imagenes -->
-                    <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                        onclick="openModal('Obras/arreglo cerro (1).jpg')">
-                        <img src="Obras/arreglo cerro (1).jpg" alt="Personal en obra pública"
-                            class="w-full h-60 object-cover hover:scale-105 transition duration-300">
-                    </div>
-                    <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                        onclick="openModal('Obras/arreglo cerro (2).jpg')">
-                        <img src="Obras/arreglo cerro (2).jpg" alt="Personal en obra pública"
-                            class="w-full h-60 object-cover hover:scale-105 transition duration-300">
-                    </div>
-                    <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                        onclick="openModal('Obras/arreglo cerro (3).jpg')">
-                        <img src="Obras/arreglo cerro (3).jpg" alt="Personal en obra pública"
-                            class="w-full h-60 object-cover hover:scale-105 transition duration-300">
-                    </div>
-                    <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                        onclick="openModal('Obras/arreglo cerro (4).jpg')">
-                        <img src="Obras/arreglo cerro (4).jpg" alt="Personal en obra pública"
-                            class="w-full h-60 object-cover hover:scale-105 transition duration-300">
-                    </div>
-                    <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                        onclick="openModal('Obras/arreglo cerro.jpg')">
-                        <img src="Obras/arreglo cerro.jpg" alt="Personal en obra pública"
-                            class="w-full h-60 object-cover hover:scale-105 transition duration-300">
-                    </div>
-                    <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                        onclick="openModal('Obras/arreglo cerro (5).jpg')">
-                        <img src="Obras/arreglo cerro (5).jpg" alt="Personal en obra pública"
-                            class="w-full h-60 object-cover hover:scale-105 transition duration-300">
-                    </div>
-                </div>
-                <!-- Modal de imagen -->
-                <div id="imageModal"
-                    class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50">
-                    <div class="relative max-w-4xl w-full px-4">
-                        <!-- Botón de cerrar estilizado -->
-                        <button onclick="closeModal()"
-                            class="absolute top-4 right-4 bg-white text-black hover:bg-red-600 hover:text-white rounded-full p-2 shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
-                        <img id="modalImage" src="" class="w-full h-auto rounded-xl shadow-xl border-4 border-white">
-                    </div>
-                </div>
-            </div>
-            <section class="text-center py-12 px-4">
-                <h3 class="text-3xl font-bold text-gray-800 mb-4">
-                    Arreglos en las Manzanas 203 - 204 - 236 - 235.
-                </h3>
-
-                <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
-                    Se realizaron tareas de nivelación y mantenimiento de los caminos de tierra en las manzanas 203,
-                    204, 235 y 236, con el objetivo de mejorar la transitabilidad y el acceso para los vecinos de la
-                    zona.
-
-                    Estas mejoras forman parte de un plan de mantenimiento vial que busca facilitar la circulación,
-                    especialmente en días de lluvia, y garantizar mayor seguridad para quienes viven o transitan por el
-                    lugar.
-                </p>
-            </section>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
-                <!-- Imagenes -->
-                <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                    onclick="openModal('Obras/Manzana 203.jpg')">
-                    <img src="Obras/Manzana 203.jpg" alt="Obreros trabajando"
-                        class="w-full h-60 object-cover hover:scale-105 transition duration-300">
-                </div>
-                <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                    onclick="openModal('Obras/Manzana 203(1).jpg')">
-                    <img src="Obras/Manzana 203(1).jpg" alt="Obra publica"
-                        class="w-full h-60 object-cover hover:scale-105 transition duration-300">
-                </div>
-                <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                    onclick="openModal('Obras/Manzana 203(2).jpg')">
-                    <img src="Obras/Manzana 203(2).jpg" alt="Personal en obra pública"
-                        class="w-full h-60 object-cover hover:scale-105 transition duration-300">
-                </div>
-            </div>
-
-            <section class="text-center py-12 px-4">
-                <h3 class="text-3xl font-bold text-gray-800 mb-4">
-                    Mejoras en los caminos de tierra – Manzanas 236 y 245
-                </h3>
-
-                <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
-                    El equipo municipal llevó a cabo trabajos de arreglo y mantenimiento en los caminos de tierra de la
-                    manzana 236, la manzana 245 y en el sector inferior de esta última.
-                    Estas tareas tuvieron como objetivo mejorar la circulación y el acceso de los vecinos, especialmente
-                    en días de lluvia, garantizando mayor seguridad y comodidad para todos los que transitan por la
-                    zona.
-                </p>
-            </section>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
-                <!-- Imagenes -->
-                <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                    onclick="openModal('Obras/Manza 245.jpg')">
-                    <img src="Obras/Manza 245.jpg" alt="Obreros trabajando"
-                        class="w-full h-60 object-cover hover:scale-105 transition duration-300">
-                </div>
-                <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                    onclick="openModal('Obras/Manza 245 (1).jpg')">
-                    <img src="Obras/Manza 245 (1).jpg" alt="Obra publica"
-                        class="w-full h-60 object-cover hover:scale-105 transition duration-300">
-                </div>
-                <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                    onclick="openModal('Obras/Manza 245 (2).jpg')">
-                    <img src="Obras/Manza 245 (2).jpg" alt="Personal en obra pública"
-                        class="w-full h-60 object-cover hover:scale-105 transition duration-300">
-                </div>
-            </div>
-
         </div>
     </section>
-    </div>
-    <footer class="bg-black/80 text-white py-10 mt-12 rounded-t-2xl shadow-inner backdrop-blur-sm">
-        <div class="max-w-7xl mx-auto px-4">
-            <!-- Sección de Contactos -->
-            <div class="mb-6">
-                <h2 class="text-center text-xl font-semibold mb-6">Contactos Municipales</h2>
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 justify-items-center">
-                    <!-- Municipalidad -->
-                    <a href="https://wa.me/5493765216291?text=Hola,%20quisiera%20poder%20hablar%20con%20la%20Intendenta"
-                        target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fas fa-city text-3xl"></i>
-                        <p class="text-sm">Mesa de Entrada</p>
-                    </a>
-                    <!-- Recaudaciones -->
-                    <a href="https://wa.me/5493765216293?text=Hola,%20quisiera%20información%20sobre%20Recaudaciones"
-                        target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fas fa-wallet text-3xl"></i>
-                        <p class="text-sm">Recaudaciones</p>
-                    </a>
-                    <!-- Calidad de Vida -->
-                    <a href="https://wa.me/5493765208091?text=Hola,%20quisiera%20información%20sobre%20Calidad%20de%20Vida"
-                        target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fas fa-heartbeat text-3xl"></i>
-                        <p class="text-sm">Calidad de Vida</p>
-                    </a>
-                    <!-- Obra Pública -->
-                    <a href="https://wa.me/5493765208039?text=Hola,%20quisiera%20información%20sobre%20Obra%20Pública"
-                        target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fas fa-tools text-3xl"></i>
-                        <p class="text-sm">Obra Pública</p>
-                    </a>
-                    <!-- Agua Potable -->
-                    <a href="https://wa.me/5493765216294?text=Hola,%20quisiera%20información%20sobre%20Agua%20Potable"
-                        target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fas fa-tint text-3xl"></i>
-                        <p class="text-sm">Agua Potable</p>
-                    </a>
-                    <!-- Feriantes -->
-                    <a href="https://chat.whatsapp.com/IKqujeJkOi54nDEFW3yyCT" target="_blank"
-                        class="flex flex-col items-center gap-2 text-center hover:text-green-400 transition">
-                        <i class="fab fa-whatsapp text-3xl"></i>
-                        <p class="text-sm">Grupo Feriantes</p>
-                    </a>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div
+            class="bg-white rounded-[3rem] p-8 md:p-12 shadow-sm border border-gray-100 mb-20 overflow-hidden relative">
+            <div class="grid lg:grid-cols-3 gap-12 items-center">
+                <div class="lg:col-span-1">
+                    <h3 class="text-2xl font-black text-muniDark uppercase mb-4">Mapa de <br><span
+                            class="text-green-600">Intervención</span></h3>
+                    <p class="text-gray-500 font-medium mb-8 leading-relaxed">Visualice las calles y zonas donde el
+                        equipo municipal ha realizado trabajos de asfaltado, bacheo y nivelación.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 p-4 bg-orange-50 rounded-2xl border border-orange-100">
+                            <div class="w-10 h-10 bg-orange-400 rounded-xl shadow-inner"></div>
+                            <span class="text-sm font-black text-orange-900 uppercase tracking-tighter">Caminos de
+                                tierra arreglados</span>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-yellow-50 rounded-2xl border border-yellow-100">
+                            <div class="w-10 h-10 bg-yellow-300 rounded-xl shadow-inner"></div>
+                            <span class="text-sm font-black text-yellow-900 uppercase tracking-tighter">Calles
+                                Asfaltadas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-2 group cursor-zoom-in" onclick="openModal('Obras/Mapa Santa Ana.png')">
+                    <div
+                        class="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white transition-transform duration-500 group-hover:scale-[1.02]">
+                        <img src="Obras/Mapa Santa Ana.png" alt="Mapa" class="w-full h-auto">
+                    </div>
+                    <p class="text-center text-[10px] font-bold text-gray-400 mt-4 uppercase tracking-[0.2em]">📍 Mapa
+                        actualizado de gestión 2024</p>
                 </div>
             </div>
-            <!-- Derechos -->
-            <p class="text-center text-xs md:text-sm mt-8">&copy; Municipalidad de Santa Ana. Todos los derechos
-                reservados.</p>
+        </div>
+
+        <div class="mb-24">
+            <div class="text-center mb-12">
+                <h3
+                    class="text-3xl font-black text-muniDark uppercase italic mb-4 underline decoration-green-600 decoration-4 underline-offset-8">
+                    Espacios de Recreación</h3>
+                <p class="max-w-2xl mx-auto text-gray-500 font-semibold italic">Instalación de nuevos juegos en la Plaza
+                    Central para el disfrute de nuestras familias.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <img src="Obras/PLAZA.jpg" onclick="openModal(this.src)"
+                    class="h-80 w-full object-cover rounded-[2.5rem] border-4 border-white shadow-lg cursor-pointer hover:scale-105 transition duration-500">
+                <img src="Obras/PLAZA (1).jpg" onclick="openModal(this.src)"
+                    class="h-80 w-full object-cover rounded-[2.5rem] border-4 border-white shadow-lg cursor-pointer hover:scale-105 transition duration-500">
+                <img src="Obras/PLAZA (2).jpg" onclick="openModal(this.src)"
+                    class="h-80 w-full object-cover rounded-[2.5rem] border-4 border-white shadow-lg cursor-pointer hover:scale-105 transition duration-500">
+            </div>
+        </div>
+
+        <div class="bg-muniDark rounded-[3rem] p-12 mb-24 text-white">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-green-500 font-black uppercase text-xs tracking-widest mb-4 block">Zonas Rurales y
+                        Turísticas</span>
+                    <h3 class="text-4xl font-black mb-6 uppercase leading-none">Trabajos en el <br><span
+                            class="text-green-500">Cerro Santa Ana</span></h3>
+                    <p class="text-gray-400 mb-8 font-medium">Mejora de accesos estratégicos para vecinos y
+                        establecimientos turísticos.</p>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <li
+                            class="flex items-center gap-3 text-sm font-bold bg-white/5 p-3 rounded-xl border border-white/10 italic">
+                            <i class="fas fa-check-circle text-green-500"></i> Comunidad Miri
+                        </li>
+                        <li
+                            class="flex items-center gap-3 text-sm font-bold bg-white/5 p-3 rounded-xl border border-white/10 italic">
+                            <i class="fas fa-check-circle text-green-500"></i> Escuela 166
+                        </li>
+                        <li
+                            class="flex items-center gap-3 text-sm font-bold bg-white/5 p-3 rounded-xl border border-white/10 italic">
+                            <i class="fas fa-check-circle text-green-500"></i> Cabañas DyD y La Victoria
+                        </li>
+                        <li
+                            class="flex items-center gap-3 text-sm font-bold bg-white/5 p-3 rounded-xl border border-white/10 italic">
+                            <i class="fas fa-check-circle text-green-500"></i> Itatí Juañuk
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="Obras/arreglo cerro (1).jpg" onclick="openModal(this.src)"
+                        class="rounded-2xl cursor-pointer hover:opacity-80 transition shadow-xl border-2 border-white/10">
+                    <img src="Obras/arreglo cerro (2).jpg" onclick="openModal(this.src)"
+                        class="rounded-2xl cursor-pointer hover:opacity-80 transition shadow-xl border-2 border-white/10">
+                    <img src="Obras/arreglo cerro (3).jpg" onclick="openModal(this.src)"
+                        class="rounded-2xl cursor-pointer hover:opacity-80 transition shadow-xl border-2 border-white/10">
+                    <img src="Obras/arreglo cerro (4).jpg" onclick="openModal(this.src)"
+                        class="rounded-2xl cursor-pointer hover:opacity-80 transition shadow-xl border-2 border-white/10">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-20">
+            <h3 class="text-2xl font-black text-muniDark uppercase text-center mb-12 italic">Mantenimiento de Manzanas
+                Urbanas</h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div
+                    class="md:col-span-2 p-8 bg-white rounded-[2rem] border border-gray-100 flex flex-col justify-center">
+                    <h4 class="text-xl font-black text-green-600 uppercase mb-2">Sectores 203, 204, 235 y 236</h4>
+                    <p class="text-gray-500 font-semibold text-sm">Tareas de nivelación de suelo y perfilado de calles
+                        de tierra para garantizar la transitabilidad segura incluso en días de lluvia.</p>
+                </div>
+                <img src="Obras/Manzana 203.jpg" onclick="openModal(this.src)"
+                    class="h-60 w-full object-cover rounded-[2rem] cursor-pointer shadow-lg border-2 border-white hover:scale-105 transition">
+                <img src="Obras/Manzana 203(1).jpg" onclick="openModal(this.src)"
+                    class="h-60 w-full object-cover rounded-[2rem] cursor-pointer shadow-lg border-2 border-white hover:scale-105 transition">
+            </div>
+        </div>
+
+        <div class="mb-20">
+            <h3 class="text-2xl font-black text-muniDark uppercase text-center mb-12 italic">
+                Mantenimiento de Manzanas Urbanas
+            </h3>
+
+            <div class="space-y-12">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div
+                        class="md:col-span-2 p-8 bg-white rounded-[2rem] border border-gray-100 flex flex-col justify-center">
+                        <span class="text-green-600 font-black text-xs uppercase tracking-widest mb-2">Zona Norte</span>
+                        <h4 class="text-xl font-black text-muniDark uppercase mb-2">Sectores 203, 204, 235 y 236</h4>
+                        <p class="text-gray-500 font-semibold text-sm leading-relaxed">
+                            Tareas de nivelación de suelo y perfilado de calles de tierra para garantizar la
+                            transitabilidad segura incluso en días de lluvia.
+                        </p>
+                    </div>
+                    <img src="Obras/Manzana 203.jpg" onclick="openModal(this.src)"
+                        class="h-60 w-full object-cover rounded-[2rem] cursor-pointer shadow-lg border-2 border-white hover:scale-105 transition duration-500">
+                    <img src="Obras/Manzana 203(1).jpg" onclick="openModal(this.src)"
+                        class="h-60 w-full object-cover rounded-[2rem] cursor-pointer shadow-lg border-2 border-white hover:scale-105 transition duration-500">
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <img src="Obras/Manza 245 (2).jpg" onclick="openModal(this.src)"
+                        class="h-60 w-full object-cover rounded-[2rem] cursor-pointer shadow-lg border-2 border-white hover:scale-105 transition duration-500 order-2 md:order-1">
+                    <img src="Obras/Manza 245.jpg" onclick="openModal(this.src)"
+                        class="h-60 w-full object-cover rounded-[2rem] cursor-pointer shadow-lg border-2 border-white hover:scale-105 transition duration-500 order-3 md:order-2">
+                    <div
+                        class="md:col-span-2 p-8 bg-white rounded-[2rem] border border-gray-100 flex flex-col justify-center order-1 md:order-3">
+                        <span class="text-green-600 font-black text-xs uppercase tracking-widest mb-2">Mejora de
+                            Caminos</span>
+                        <h4 class="text-xl font-black text-muniDark uppercase mb-2">Manzanas 236 y 245</h4>
+                        <p class="text-gray-500 font-semibold text-sm leading-relaxed">
+                            Intervención profunda con maquinaria pesada para la recuperación de caminos de tierra,
+                            cuneteo y compactación en sectores estratégicos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="imageModal" class="fixed inset-0 bg-black/95 flex items-center justify-center hidden z-[100] p-6"
+        onclick="closeModal()">
+        <div class="relative max-w-5xl w-full">
+            <button class="absolute -top-12 right-0 text-white text-4xl hover:text-green-500 transition">×</button>
+            <img id="modalImage" src="" class="w-full h-auto rounded-[2rem] border-4 border-white shadow-2xl">
+        </div>
+    </div>
+
+    <footer class="bg-muniDark text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <img src="img/logosan.png" class="h-20 brightness-200 mb-6" alt="Logo">
+                <p class="text-gray-400 text-sm font-medium">Trabajando por el desarrollo sustentable y el bienestar de
+                    cada vecino de Santa Ana, Misiones.</p>
+            </div>
+            <div>
+                <h5 class="font-black text-muniYellow uppercase text-sm mb-6 tracking-widest">Menú Rápido</h5>
+                <ul class="space-y-3 text-sm text-gray-300">
+                    <li><a href="https://wa.me/5493765216291?text=Hola,%20quisiera%20poder%20hablar%20con%20la%20Intendenta"
+                            class="hover:text-white transition">Mesa de entrada</a></li>
+                    <li><a href="https://wa.me/5493765216293?text=Hola,%20quisiera%20información%20sobre%20Recaudaciones"
+                            class="hover:text-white transition">Recaudaciones</a></li>
+                    <li><a href="https://wa.me/5493765208091?text=Hola,%20quisiera%20información%20sobre%20Calidad%20de%20Vida"
+                            class="hover:text-white transition">Calidad de Vida</a></li>
+                    <li><a href="https://wa.me/5493765208039?text=Hola,%20quisiera%20información%20sobre%20Obra%20Pública"
+                            class="hover:text-white transition">Obra Pública</a></li>
+                    <li><a href="https://wa.me/5493765216294?text=Hola,%20quisiera%20información%20sobre%20Agua%20Potable"
+                            class="hover:text-white transition">Agua Potable</a></li>
+                    <li><a href="https://chat.whatsapp.com/IKqujeJkOi54nDEFW3yyCT"
+                            class="hover:text-white transition">Feriantes</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-black text-muniYellow uppercase text-sm mb-6 tracking-widest">Nuestra Ubicación</h5>
+                <div
+                    class="rounded-2xl overflow-hidden h-32 opacity-50 grayscale hover:grayscale-0 transition duration-500">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14167.3144820624!2d-55.586111!3d-27.466667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94580554f6534571%3A0xc3f73663a89345c2!2sSanta%20Ana%2C%20Misiones!5e0!3m2!1ses!2sar!4v1700000000000"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-6 border-t border-white/10 mt-20 pt-10 text-center text-[10px] text-gray-500 font-bold uppercase tracking-widest">
+            © 2026 Municipalidad de Santa Ana - Misiones | Todos los derechos reservados
         </div>
     </footer>
-    <script>
-        function openModal(imageSrc) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-            modalImg.src = imageSrc;
-            modal.classList.remove('hidden');
-        }
 
-        function closeModal() {
-            const modal = document.getElementById('imageModal');
-            modal.classList.add('hidden');
+    <script>
+        // Modal Logic
+        function openModal(src) {
+            document.getElementById('modalImage').src = src;
+            document.getElementById('imageModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
         }
+        function closeModal() {
+            document.getElementById('imageModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        // Mobile Menu
+        document.getElementById('btn-mobile').onclick = function () {
+            const menu = document.querySelector('ul.hidden');
+            // Nota: Aquí podrías añadir lógica para mostrar el menú móvil si lo necesitas
+            alert('Menú móvil presionado');
+        };
     </script>
 </body>
 

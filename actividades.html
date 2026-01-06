@@ -133,528 +133,404 @@
             </button>
         </nav>
     </header>
-    <section id="cursos" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-6 md:px-12 relative">
+    <section id="cursos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
 
-            <div class="text-center mb-12">
-                <span
-                    class="bg-muniYellow text-black text-[10px] font-black px-4 py-1.5 rounded-full uppercase italic">Nuevas
-                    Oportunidades</span>
-                <h2 class="text-4xl font-black text-black mt-4 italic tracking-tighter uppercase">Cursos y Talleres</h2>
-                <p class="text-gray-500 font-bold text-xs mt-2 uppercase italic tracking-widest">Organizados de forma
-                    puntual en el pueblo</p>
-                <div class="mt-4 h-1.5 w-24 bg-muniYellow mx-auto rounded-full"></div>
+            <div
+                class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 border-b border-gray-100 pb-8">
+                <div class="max-w-2xl">
+                    <span
+                        class="text-green-600 font-black uppercase text-sm tracking-widest mb-2 block">Capacitaciones</span>
+                    <h2 class="text-4xl md:text-5xl font-black text-muniDark leading-tight uppercase">Cursos <span
+                            class="text-green-600">& Talleres</span></h2>
+                    <p class="text-gray-600 mt-4 text-lg font-medium">Formación profesional y talleres puntuales
+                        organizados para la comunidad de Santa Ana.</p>
+                </div>
+                <div class="hidden md:block">
+                    <span
+                        class="bg-gray-100 text-muniDark text-xs font-bold px-5 py-2 rounded-full uppercase italic border border-gray-200">
+                        Nuevas Oportunidades 2026.
+                    </span>
+                </div>
             </div>
 
-            <div class="swiper mySwiperCursos relative group">
-                <div class="swiper-wrapper">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
 
-                    <div class="swiper-slide pb-10">
-                        <div
-                            class="bg-white rounded-[2rem] shadow-xl border border-gray-100 overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300">
-                            <div class="h-48 overflow-hidden">
-                                <img src="Talleres/expon/Audiovisual.jpg" class="w-full h-full object-cover" />
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 group flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="Talleres/expon/Audiovisual.jpg"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            alt="Curso Audiovisual">
+                        <span
+                            class="absolute top-4 left-4 bg-muniYellow text-muniDark text-[10px] font-black px-3 py-1 rounded-full uppercase shadow-sm">Digital</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-black text-muniDark mb-4 leading-tight">Curso de Audiovisual</h3>
+                        <div class="space-y-3 mb-6 flex-grow">
+                            <div class="flex items-center gap-3 text-sm text-gray-500 font-semibold">
+                                <span
+                                    class="bg-green-50 w-7 h-7 flex items-center justify-center rounded-lg text-green-600">📅</span>
+                                09 de Agosto
                             </div>
-                            <div class="p-5 flex-grow">
-                                <h3 class="text-base font-black text-black italic uppercase leading-tight">Curso de
-                                    Audiovisual</h3>
-                                <div class="mt-4 space-y-2">
-                                    <p class="text-[10px] font-bold text-gray-500 uppercase italic flex items-center">
-                                        <i class="far fa-calendar-alt text-muniYellow mr-2"></i> 09 de Agosto
-                                    </p>
-                                    <p class="text-[10px] font-bold text-gray-400 uppercase italic flex items-center">
-                                        <i class="fas fa-map-marker-alt text-muniYellow mr-2"></i> Salón Municipal
-                                    </p>
-                                </div>
+                            <div class="flex items-center gap-3 text-sm text-gray-500 font-semibold">
+                                <span
+                                    class="bg-green-50 w-7 h-7 flex items-center justify-center rounded-lg text-green-600">📍</span>
+                                Salón Municipal
                             </div>
                         </div>
+                        <a href="Talleres/expon/Audiovisual.jpg" target="_blank"
+                            class="text-center bg-muniDark text-white font-bold py-3 rounded-xl hover:bg-green-600 transition-all text-sm shadow-md">Ver
+                            Información</a>
                     </div>
-
-                    <div class="swiper-slide pb-10">
-                        <div
-                            class="bg-white rounded-[2rem] shadow-xl border border-gray-100 overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300">
-                            <div class="h-48 overflow-hidden">
-                                <img src="Talleres/expon/Huertas.jpg" class="w-full h-full object-cover" />
-                            </div>
-                            <div class="p-5 flex-grow">
-                                <h3 class="text-base font-black text-black italic uppercase leading-tight">Capacitación
-                                    sobre Huertas</h3>
-                                <div class="mt-4 space-y-2">
-                                    <p class="text-[10px] font-bold text-gray-500 uppercase italic flex items-center">
-                                        <i class="far fa-calendar-alt text-muniYellow mr-2"></i> 20 de Agosto
-                                    </p>
-                                    <p class="text-[10px] font-bold text-gray-400 uppercase italic flex items-center">
-                                        <i class="fas fa-map-marker-alt text-muniYellow mr-2"></i> S.U.M Cultural
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide pb-10">
-                        <div
-                            class="bg-white rounded-[2rem] shadow-xl border border-gray-100 overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300">
-                            <div class="h-48 overflow-hidden">
-                                <img src="Talleres/expon/Manipulacion De Alimentos.jpg"
-                                    class="w-full h-full object-cover" />
-                            </div>
-                            <div class="p-5 flex-grow">
-                                <h3 class="text-base font-black text-black italic uppercase leading-tight">Manipulación
-                                    de Alimentos</h3>
-                                <div class="mt-4 space-y-2">
-                                    <p class="text-[10px] font-bold text-gray-500 uppercase italic flex items-center">
-                                        <i class="far fa-calendar-alt text-muniYellow mr-2"></i> 20 de Agosto
-                                    </p>
-                                    <p class="text-[10px] font-bold text-gray-400 uppercase italic flex items-center">
-                                        <i class="fas fa-map-marker-alt text-muniYellow mr-2"></i> Salón Municipal
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide pb-10">
-                        <div
-                            class="bg-white rounded-[2rem] shadow-xl border border-gray-100 overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300">
-                            <div class="h-48 overflow-hidden">
-                                <img src="Talleres/expon/Curso de Excel.jpg" class="w-full h-full object-cover" />
-                            </div>
-                            <div class="p-5 flex-grow">
-                                <h3 class="text-base font-black text-black italic uppercase leading-tight">Curso de Uso
-                                    de Excel</h3>
-                                <div class="mt-4 space-y-2">
-                                    <p class="text-[10px] font-bold text-gray-500 uppercase italic flex items-center">
-                                        <i class="far fa-calendar-alt text-muniYellow mr-2"></i> 01 de Agosto
-                                    </p>
-                                    <p class="text-[10px] font-bold text-gray-400 uppercase italic flex items-center">
-                                        <i class="fas fa-map-marker-alt text-muniYellow mr-2"></i> Salón Municipal
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide pb-10">
-                        <div
-                            class="bg-white rounded-[2rem] shadow-xl border border-gray-100 overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300">
-                            <div class="h-48 overflow-hidden">
-                                <img src="Talleres/expon/Taller Folklore.jpg" class="w-full h-full object-cover" />
-                            </div>
-                            <div class="p-5 flex-grow">
-                                <h3 class="text-base font-black text-black italic uppercase leading-tight">Taller de
-                                    Folklore</h3>
-                                <div class="mt-4 space-y-2">
-                                    <p class="text-[10px] font-bold text-gray-400 uppercase italic flex items-center">
-                                        <i class="fas fa-map-marker-alt text-muniYellow mr-2"></i> S.U.M Cultural
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
                 <div
-                    class="swiper-button-prev !text-black bg-muniYellow !w-10 !h-10 rounded-full !-left-2 md:!-left-12 after:!text-sm shadow-lg opacity-0 group-hover:opacity-100 transition duration-300">
-                </div>
-                <div
-                    class="swiper-button-next !text-black bg-muniYellow !w-10 !h-10 rounded-full !-right-2 md:!-right-12 after:!text-sm shadow-lg opacity-0 group-hover:opacity-100 transition duration-300">
+                    class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 group flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="Talleres/expon/Huertas.jpg"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            alt="Huertas">
+                        <span
+                            class="absolute top-4 left-4 bg-green-600 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase shadow-sm">Sustentable</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-black text-muniDark mb-4 leading-tight">Capacitación Huertas</h3>
+                        <div class="space-y-3 mb-6 flex-grow">
+                            <div class="flex items-center gap-3 text-sm text-gray-500 font-semibold">
+                                <span
+                                    class="bg-green-50 w-7 h-7 flex items-center justify-center rounded-lg text-green-600">📅</span>
+                                20 de Agosto
+                            </div>
+                            <div class="flex items-center gap-3 text-sm text-gray-500 font-semibold">
+                                <span
+                                    class="bg-green-50 w-7 h-7 flex items-center justify-center rounded-lg text-green-600">📍</span>
+                                S.U.M Cultural
+                            </div>
+                        </div>
+                        <a href="Talleres/expon/Huertas.jpg" target="_blank"
+                            class="text-center bg-muniDark text-white font-bold py-3 rounded-xl hover:bg-green-600 transition-all text-sm shadow-md">Ver
+                            Información</a>
+                    </div>
                 </div>
 
-                <div class="swiper-pagination"></div>
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 group flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="Talleres/expon/Manipulacion De Alimentos.jpg"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            alt="Alimentos">
+                        <span
+                            class="absolute top-4 left-4 bg-orange-500 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase shadow-sm">Oficios</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-black text-muniDark mb-4 leading-tight">Manipulación de Alimentos</h3>
+                        <div class="space-y-3 mb-6 flex-grow">
+                            <div class="flex items-center gap-3 text-sm text-gray-500 font-semibold">
+                                <span
+                                    class="bg-green-50 w-7 h-7 flex items-center justify-center rounded-lg text-green-600">📅</span>
+                                20 de Agosto
+                            </div>
+                            <div class="flex items-center gap-3 text-sm text-gray-500 font-semibold">
+                                <span
+                                    class="bg-green-50 w-7 h-7 flex items-center justify-center rounded-lg text-green-600">📍</span>
+                                Salón Municipal
+                            </div>
+                        </div>
+                        <a href="Talleres/expon/Manipulacion De Alimentos.jpg" target="_blank"
+                            class="text-center bg-muniDark text-white font-bold py-3 rounded-xl hover:bg-green-600 transition-all text-sm shadow-md">Ver
+                            Información</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 group flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="Talleres/expon/Curso de Excel.jpg"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            alt="Excel">
+                        <span
+                            class="absolute top-4 left-4 bg-blue-600 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase shadow-sm">Herramientas</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-black text-muniDark mb-4 leading-tight">Curso de Uso de Excel</h3>
+                        <div class="space-y-3 mb-6 flex-grow">
+                            <div class="flex items-center gap-3 text-sm text-gray-500 font-semibold">
+                                <span
+                                    class="bg-green-50 w-7 h-7 flex items-center justify-center rounded-lg text-green-600">📅</span>
+                                01 de Agosto
+                            </div>
+                            <div class="flex items-center gap-3 text-sm text-gray-500 font-semibold">
+                                <span
+                                    class="bg-green-50 w-7 h-7 flex items-center justify-center rounded-lg text-green-600">📍</span>
+                                Salón Municipal
+                            </div>
+                        </div>
+                        <a href="Talleres/expon/Curso de Excel.jpg" target="_blank"
+                            class="text-center bg-muniDark text-white font-bold py-3 rounded-xl hover:bg-green-600 transition-all text-sm shadow-md">Ver
+                            Información</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 group flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="Talleres/expon/Taller Folklore.jpg"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            alt="Folklore">
+                        <span
+                            class="absolute top-4 left-4 bg-red-600 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase shadow-sm">Cultura</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-black text-muniDark mb-4 leading-tight">Taller de Folklore</h3>
+                        <div class="space-y-3 mb-6 flex-grow">
+                            <div class="flex items-center gap-3 text-sm text-gray-500 font-semibold">
+                                <span
+                                    class="bg-green-50 w-7 h-7 flex items-center justify-center rounded-lg text-green-600">✨</span>
+                                Inscripción Abierta
+                            </div>
+                            <div class="flex items-center gap-3 text-sm text-gray-500 font-semibold">
+                                <span
+                                    class="bg-green-50 w-7 h-7 flex items-center justify-center rounded-lg text-green-600">📍</span>
+                                S.U.M Cultural
+                            </div>
+                        </div>
+                        <a href="Talleres/expon/Taller Folklore.jpg" target="_blank"
+                            class="text-center bg-muniDark text-white font-bold py-3 rounded-xl hover:bg-green-600 transition-all text-sm shadow-md">Ver
+                            Información</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="actividades" class="bg-gray-50 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div class="max-w-2xl">
+                    <span class="text-green-600 font-black uppercase text-sm tracking-widest mb-2 block">Participación y
+                        Deporte</span>
+                    <h2 class="text-4xl md:text-5xl font-black text-muniDark leading-tight">Talleres <span
+                            class="text-green-600">Municipales</span></h2>
+                    <p class="text-gray-600 mt-4 text-lg">Encontrá tu espacio de formación y recreación. Actividades
+                        gratuitas pensadas para todas las edades en Santa Ana.</p>
+                </div>
+                <a href="index.html"
+                    class="inline-flex items-center gap-3 bg-muniDark text-white px-6 py-3 rounded-full font-bold hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl w-fit">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    Volver al Inicio
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="swiper mySwiperCards h-full">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="Talleres/Patin/Patin.jpg"
+                                        class="w-full h-full object-cover" alt="Patín"></div>
+                                <div class="swiper-slide"><img src="Talleres/Patin/patin2.jpg"
+                                        class="w-full h-full object-cover" alt="Patín"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <span
+                            class="absolute top-4 right-4 z-10 bg-green-600 text-white text-xs font-black px-4 py-1.5 rounded-full uppercase">Deportes</span>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-black text-muniDark mb-3">Patín Artístico</h3>
+                        <p class="text-gray-600 text-sm mb-6 flex-grow line-clamp-3">Promovemos la disciplina y el
+                            trabajo en equipo bajo la coordinación de la Prof. Werner Aylén.</p>
+                        <div class="space-y-3 mb-8 text-sm text-gray-500 font-medium">
+                            <div class="flex items-center gap-3"><span class="text-green-600">📅</span> Viernes</div>
+                            <div class="flex items-center gap-3"><span class="text-green-600">⏰</span> 18:30 a 21:30 hs
+                            </div>
+                            <div class="flex items-center gap-3"><span class="text-green-600">📍</span> Polideportivo
+                                Municipal</div>
+                        </div>
+                        <a href="https://wa.me/543765216291"
+                            class="block w-full text-center bg-gray-100 text-muniDark font-black py-4 rounded-2xl hover:bg-green-600 hover:text-white transition-all">Inscribirme</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="swiper mySwiperCards h-full">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="Talleres/Yoga/YOGA (1).jpg"
+                                        class="w-full h-full object-cover" alt="Yoga"></div>
+                                <div class="swiper-slide"><img src="Talleres/Yoga/YOGA (2).jpg"
+                                        class="w-full h-full object-cover" alt="Yoga"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <span
+                            class="absolute top-4 right-4 z-10 bg-green-600 text-white text-xs font-black px-4 py-1.5 rounded-full uppercase">Salud</span>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-black text-muniDark mb-3">Yoga Comunitario</h3>
+                        <p class="text-gray-600 text-sm mb-6 flex-grow line-clamp-3">Un espacio para el bienestar mental
+                            y físico. Clases para niños y adultos a cargo de Alicia Cardozo.</p>
+                        <div class="space-y-3 mb-8 text-sm text-gray-500 font-medium">
+                            <div class="flex items-center gap-3"><span class="text-green-600">📅</span> Lunes y
+                                Miércoles</div>
+                            <div class="flex items-center gap-3"><span class="text-green-600">⏰</span> Infantil 17hs |
+                                Adultos 19:30hs</div>
+                            <div class="flex items-center gap-3"><span class="text-green-600">📍</span> S.U.M Municipal
+                            </div>
+                        </div>
+                        <a href="https://wa.me/5493764211086"
+                            class="block w-full text-center bg-gray-100 text-muniDark font-black py-4 rounded-2xl hover:bg-green-600 hover:text-white transition-all">Inscribirme</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="swiper mySwiperCards h-full">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="Talleres/Robotica/robotica (1).jpg"
+                                        class="w-full h-full object-cover" alt="Robótica"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <span
+                            class="absolute top-4 right-4 z-10 bg-muniYellow text-muniDark text-xs font-black px-4 py-1.5 rounded-full uppercase">Tecnología</span>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-black text-muniDark mb-3">Escuela de Robótica</h3>
+                        <p class="text-gray-600 text-sm mb-6 flex-grow line-clamp-3">Aprendizaje basado en proyectos
+                            reales integrando programación y automatización para el futuro.</p>
+                        <div class="space-y-3 mb-8 text-sm text-gray-500 font-medium">
+                            <div class="flex items-center gap-3"><span class="text-green-600">📅</span> Lunes a Viernes
+                            </div>
+                            <div class="flex items-center gap-3"><span class="text-green-600">⏰</span> Desde las 13:00
+                                hs</div>
+                            <div class="flex items-center gap-3"><span class="text-green-600">📍</span> Sede Santa Ana
+                            </div>
+                        </div>
+                        <a href="https://wa.me/5493764727920"
+                            class="block w-full text-center bg-gray-100 text-muniDark font-black py-4 rounded-2xl hover:bg-green-600 hover:text-white transition-all">Inscribirme</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="swiper mySwiperCards h-full">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="Talleres/Voleibol NEWCOM/NEWCOM (1).jpg"
+                                        class="w-full h-full object-cover" alt="Newcom"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <span
+                            class="absolute top-4 right-4 z-10 bg-blue-600 text-white text-xs font-black px-4 py-1.5 rounded-full uppercase">Adultos</span>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-black text-muniDark mb-3">Voleibol NEWCOM</h3>
+                        <p class="text-gray-600 text-sm mb-6 flex-grow line-clamp-3">Actividad adaptada e inclusiva.
+                            Fomentamos el deporte comunitario en un ambiente divertido.</p>
+                        <div class="space-y-3 mb-8 text-sm text-gray-500 font-medium">
+                            <div class="flex items-center gap-3"><span class="text-green-600">📅</span> Martes y Viernes
+                            </div>
+                            <div class="flex items-center gap-3"><span class="text-green-600">⏰</span> 16:30 a 20:00 hs
+                            </div>
+                            <div class="flex items-center gap-3"><span class="text-green-600">📍</span> Polideportivo
+                                Municipal</div>
+                        </div>
+                        <a href="https://wa.me/5493764579480"
+                            class="block w-full text-center bg-gray-100 text-muniDark font-black py-4 rounded-2xl hover:bg-green-600 hover:text-white transition-all">Inscribirme</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="swiper mySwiperCards h-full">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="Talleres/Zumba/ZUMBA (3).jpg"
+                                        class="w-full h-full object-cover" alt="Zumba"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <span
+                            class="absolute top-4 right-4 z-10 bg-pink-500 text-white text-xs font-black px-4 py-1.5 rounded-full uppercase">Ritmo</span>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-black text-muniDark mb-3">Zumba</h3>
+                        <p class="text-gray-600 text-sm mb-6 flex-grow line-clamp-3">Mejorá tu condición física y reducí
+                            el estrés con nuestras clases llenas de energía.</p>
+                        <div class="space-y-3 mb-8 text-sm text-gray-500 font-medium">
+                            <div class="flex items-center gap-3"><span class="text-green-600">📅</span> Martes y Jueves
+                            </div>
+                            <div class="flex items-center gap-3"><span class="text-green-600">⏰</span> 18:30 hs</div>
+                            <div class="flex items-center gap-3"><span class="text-green-600">📍</span> S.U.M Municipal
+                            </div>
+                        </div>
+                        <a href="https://wa.me/5493764211086"
+                            class="block w-full text-center bg-gray-100 text-muniDark font-black py-4 rounded-2xl hover:bg-green-600 hover:text-white transition-all">Inscribirme</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="swiper mySwiperCards h-full">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="Talleres/Brasanelli/brasanelli (1).jpg"
+                                        class="w-full h-full object-cover" alt="Arte"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <span
+                            class="absolute top-4 right-4 z-10 bg-orange-500 text-white text-xs font-black px-4 py-1.5 rounded-full uppercase">Cultura</span>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-black text-muniDark mb-3">Taller Brasanelli</h3>
+                        <p class="text-gray-600 text-sm mb-6 flex-grow line-clamp-3">Espacio de dibujo y cerámica.
+                            Formamos artistas locales en convenio con la UNAM.</p>
+                        <div class="space-y-3 mb-8 text-sm text-gray-500 font-medium">
+                            <div class="flex items-center gap-3"><span class="text-green-600">📅</span> Lunes a Viernes
+                            </div>
+                            <div class="flex items-center gap-3"><span class="text-green-600">⏰</span> Desde las 13:00
+                                hs</div>
+                            <div class="flex items-center gap-3"><span class="text-green-600">📍</span> Escuela de Arte
+                            </div>
+                        </div>
+                        <a href="https://wa.me/5493764727920"
+                            class="block w-full text-center bg-gray-100 text-muniDark font-black py-4 rounded-2xl hover:bg-green-600 hover:text-white transition-all">Inscribirme</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <script>
-        var swiperCursos = new Swiper(".mySwiperCursos", {
-            slidesPerView: 1.2,      // En móviles se ve una y un pedacito
-            spaceBetween: 20,       // Espacio entre tarjetas
-            loop: true,
-            autoplay: { delay: 4000, disableOnInteraction: false },
-            pagination: { el: ".swiper-pagination", clickable: true },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                640: { slidesPerView: 2 },  // Tablet: 2 tarjetas
-                1024: { slidesPerView: 4 }  // PC: 4 tarjetas exactamente como en tu imagen
-            },
+        document.addEventListener('DOMContentLoaded', function () {
+            new Swiper(".mySwiperCards", {
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                }
+            });
         });
     </script>
 
-    <style>
-        /* Estilo para los puntitos amarillos de Swiper */
-        .swiper-pagination-bullet-active {
-            background: #fbff00 !important;
-            opacity: 1;
-        }
-    </style>
-
-    <!-- Sección Actividades -->
-    <section id="actividades" class="max-w-7xl mx-auto px-4 py-10">
-        <h2 class="text-3xl font-bold text-center mb-8">Actividades y Talleres Municipales</h2>
-
-        <p class="text-center mb-12 text-gray-700 max-w-3xl mx-auto">Aquí encontrarás toda la información sobre los
-            cursos, talleres y actividades que ofrecemos. Podés ver horarios, descripción, imágenes y videos para
-            conocer mejor cada actividad.</p>
-        <a href="index.html"
-            class="inline-flex items-center gap-2 text-white bg-green-600 hover:bg-green-700 transition duration-300 px-4 py-2 rounded-full shadow-md text-center font-semibold">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-            Volver al inicio
-        </a>
-
-        <!-- Actividad: Patín -->
-        <article class="mb-16 border rounded-lg p-6 shadow-md">
-            <h3 class="text-2xl font-semibold mb-2">Patín</h3>
-            <p class="mb-4 text-gray-600">El Taller Municipal de Patín de la Municipalidad de Santa Ana se desarrolla
-                bajo la coordinación de la profesora Werner Aylén, los días viernes de 18:30 a 21:30 horas. Actualmente,
-                el espacio cuenta con la participación de más de veinte alumnas.
-
-                El taller inició en abril del año 2024, con el objetivo de promover la práctica del patín artístico como
-                una disciplina deportiva y recreativa, brindando a niñas, adolescentes y jóvenes un espacio de
-                aprendizaje, formación y desarrollo personal.
-
-                Durante este período, las alumnas han participado en diversos eventos, encuentros y cursos de
-                perfeccionamiento en patinaje, lo que les ha permitido capacitarse, mejorar sus habilidades técnicas y
-                fortalecer el espíritu de equipo.
-
-                De esta manera, el Taller Municipal de Patín continúa consolidándose como una propuesta que fomenta el
-                deporte, la disciplina y la integración comunitaria en el municipio de Santa Ana.</p>
-            <ul class="mb-4 list-disc list-inside text-gray-700">
-                <li><strong>Días:</strong> Viernes</li>
-                <li><strong>Horarios:</strong> 18:30 a 21:30 hs</li>
-                <li><strong>Lugar:</strong> Polideportivo Municipal</li>
-                <li><strong>Profesor:</strong> Werner Aylén</li>
-                <li><strong>Cupo:</strong> ---- </li>
-                <li><strong>Costo:</strong> Gratuito</li>
-                <li><strong>Inscribite:</strong> <a
-                        href="https://wa.me/543765216291?text=Hola%20Mariana,%20quiero%20inscribirme%20al%20taller"
-                        target="_blank">+543765216291</a></li>
-            </ul>
-            <!-- Carrusel fotos y videos -->
-            <div class="swiper mySwiperPatin max-w-4xl mx-auto rounded-lg overflow-hidden">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="Talleres/Patin/Patin.jpg" alt="Clase de Patín"
-                            class="w-full object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Talleres/Patin/patin2.jpg" alt="Clase de Patín"
-                            class="w-full object-cover rounded-lg" />
-                    </div>
-                    <<div class="swiper-slide">
-                        <img src="Talleres/Patin/patin3.jpg" alt="Clase de Patín"
-                            class="w-full object-cover rounded-lg" />
-                </div>
-            </div>
-            <!-- Controles -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-            </div>
-        </article>
-
-        <article class="mb-16 border rounded-lg p-6 shadow-md">
-            <h3 class="text-2xl font-semibold mb-2">Yoga</h3>
-            <p class="mb-4 text-gray-600">El taller de yoga comunitario es
-                una excelente iniciativa para promover el bienestar y la salud en la comunidad. Al ofrecer un espacio
-                gratuito y seguro, se puede llegar a más personas y fomentar la práctica del yoga como una herramienta
-                para mejorar la calidad de vida. ¡Es una excelente forma de invertir en la salud y el bienestar de la
-                comunidad!</p>
-            <ul class="mb-4 list-disc list-inside text-gray-700">
-                <li><strong>Días:</strong> Lunes y Miércoles.</li>
-                <li><strong>Horarios:</strong> Infantil a 17:00 y Adultos 19:30 hs</li>
-                <li><strong>Lugar:</strong> S.U.M </li>
-                <li><strong>Profesor:</strong> Alicia Cardozo</li>
-                <li><strong>Costo:</strong> Gratuito</li>
-                <li><strong>Inscribite:</strong> <a
-                        href="https://wa.me/5493764211086?text=Hola,%20quiero%20inscribirme%20en%20Yoga"
-                        target="_blank">+5493764211086</a></li>
-            </ul>
-
-            <!-- Carrusel fotos y videos -->
-            <div class="swiper mySwiperPatin max-w-4xl mx-auto rounded-lg overflow-hidden">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="Talleres/Yoga/YOGA (1).jpg" alt="Clase de Yoga 1"
-                            class="w-full object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Talleres/Yoga/YOGA (2).jpg" alt="Clase de Patín 2"
-                            class="w-full object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Talleres/Yoga/YOGA (3).jpg" alt="Clase de Patín 2"
-                            class="w-full object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Talleres/Yoga/YOGA (4).jpg" alt="Clase de Patín 2"
-                            class="w-full object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Talleres/Yoga/YOGA (5).jpg" alt="Clase de Patín 2"
-                            class="w-full object-cover rounded-lg" />
-                    </div>
-                </div>
-                <!-- Controles -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </article>
-
-        <article class="mb-16 border rounded-lg p-6 shadow-md">
-            <h3 class="text-2xl font-semibold mb-2">Voleibol NEWCOM</h3>
-            <p class="mb-4 text-gray-600">Disfruta de una actividad inclusiva y divertida todos los viernes a las 17:00
-                hs. Ideal para todas las edades, con un ambiente comunitario y sin costo</p>
-            <ul class="mb-4 list-disc list-inside text-gray-700">
-                <li><strong>Días:</strong> Martes - Viernes</li>
-                <li><strong>Horarios:</strong> 16:30 - 20hs.</li>
-                <li><strong>Lugar:</strong> Polideportivo Municipal Santa Ana </li>
-                <li><strong>Profesores:</strong> Rocio Arrieta - Miqueas Rizky</li>
-                <li><strong>Costo:</strong> Gratuito</li>
-                <li><strong>Inscribite:</strong> <a
-                        href="https://wa.me/5493764579480?text=Hola,%20quiero%20inscribirme%20en%20Voleibol%20NEWCOM"
-                        target="_blank">+5493764579480</a></li>
-            </ul>
-
-            <!-- Carrusel fotos y videos -->
-            <div class="swiper mySwiperPatin max-w-4xl mx-auto rounded-lg overflow-hidden">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="Talleres/Voleibol NEWCOM/NEWCOM (1).jpg" alt="NEWCOM"
-                            class="w-full object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Talleres/Voleibol NEWCOM/NEWCOM (2).jpg" alt="NEWCOM"
-                            class="w-full object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Talleres/Voleibol NEWCOM/NEWCOM (3).jpg" alt="NEWCOM"
-                            class="w-full object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Talleres/Voleibol NEWCOM/NEWCOM (4).jpg" alt="NEWCOM"
-                            class="w-full object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Talleres/Voleibol NEWCOM/NEWCOM (5).jpg" alt="NEWCOM"
-                            class="w-full object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Talleres/Voleibol NEWCOM/NEWCOM (6).jpg" alt="NEWCOM"
-                            class="w-full object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <video controls class="w-full rounded-lg">
-                            <source src="Talleres/Voleibol NEWCOM/NEWCOM (1).mp4" type="video/mp4" />
-                            Tu navegador no soporta el video.
-                        </video>
-                    </div>
-                </div>
-                <!-- Controles -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </article>
-
-        <article class="mb-16 border rounded-lg p-6 shadow-md">
-            <h3 class="text-2xl font-semibold mb-2">Zumba</h3>
-            <p class="mb-4 text-gray-600">La experiencia “Zumba” es una actividad que sirve para mejorar la condición
-                física tonificar los músculos quemar calorías, reducir el estrés y mejorar el estado de ánimo además de
-                ser una actividad divertida y social, es un ejercicio integral que beneficia tanto el cuerpo como la
-                mente y una de las formas de estar en movimiento y mejorar la salud y calidad de vida.</p>
-            <ul class="mb-4 list-disc list-inside text-gray-700">
-                <li><strong>Días:</strong> Martes y Jueves.</li>
-                <li><strong>Horarios:</strong> 18:30 hs.</li>
-                <li><strong>Lugar:</strong> S.U.M </li>
-                <li><strong>Profesores:</strong> ---- </li>
-                <li><strong>Costo:</strong> Gratuito</li>
-                <li><strong>Inscribite:</strong> <a
-                        href="https://wa.me/5493764211086?text=Hola,%20quiero%20inscribirme%20en%20Zumba"
-                        target="_blank">+5493764211086</a></li>
-            </ul>
-
-            <!-- Carrusel fotos y videos -->
-            <div class="swiper mySwiperPatin max-w-4xl mx-auto rounded-lg overflow-hidden">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="Talleres/Zumba/ZUMBA (3).jpg" alt="Clase de Zumba"
-                            class="w-full h-95 md:h-100 object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Talleres/Zumba/ZUMBA (2).jpg" alt="Clase de Zumba"
-                            class="w-full h-95 md:h-100 object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Talleres/Zumba/ZUMBA (4).jpg" alt="Clase de Zumba"
-                            class="w-full h-95 md:h-100 object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Talleres/Zumba/ZUMBA (1).jpg" alt="Clase de Zumba"
-                            class="w-full h-95 md:h-100 object-cover rounded-lg" />
-                    </div>
-                </div>
-                <!-- Controles -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </article>
-
-
-        <article class="mb-16 border rounded-lg p-6 shadow-md">
-            <h3 class="text-2xl font-semibold mb-2">Robotica</h3>
-            <p class="mb-4 text-gray-600">la robótica educativa alcanza un nuevo nivel.
-
-                Nuestros estudiantes no solo aprenden conceptos… ¡los aplican en proyectos reales que integran
-                electrónica, programación y automatización!.</p>
-            <ul class="mb-4 list-disc list-inside text-gray-700">
-                <li><strong>Días:</strong> Lunes a Viernes.</li>
-                <li><strong>Horarios:</strong> 13hs.</li>
-                <li><strong>Lugar:</strong> Escuela de Robotica de Santa Ana</li>
-                <li><strong>Profesores:</strong> ---- </li>
-                <li><strong>Costo:</strong> Gratuito</li>
-                <li><strong>Inscribite:</strong> <a
-                        href="https://wa.me/5493764727920?text=Hola,%20quiero%20inscribirme%20en%20Robotica"
-                        target="_blank">+5493764727920</a></li>
-            </ul>
-
-            <!-- Carrusel fotos y videos -->
-            <div class="swiper mySwiperPatin max-w-4xl mx-auto rounded-lg overflow-hidden">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="Talleres/Robotica/robotica (1).jpg" alt="Clase de Zumba"
-                            class="w-full object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Talleres/Robotica/robotica (2).jpg" alt="Clase de Zumba"
-                            class="w-full object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Talleres/Robotica/robotica (3).jpg" alt="Clase de Zumba"
-                            class="w-full object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Talleres/Robotica/robotica (4).jpg" alt="Clase de Zumba"
-                            class="w-full object-cover rounded-lg" />
-                    </div>
-                </div>
-                <!-- Controles -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </article>
-        <article class="mb-16 border rounded-lg p-6 shadow-md">
-            <h3 class="text-2xl font-semibold mb-2">Brasanelli</h3>
-            <p class="mb-4 text-gray-600">El taller de arte es un espacio de donde salió tres cortes de técnico cerámica
-                dependienda de la UNAM, asube briendo varios talleres como dibujo, cerámica y otros. Fue beneficiado
-                muchas personas ya sea adulto joven y niños</p>
-            <ul class="mb-4 list-disc list-inside text-gray-700">
-                <li><strong>Días:</strong> Lunes a Viernes.</li>
-                <li><strong>Horarios:</strong> 13hs.</li>
-                <li><strong>Lugar:</strong> Escuela de Robotica de Santa Ana</li>
-                <li><strong>Profesores:</strong> ---- </li>
-                <li><strong>Costo:</strong> Gratuito</li>
-                <li><strong>Inscribite:</strong> <a
-                        href="https://wa.me/5493764727920?text=Hola,%20quiero%20inscribirme%20en%20Robotica"
-                        target="_blank">+5493764727920</a></li>
-            </ul>
-
-            <!-- Carrusel fotos y videos -->
-            <div class="swiper mySwiperPatin max-w-4xl mx-auto rounded-lg overflow-hidden">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="Talleres/Brasanelli/brasanelli (1).jpg" alt="clase de brasanelli"
-                            class="w-full h-96 object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Talleres/Brasanelli/brasanelli (2).jpg" alt="clase de brasanelli"
-                            class="w-full h-96 object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Talleres/Brasanelli/brasanelli (3).jpg" alt="clase de brasanelli"
-                            class="w-full h-96 object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Talleres/Brasanelli/brasanelli (6).jpg" alt="clase de brasanelli"
-                            class="w-full h-96 object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Talleres/Brasanelli/brasanelli (9).jpg" alt="clase de brasanelli"
-                            class="w-full h-96 object-cover rounded-lg" />
-                    </div>
-                </div>
-                <!-- Controles -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </article>
-
-    </section>
-    <!-- Script inicializando swiper para Patín -->
-    <script>
-        const swiperPatin = new Swiper(".mySwiperPatin", {
-            loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    </script>
-
-    <footer class="bg-muniDark text-white pt-20 pb-10">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div>
-                <img src="img/logosan.png" class="h-20 brightness-200 mb-6" alt="">
-                <p class="text-gray-400 text-sm font-medium">Trabajando por el desarrollo sustentable y el bienestar de
-                    cada vecino de Santa Ana, Misiones.</p>
-            </div>
-            <div>
-                <h5 class="font-black text-muniYellow uppercase text-sm mb-6 tracking-widest">Menú Rápido</h5>
-                <ul class="space-y-3 text-sm text-gray-300">
-                    <li><a href="https://wa.me/5493765216291?text=Hola,%20quisiera%20poder%20hablar%20con%20la%20Intendenta"
-                            class="hover:text-white transition">Mesa de entrada</a></li>
-                    <li><a href="https://wa.me/5493765216293?text=Hola,%20quisiera%20información%20sobre%20Recaudaciones"
-                            class="hover:text-white transition">Recaudaciones</a></li>
-                    <li><a href="https://wa.me/5493765208091?text=Hola,%20quisiera%20información%20sobre%20Calidad%20de%20Vida"
-                            class="hover:text-white transition">Calidad de Vida</a></li>
-                    <li><a href="https://wa.me/5493765208039?text=Hola,%20quisiera%20información%20sobre%20Obra%20Pública"
-                            class="hover:text-white transition">Obra Pública</a></li>
-                    <li><a href="https://wa.me/5493765216294?text=Hola,%20quisiera%20información%20sobre%20Agua%20Potable"
-                            class="hover:text-white transition">Agua Potable</a></li>
-                    <li><a href="https://chat.whatsapp.com/IKqujeJkOi54nDEFW3yyCT"
-                            class="hover:text-white transition">Feriantes</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="font-black text-muniYellow uppercase text-sm mb-6 tracking-widest">Nuestra Ubicación</h5>
-                <div
-                    class="rounded-2xl overflow-hidden h-32 opacity-50 grayscale hover:grayscale-0 transition duration-500">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14169.117145780512!2d-55.5786411!3d-27.3981084!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be28d4474327%3A0x89798544d67319c5!2sMunicipalidad%20De%20Santa%20Ana!5e0!3m2!1ses-419!2sar!4v1716388484196!5m2!1ses-419!2sar"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-        <div
-            class="max-w-7xl mx-auto px-6 border-t border-white/10 mt-20 pt-10 text-center text-[10px] text-gray-500 font-bold uppercase tracking-widest">
-            © 2026 Municipalidad de Santa Ana - Misiones | Todos los derechos reservados
-        </div>
-    </footer>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </html>
