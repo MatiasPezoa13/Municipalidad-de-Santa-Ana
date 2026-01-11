@@ -124,7 +124,22 @@
                     </a>
                 </li>
             </ul>
-
+            <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-50 z-[60] hidden">
+                <div class="bg-white w-3/4 h-full p-6 shadow-xl">
+                    <div class="flex justify-between items-center mb-8">
+                        <span class="font-bold text-lg">MENÚ</span>
+                        <button id="close-mobile" class="text-2xl">&times;</button>
+                    </div>
+                    <ul class="flex flex-col gap-5 font-bold text-black">
+                        <li><a href="#" class="block border-b pb-2">GOBIERNO</a></li>
+                        <li><a href="noticias.html" class="block border-b pb-2">NOTICIAS</a></li>
+                        <li><a href="#Turismo" class="block border-b pb-2">TURISMO</a></li>
+                        <li><a href="actividades.html" class="block border-b pb-2">ACTIVIDADES</a></li>
+                        <li><a href="https://wa.me/5493765216291"
+                                class="inline-block bg-black text-yellow-300 px-5 py-2 rounded-full">CONTACTO</a></li>
+                    </ul>
+                </div>
+            </div>
             <!-- Mobile button -->
             <button class="lg:hidden text-2xl text-black" id="btn-mobile">
                 <i class="fas fa-bars"></i>
@@ -210,41 +225,119 @@
         </div>
     </section>
 
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
 
-            <a href="obras-publicas.html"
-                class="group bg-white p-8 rounded-[2rem] shadow-xl border border-gray-100 flex items-center justify-between transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-                <div class="flex items-center gap-5">
-                    <div
-                        class="w-14 h-14 bg-muniDark rounded-2xl flex items-center justify-center group-hover:bg-muniYellow transition-colors">
-                        <i class="fas fa-hammer text-white group-hover:text-black text-xl"></i>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <a href="obras-publicas.html"
+                    class="group bg-white p-8 rounded-[2rem] shadow-xl border border-gray-100 flex items-center justify-between transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
+                    <div class="flex items-center gap-5">
+                        <div
+                            class="w-14 h-14 bg-slate-900 rounded-2xl flex items-center justify-center group-hover:bg-yellow-400 transition-colors duration-300">
+                            <i class="fas fa-hammer text-white group-hover:text-black text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-black text-slate-900 uppercase italic leading-none">Obras Públicas
+                            </h3>
+                            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-1">Gestión e
+                                Infraestructura</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="text-xl font-black text-muniDark uppercase italic">Obras Públicas</h3>
-                        <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Infraestructura</p>
+                    <i
+                        class="fas fa-arrow-right text-gray-300 group-hover:text-yellow-500 group-hover:translate-x-2 transition-all"></i>
+                </a>
+
+                <a href="equipos.html"
+                    class="group bg-white p-8 rounded-[2rem] shadow-xl border border-gray-100 flex items-center justify-between transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
+                    <div class="flex items-center gap-5">
+                        <div
+                            class="w-14 h-14 bg-slate-900 rounded-2xl flex items-center justify-center group-hover:bg-yellow-400 transition-colors duration-300">
+                            <i class="fas fa-trophy text-white group-hover:text-black text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-black text-slate-900 uppercase italic leading-none">Liga Municipal
+                            </h3>
+                            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-1">Deportes y
+                                Salud</p>
+                        </div>
+                    </div>
+                    <i
+                        class="fas fa-arrow-right text-gray-300 group-hover:text-yellow-500 group-hover:translate-x-2 transition-all"></i>
+                </a>
+            </div>
+
+            <article
+                class="bg-white rounded-[3rem] shadow-2xl p-8 lg:p-12 border-l-[12px] border-yellow-400 flex flex-col lg:flex-row-reverse items-center gap-10 transition-all duration-300 hover:shadow-yellow-100/50">
+
+                <div class="flex justify-center w-full lg:w-1/2">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-yellow-400/20 rounded-full blur-3xl"></div>
+                        <video src="noticias/Campingg.mp4" controls
+                            class="relative rounded-3xl shadow-2xl w-full max-w-[320px] aspect-[9/16] object-cover border-4 border-white"
+                            preload="metadata"></video>
                     </div>
                 </div>
-                <i class="fas fa-chevron-right text-gray-300 group-hover:text-muniYellow transition-colors"></i>
-            </a>
 
-            <a href="equipos.html"
-                class="group bg-white p-8 rounded-[2rem] shadow-xl border border-gray-100 flex items-center justify-between transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-                <div class="flex items-center gap-5">
+                <div class="w-full lg:w-1/2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span
+                            class="bg-yellow-400 text-black text-[10px] font-black px-3 py-1 rounded-full uppercase italic">Temporada
+                            2025/2026</span>
+                        <span class="text-gray-400 text-[10px] font-bold uppercase italic">Vigente</span>
+                    </div>
+
+                    <h2 class="text-4xl font-black mb-6 text-slate-900 italic uppercase leading-tight">Tarifas
+                        Actualizadas <br><span class="text-yellow-500">“Camping La Boca”</span></h2>
+
+                    <p class="text-gray-500 text-xs font-bold mb-8 uppercase tracking-widest border-b pb-4">Precios por
+                        jornada para residentes y visitantes</p>
+
                     <div
-                        class="w-14 h-14 bg-muniDark rounded-2xl flex items-center justify-center group-hover:bg-muniYellow transition-colors">
-                        <i class="fas fa-trophy text-white group-hover:text-black text-xl"></i>
+                        class="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-gray-50 p-6 rounded-3xl border border-gray-100">
+                        <ul class="space-y-3">
+                            <li class="flex justify-between items-center border-b border-gray-200 pb-2">
+                                <span class="text-gray-600 font-bold text-sm uppercase">Santanero</span>
+                                <span class="text-slate-900 font-black text-lg">$1.000</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-200 pb-2">
+                                <span class="text-gray-600 font-bold text-sm uppercase">Visitante</span>
+                                <span class="text-slate-900 font-black text-lg">$4.000</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-200 pb-2">
+                                <span class="text-gray-600 font-bold text-sm uppercase">Vehículos</span>
+                                <span class="text-slate-900 font-black text-lg">$2.000</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-200 pb-2">
+                                <span class="text-gray-600 font-bold text-sm uppercase">Carpas</span>
+                                <span class="text-slate-900 font-black text-lg">$4.000</span>
+                            </li>
+                        </ul>
+                        <ul class="space-y-3">
+                            <li class="flex justify-between items-center border-b border-gray-200 pb-2">
+                                <span class="text-gray-600 font-bold text-sm uppercase">Motor Home</span>
+                                <span class="text-slate-900 font-black text-lg">$6.000</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-200 pb-2">
+                                <span class="text-gray-600 font-bold text-sm uppercase">Lancha Gral.</span>
+                                <span class="text-slate-900 font-black text-lg">$6.000</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-200 pb-2">
+                                <span class="text-gray-600 font-bold text-sm uppercase">Lancha Local</span>
+                                <span class="text-slate-900 font-black text-lg">$2.000</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-200 pb-2">
+                                <span class="text-gray-600 font-bold text-sm uppercase">Kayak/Moto</span>
+                                <span class="text-slate-900 font-black text-lg">$2.000</span>
+                            </li>
+                        </ul>
                     </div>
-                    <div>
-                        <h3 class="text-xl font-black text-muniDark uppercase italic">Liga Municipal</h3>
-                        <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Deportes</p>
-                    </div>
+
+                    <p class="mt-6 text-[10px] text-gray-400 font-bold italic uppercase">** Precios sujetos a
+                        modificación según disposición municipal.</p>
                 </div>
-                <i class="fas fa-chevron-right text-gray-300 group-hover:text-muniYellow transition-colors"></i>
-            </a>
+            </article>
         </div>
     </section>
-
     <section class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h3 class="text-muniDark text-3xl md:text-5xl font-black mb-6 leading-tight italic">"Un próspero 2026 para
@@ -619,27 +712,25 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        // Swiper Config
-        const swiper = new Swiper(".mySwiper", {
-            loop: true,
-            pagination: { el: ".swiper-pagination", clickable: true },
-            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
-            autoplay: { delay: 5000 },
+        const btnMobile = document.getElementById('btn-mobile');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMobile = document.getElementById('close-mobile');
+
+        // Función para abrir
+        btnMobile.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
         });
 
-        // Carrusel Hero Manual mejorado
-        const carousel = document.getElementById('carousel');
-        const slides = carousel.children.length;
-        let index = 0;
-        setInterval(() => {
-            index = (index + 1) % slides;
-            carousel.style.transform = `translateX(-${index * 100}%)`;
-        }, 8000);
+        // Función para cerrar
+        closeMobile.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
 
-        // Mobile Menu Logic
-        const btnMobile = document.getElementById('btn-mobile');
-        btnMobile.addEventListener('click', () => {
-            alert('Integrar Menú Lateral o Dropdown Mobile aquí');
+        // Cerrar al hacer clic fuera del menú blanco
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                mobileMenu.classList.add('hidden');
+            }
         });
     </script>
 </body>

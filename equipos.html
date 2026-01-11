@@ -26,7 +26,7 @@
             </div>
             <div class="flex gap-4">
                 <a href="#" class="hover:underline transition">
-                    <i class="fab fa-facebook mr-2"></i>@santaanamunicipalidad
+                    <span><i class="fab fa-instagram mr-1"></i> @santaanamunicipalidad</span>
                 </a>
                 <span><i class="fas fa-phone mr-2"></i>+54 9 3765-216291</span>
             </div>
@@ -101,26 +101,28 @@
                     </a>
                 </li>
             </ul>
-
+            <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-50 z-[60] hidden">
+                <div class="bg-white w-3/4 h-full p-6 shadow-xl">
+                    <div class="flex justify-between items-center mb-8">
+                        <span class="font-bold text-lg">MENÚ</span>
+                        <button id="close-mobile" class="text-2xl">&times;</button>
+                    </div>
+                    <ul class="flex flex-col gap-5 font-bold text-black">
+                        <li><a href="#" class="block border-b pb-2">GOBIERNO</a></li>
+                        <li><a href="noticias.html" class="block border-b pb-2">NOTICIAS</a></li>
+                        <li><a href="#Turismo" class="block border-b pb-2">TURISMO</a></li>
+                        <li><a href="actividades.html" class="block border-b pb-2">ACTIVIDADES</a></li>
+                        <li><a href="https://wa.me/5493765216291"
+                                class="inline-block bg-black text-yellow-300 px-5 py-2 rounded-full">CONTACTO</a></li>
+                    </ul>
+                </div>
+            </div>
             <!-- Mobile button -->
             <button class="lg:hidden text-2xl text-black" id="btn-mobile">
                 <i class="fas fa-bars"></i>
             </button>
         </nav>
     </header>
-
-    <div class="w-full text-black font-bold border-t border-black/10 shadow-sm" style="background-color: #fbff00;">
-        <div class="flex flex-wrap justify-center items-center gap-4 py-2 px-4 text-[11px] uppercase tracking-wider">
-            <span><i class="fas fa-broadcast-tower mr-1"></i> FM 94.7 Radio Municipal</span>
-            <span class="hidden md:block">|</span>
-            <span><i class="fab fa-instagram mr-1"></i> @santaanamunicipalidad</span>
-            <span class="hidden md:block">|</span>
-            <span><i class="fas fa-map-marker-alt mr-1"></i> Av. San Martín & Belgrano</span>
-            <span class="hidden md:block">|</span>
-            <span><i class="fas fa-phone mr-1"></i> +54 9 3765-216291</span>
-        </div>
-    </div>
-
     <main class="flex-grow max-w-6xl mx-auto px-6 py-12">
 
         <div
@@ -401,6 +403,28 @@
             </div>
         </div>
     </footer>
+    <script>
+        const btnMobile = document.getElementById('btn-mobile');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMobile = document.getElementById('close-mobile');
+
+        // Función para abrir
+        btnMobile.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+
+        // Función para cerrar
+        closeMobile.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        // Cerrar al hacer clic fuera del menú blanco
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
 </body>
 
 </html>
